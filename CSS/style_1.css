@@ -1,7 +1,7 @@
 .Main_block {
     background-color: #fff2fe;
     padding: 6%;
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -17,4 +17,18 @@ footer {
     margin: 0 auto;
     padding-bottom: 1%;
     float: inline-end;
+}
+
+/* .info_text{
+     width: 50%;
+    margin: 0 auto;
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 600px) {
+h1, h2{
+    text-si
 }
