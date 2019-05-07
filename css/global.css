@@ -1,0 +1,18 @@
+.container{
+    background: #ffe2f4;
+}
+
+.container-fluid{
+    background: #ffe2f4;
+}
+
+.index_logo{
+    margin-top: 1%;
+}
+
+@media only screen and (max-width: 576px){
+    .index_logo{
+        width: 0%;
+        height: 0%;
+    }
+}
