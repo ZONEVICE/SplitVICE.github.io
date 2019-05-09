@@ -7,12 +7,17 @@
 }
 
 .index_logo{
-    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+header{
+    background: #ff009d;
+}
+
+.text_header{
+    color: white;
 }
 
 @media only screen and (max-width: 576px){
-    .index_logo{
-        width: 0%;
-        height: 0%;
-    }
+
 }
