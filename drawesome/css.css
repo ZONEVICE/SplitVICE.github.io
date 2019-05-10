@@ -1,0 +1,18 @@
+@media only screen and (max-width: 420px){    
+    tr{
+        font-size: 88%;
+        /* color:red; */
+    }
+    td{
+        font-size: 88%;
+        /* color:red; */
+    }
+    th{
+        font-size: 88%;
+        /* color:red; */
+    }
+}
+
+#friendly_users_content{
+    color:red;  
+}
