@@ -13,6 +13,11 @@
     }
 }
 
-#friendly_users_content{
+/* #friendly_users_content{
     color:red;  
+} */
+
+.jplayer_img{
+    margin-left:35%; 
+    margin-top: 5%;
 }
