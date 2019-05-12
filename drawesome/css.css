@@ -17,6 +17,11 @@
     color:red;  
 } */
 
+.img_logo{
+    width: 8%;
+    height: 8%;
+}
+
 .jplayer_img{
     margin-left:35%; 
     margin-top: 5%;
