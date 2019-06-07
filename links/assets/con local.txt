@@ -51,7 +51,7 @@
                         <hr>
                         <div class="card">
                             <div class="card-body">
-                                <img src="https://i.imgur.com/2cEx1qg.png" alt="!">
+                                <img src="img/Mega_small.png" alt="!">
                                 <a target="_blank" href="https://mega.nz/#F!mvQwmIgJ!1ErN51p9NRehylkS99M6jA">MEGA</a>
                                 <span>- Complete
                                     VICE's
@@ -61,7 +61,7 @@
 
                         <div class="card">
                             <div class="card-body">
-                                <img src="https://i.imgur.com/5zK8zmP.png" alt="!">
+                                <img src="img/Github_small.png" alt="!">
                                 <a target="_blank" href="https://github.com/JustVice?tab=repositories">Github</a>
                                 <span>- Source code of
                                     programs</span>
@@ -72,29 +72,29 @@
                         <ul class="list-group">
                             <li class="list-group-item text-center font-weight-bold">NSFW ART</li>
                             <li class="list-group-item">
-                                <img src="https://i.imgur.com/b8vz8BL.png" alt="!">
+                                <img src="img/twitter_small.png" alt="!">
                                 <a target="_blank" href="https://twitter.com/JustVice1">Twitter</a> <span>- Mostly
                                     active</span>
                             </li>
                             <li class="list-group-item">
-                                <img src="https://i.imgur.com/tapE6xC.png" alt="!">
+                                <img src="img/pixiv_small.png" alt="!">
                                 <a target="_blank" href="https://www.pixiv.net/member.php?id=31578923">Pixiv</a> <span>-
                                     Portafolio</span>
                             </li>
                             <li class="list-group-item">
-                                <img src="https://i.imgur.com/VvDc2iu.png" alt="!">
+                                <img src="img/Newgrounds_small.png" alt="!">
                                 <a target="_blank" href="https://justvice.newgrounds.com">Newgrounds</a> <span>- Old,
                                     but still
                                     good</span>
                             </li>
                             <li class="list-group-item">
-                                <img src="https://i.imgur.com/D0LpFOb.png" alt="!">
+                                <img src="img/FurAffinity_small.png" alt="!">
                                 <a target="_blank" href="https://www.furaffinity.net/user/justvice/">FurAffinity</a>
                                 <span>- mostly
                                     furry content</span>
                             </li>
                             <li class="list-group-item">
-                                <img src="https://i.imgur.com/q1OvAcn.png" alt="!">
+                                <img src="img/tumblr_small.png" alt="!">
                                 <a target="_blank" href="https://justvice18.tumblr.com">Tumblr NSFW</a> <span>-
                                     abandoned since December
                                     17th</span>
@@ -104,19 +104,19 @@
                         <ul class="list-group">
                             <li class="list-group-item text-center font-weight-bold">SFW ART</li>
                             <li class="list-group-item">
-                                <img src="https://i.imgur.com/q1OvAcn.png" alt="!">
+                                <img src="img/tumblr_small.png" alt="!">
                                 <a target="_blank" href="https://justvice.tumblr.com">Tumblr SFW</a> <span>- remains
                                     alive to certain
                                     art</span>
                             </li>
                             <li class="list-group-item">
-                                <img src="https://i.imgur.com/XZAxsto.png" alt="!">
+                                <img src="img/deviant_art_small.png" alt="!">
                                 <a target="_blank" href="https://www.deviantart.com/justviceart">Deviant Art</a> <span>-
                                     SFW and some
                                     light NSFW content</span>
                             </li>
                             <li class="list-group-item">
-                                <img src="https://i.imgur.com/dyC4TkJ.png" alt="!">
+                                <img src="img/instagram_small.png" alt="!">
                                 <a target="_blank" href="https://www.instagram.com/justvice1">Instagram</a> <span>- SFW,
                                     it may have
                                     some questionable content</span>
@@ -131,14 +131,14 @@
                         </div>
                         <div class="card">
                             <div class="card-body">
-                                <img src="https://i.imgur.com/rg9ge3q.png" alt="!">
+                                <img src="img/discord_small.png" alt="!">
                                 Discord. User name: VICE#3879
                             </div>
                         </div>
                         <br>
                         <div class="card">
                             <div class="card-body">
-                                <img src="https://i.imgur.com/hrVPTin.png" alt="!">
+                                <img src="img/Web_small.png" alt="!">
                                 <a target="_blank" href="https://justvice.wixsite.com/info">Content links (WIX
                                     version)</a> <span>-
                                     better design</span>
