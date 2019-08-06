@@ -1,23 +1,7 @@
-.container{
-    background: #dbdbdb;
-}
+/* HEADER */
+.index_logo{margin-bottom: 1%;}
+header{background: #ed1a75;}
+.text_header{color: white;}
 
-.container-fluid{
-    background: #dbdbdb;
-}
-
-.index_logo{
-    margin-bottom: 1%;
-}
-
-header{
-    background: #ed1a75;
-}
-
-.text_header{
-    color: white;
-}
-
-@media only screen and (max-width: 576px){
-
-}
+/* GRAY BACKGROUND COLOR */
+body{background: #dbdbdb;}
