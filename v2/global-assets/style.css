@@ -1,1 +1,5 @@
 header { background-color: pink; }
+
+.header-img { margin: 2%; }
+
+.header-img a:hover { color:black; }
