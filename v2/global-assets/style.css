@@ -1,15 +1,73 @@
-body {background-color: grey; }
+/* HEADER */
 
-header { background-color: pink; }
+body {
+    background-color: grey;
+}
 
-.header-img { margin: 2%; }
+header {
+    background-color: pink;
+}
 
-.navbar-button {float:right; margin: 4%; }
+.header-img {
+    margin: 20px;
+}
 
-.asideBlock {margin: 1%; width: 160px; background-color: white}
+@media only screen and (min-width: 1024px) {
+    .navbar-button {
+        display: none;
+    }
+}
 
-@media only screen and (min-width: 1024px){
+/* NAVBAR OR ASIDE AND CONTENT*/
 
-    .navbar-button {display: none; }
+.customContainer {
+    margin-top: 18px;
+}
 
+aside {
+    float: left;
+}
+
+.asideBlock {
+    background-color: white;
+    margin-left: 40px;
+    margin-bottom: 13px;
+    padding-left: 8px;
+    padding-right: 125px;
+    padding-bottom: 2px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.asideBlock .liStyle {
+    list-style-type: square;
+}
+
+.mainContent {
+    background-color: white;
+    margin-left: 300px;
+    margin-right: 30px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 25px;
+}
+
+footer {
+    color: white;
+    margin-top: 20px;
+    width: 100%;
+    display: inline-table;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1100px) {
+    aside {
+        display: none;
+    }
+
+    .mainContent{
+        margin-left: 45px;
+        margin-right: 25px;
+        
+    }
 }
