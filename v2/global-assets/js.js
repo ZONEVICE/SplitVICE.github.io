@@ -16,8 +16,3 @@ function show_hide_aside() {
         document.getElementById("aside-id").style.display = "none";
     }
 }
-
-function change_aside_size() {
-    var scale = document.getElementById('mainContentID').clientWidth;
-    document.getElementById("asideBlock").style.width = scale + "px";
-}
