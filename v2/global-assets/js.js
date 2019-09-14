@@ -3,7 +3,7 @@ function width_listener() {
     var x = win.innerWidth || docElem.clientWidth || body.clientWidth;
     if (x < 1025) {
         document.getElementById("aside-id").style.display = "none";
-    }else{
+    } else {
         document.getElementById("aside-id").style.display = "block";
     }
 }
@@ -15,4 +15,9 @@ function show_hide_aside() {
     } else {
         document.getElementById("aside-id").style.display = "none";
     }
+}
+
+function change_aside_size() {
+    var scale = document.getElementById('mainContentID').clientWidth;
+    document.getElementById("asideBlock").style.width = scale + "px";
 }
