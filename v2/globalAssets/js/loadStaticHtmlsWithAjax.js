@@ -1,3 +1,7 @@
+const headerPath = "staticHtmls/header.html";
+const footerPath = "staticHtmls/footer.html";
+const asidePath = "staticHtmls/aside.html";
+
 function loadHeaderWithAjax() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
@@ -5,7 +9,7 @@ function loadHeaderWithAjax() {
       document.getElementById("headerContentAjaxId").innerHTML = this.responseText;
     }
   };
-  xhttp.open("GET", "../staticHtmls/header.html", true);
+  xhttp.open("GET", headerPath, true);
   xhttp.send();
 }
 
@@ -16,7 +20,7 @@ function loadFooterWithAjax() {
       document.getElementById("footerContentAjaxId").innerHTML = this.responseText;
     }
   };
-  xhttp.open("GET", "../staticHtmls/footer.html", true);
+  xhttp.open("GET", footerPath, true);
   xhttp.send();
 }
 
@@ -27,6 +31,6 @@ function loadAsideWithAjax() {
       document.getElementById("asideContentAjaxId").innerHTML = this.responseText;
     }
   };
-  xhttp.open("GET", "../staticHtmls/aside.html", true);
+  xhttp.open("GET", asidePath, true);
   xhttp.send();
 }
