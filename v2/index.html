@@ -26,6 +26,7 @@
     <script src="XXXXXXX"></script>-->
     <link rel="stylesheet" href="global-assets/style.css">
     <script src="global-assets/js.js"></script>
+    <script src="global-assets/loadStaticHTMLs.js"></script>
 
     <!-- Browser tab icon -->
     <link rel="shortcut icon" type="image/ico" href="global-assets/img/favicon.png">
@@ -36,13 +37,7 @@
 
 <body onresize="width_listener()">
 
-    <header>
-        <a href="#">
-            <img class="header-img" src="global-assets/img/header-img.png" width="100px" alt="missing logo!">
-        </a>
-        <a href="#" onclick="show_hide_aside()">
-            <img class="navbar-button" src="global-assets/img/nav-button.png" width="30px" alt="Missing navbar button!">
-        </a>
+    <header id="headerId">
 
     </header>
 
@@ -136,7 +131,9 @@
     <footer>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </footer>
-
+    <script>
+        loadHTML();
+    </script>
 </body>
 
 </html>
