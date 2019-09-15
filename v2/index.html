@@ -24,9 +24,9 @@
     <!-- CSS and JS imports/templates -->
     <!-- <link rel="stylesheet" href="XXXXXXXXX">
     <script src="XXXXXXX"></script>-->
-    <link rel="stylesheet" href="global-assets/style.css">
-    <script src="global-assets/js.js"></script>
-    <script src="global-assets/loadStaticHTMLs.js"></script>
+    <link rel="stylesheet" href="global-assets/css/style.css">
+    <script src="global-assets/js/js.js"></script>
+    <script src="global-assets/js/loadStaticHtmlsWithAjax.js"></script>
 
     <!-- Browser tab icon -->
     <link rel="shortcut icon" type="image/ico" href="global-assets/img/favicon.png">
@@ -37,48 +37,16 @@
 
 <body onresize="width_listener()">
 
-    <header id="headerId">
-
+    <header>
+        <div id="headerContentAjaxId">
+        </div>
     </header>
 
     <div class="customContainer">
 
-        <aside id="asideID">
+        <aside id="asideId">
+            <div id="asideContentAjaxId">
 
-            <div id="asideBlock">
-                Title
-                <ul class="liStyle">
-                    <li><a href="#">Lorem dasjn eless</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                </ul>
-            </div>
-
-            <div id="asideBlock">
-                Title
-                <ul class="liStyle">
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                </ul>
-            </div>
-
-            <div id="asideBlock">
-                Title
-                <ul class="liStyle">
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                </ul>
             </div>
         </aside>
 
@@ -129,10 +97,15 @@
     </div>
 
     <footer>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div id="footerContentAjaxId">
+
+        </div>
     </footer>
+
     <script>
-        loadHTML();
+        loadHeaderWithAjax();
+        loadFooterWithAjax();
+        loadAsideWithAjax();
     </script>
 </body>
 

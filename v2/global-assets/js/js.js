@@ -1,4 +1,4 @@
-const aside_id = "asideID";
+const aside_id = "asideId";
 
 function width_listener() {
     var win = window;

@@ -33,7 +33,7 @@ aside {
     float: left;
 }
 
-#asideBlock .liStyle {
+#asideBlockId .liStyle {
     list-style-type: square;
 }
 
@@ -43,7 +43,7 @@ aside {
     max-width: 1020px;
 }
 
-#asideBlock {
+#asideBlockId {
     background-color: white;
     margin-bottom: 13px;
     padding-left: 8px;
@@ -75,7 +75,7 @@ footer {
         width: 100%;
     }
 
-    #asideBlock{
+    #asideBlockId{
         border-style: none;
     }
 
