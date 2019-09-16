@@ -1,95 +1,33 @@
-header {
-    background-color: #c8196b;
-}
+/* HEADER */
+header {background-color: #bd0058;}
+.headerImage {max-width:180px; padding-top: 9px; padding-bottom: 9px;display:block;margin-left:auto;margin-right:auto;}
+.headerNavbarButtonImage {float: right;margin: 12px;margin-top: 17px;margin-right: 20px;}
 
-.headerImage {
-    margin: 20px;
-}
+/* ASIDE */
+aside {float: left;}
+.asideListTitle {background-color: rgb(207, 207, 207);padding-left: 20px;padding-top: 4px;padding-bottom: 4px;font-size: 15px;font-weight: 650;}
+.asideBlock {background-color: #F9F9F9;margin-bottom: 13px;width: 219px;padding-bottom: 2px;}
+.asideBlock .asideLiStyle {list-style-type: square;}
 
-.headerNavbarButtonImage {
-    float: right;
-    margin: 20px;
-}
+/* CONTAINER AND OVERALL CONTENT */
+body {background-color: rgb(219, 219, 219);}
+.customContainer {margin: 0 auto;margin-top: 11px;max-width: 1020px;}
+.mainContent {margin-left: 230px;padding: 25px;padding-top: 9px; background-color: white;}
+.breadcrumb{margin:0px;padding:5px;padding-left: 10px;}
 
-.customContainer {
-    margin: 0 auto;
-    margin-top: 11px;
-    max-width: 1020px;
-}
+/* FOOTER */
+footer {color: black;margin-top: 20px;width: 100%;display: inline-table;text-align: center;}
 
-body {
-    background-color: rgb(219, 219, 219);
-}
-
-.mainContent {
-    margin-left: 230px;
-    padding: 25px;
-    background-color: white;
-}
-
-aside {
-    float: left;
-}
-
-.asideListTitle {
-    background-color: rgb(207, 207, 207);
-    padding-left: 20px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    font-size: 15px;
-  
-    font-weight: 650;
-}
-
-.asideBlock {
-    background-color: #F9F9F9;
-    margin-bottom: 13px;
-    /* padding-left: 8px; */
-    width: 219px;
-    padding-bottom: 2px;
-}
-
-.asideBlock .asideLiStyle {
-    list-style-type: square;
-}
-
-footer {
-    color: black;
-    margin-top: 20px;
-    width: 100%;
-    display: inline-table;
-    text-align: center;
-}
-
-/* MEDIAPORTS */
-
+/* RESPONSIVE MEDIA SCREEN ELEMENTS */
 @media only screen and (min-width: 1025px) {
-    .headerNavbarButtonImage {
-        display: none;
-    }
+    .headerNavbarButtonImage {display: none;}
 }
 
 @media only screen and (max-width: 1024px) {
-    aside {
-        display: none;
-        width: 100%;
-    }
-
-    .asideShowWhenScreenIsSmallClass{
-        display: block;
-    }
-
-    .asideBlock {
-        border-style: none;
-        width: auto;
-        margin-bottom: 0px;
-    }
-    
-    .mainContent {
-        margin-left: 0px;
-        border-style: none;
-    }
-    .customContainer {
-        margin-top: 0px;
-    }
+    aside {display: none;width: 100%;}
+    .asideShowWhenScreenIsSmallClass {display: block;}
+    .asideBlock {border-style: none;width: auto;margin-bottom: 0px;}
+    .mainContent {margin-left: 0px;border-style: none;}
+    .customContainer {margin-top: 0px;}
+    .headerImage{display:inline;margin-left: 10px;}
 }
