@@ -37,7 +37,8 @@ aside {
     padding-top: 4px;
     padding-bottom: 4px;
     font-size: 15px;
-    font-family: Trebuchet MS;
+  
+    font-weight: 650;
 }
 
 #asideBlockId {
@@ -73,11 +74,17 @@ footer {
         display: none;
         width: 100%;
     }
+
+    .asideShowWhenScreenIsSmallClass{
+        display: block;
+    }
+
     #asideBlockId {
         border-style: none;
         width: auto;
         margin-bottom: 0px;
     }
+    
     .mainContent {
         margin-left: 0px;
         border-style: none;
