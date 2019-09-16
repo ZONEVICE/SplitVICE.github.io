@@ -1,7 +1,9 @@
+/* HTML FILES PATHS */
 const headerPath = "staticHtmls/header.html";
 const footerPath = "staticHtmls/footer.html";
 const asidePath = "staticHtmls/aside.html";
 
+/* LOADS THE HEADER WITH AJAX */
 function loadHeaderWithAjax() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
@@ -13,6 +15,7 @@ function loadHeaderWithAjax() {
   xhttp.send();
 }
 
+/* LOADS THE FOOTER WITH AJAX */
 function loadFooterWithAjax() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
@@ -24,6 +27,7 @@ function loadFooterWithAjax() {
   xhttp.send();
 }
 
+/* LOADS THE ASIDE WITH AJAX */
 function loadAsideWithAjax() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {

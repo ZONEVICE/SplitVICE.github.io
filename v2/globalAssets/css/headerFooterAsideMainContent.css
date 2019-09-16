@@ -2,11 +2,11 @@ header {
     background-color: #c8196b;
 }
 
-.header-img {
+.headerImage {
     margin: 20px;
 }
 
-.navbar-button {
+.headerNavbarButtonImage {
     float: right;
     margin: 20px;
 }
@@ -31,7 +31,7 @@ aside {
     float: left;
 }
 
-.listTitle {
+.asideListTitle {
     background-color: rgb(207, 207, 207);
     padding-left: 20px;
     padding-top: 4px;
@@ -41,7 +41,7 @@ aside {
     font-weight: 650;
 }
 
-#asideBlockId {
+.asideBlock {
     background-color: #F9F9F9;
     margin-bottom: 13px;
     /* padding-left: 8px; */
@@ -49,7 +49,7 @@ aside {
     padding-bottom: 2px;
 }
 
-#asideBlockId .liStyle {
+.asideBlock .asideLiStyle {
     list-style-type: square;
 }
 
@@ -64,7 +64,7 @@ footer {
 /* MEDIAPORTS */
 
 @media only screen and (min-width: 1025px) {
-    .navbar-button {
+    .headerNavbarButtonImage {
         display: none;
     }
 }
@@ -79,7 +79,7 @@ footer {
         display: block;
     }
 
-    #asideBlockId {
+    .asideBlock {
         border-style: none;
         width: auto;
         margin-bottom: 0px;
