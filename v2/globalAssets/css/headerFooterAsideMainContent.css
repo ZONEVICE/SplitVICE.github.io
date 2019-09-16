@@ -13,7 +13,8 @@ aside {float: left;}
 body {background-color: rgb(219, 219, 219);}
 .customContainer {margin: 0 auto;margin-top: 11px;max-width: 1020px;}
 .mainContent {margin-left: 230px;padding: 25px;padding-top: 9px; background-color: white;}
-.breadcrumb{margin:0px;padding:5px;padding-left: 10px;}
+.breadcrumb{margin:0px;padding:5px;padding-left:10px;margin-bottom: 10px;}
+.textBold{font-weight: bold;}
 
 /* FOOTER */
 footer {color: black;margin-top: 20px;width: 100%;display: inline-table;text-align: center;}
