@@ -1,7 +1,7 @@
 /* HTML FILES PATHS */
-const headerPath = "staticHtmls/header.html";
-const footerPath = "staticHtmls/footer.html";
-const asidePath = "staticHtmls/aside.html";
+const headerPath = "/v2/staticHtmls/header.html";
+const footerPath = "/v2/staticHtmls/footer.html";
+const asidePath = "/v2/staticHtmls/aside.html";
 
 /* LOADS THE HEADER WITH AJAX */
 function loadHeaderWithAjax() {
