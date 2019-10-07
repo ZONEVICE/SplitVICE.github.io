@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="/v2/globalAssets/javascript/showOrHideAsideWhenScreenIsSmall.js"></script>
     <script src="/v2/globalAssets/javascript/loadStaticHtmlsWithAjax.js"></script>
+    <script src="js.js"></script>
 
     <!-- Browser tab icon -->
     <link rel="shortcut icon" type="image/png" href="/v2/globalAssets/images/favicon.png">
@@ -66,7 +67,13 @@
             <p>
                 Page demo:
             </p>
-            <img src="https://i.imgur.com/U7nMnFi.png" width="700px" alt="Missing example image">
+            <!-- <img src="https://i.imgur.com/U7nMnFi.png" width="700px" alt="Missing example image"> -->
+
+            <div id="LINKS_BODY_CONTENT">
+
+                
+
+            </div>
 
         </div>
     </div>
@@ -81,7 +88,9 @@
         loadHeaderWithAjax();
         loadFooterWithAjax();
         loadAsideWithAjax();
+        LOAD_BODY_CONTENT_WITH_AJAX();
     </script>
+
 </body>
 
 </html>

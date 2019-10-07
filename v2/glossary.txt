@@ -1,0 +1,5 @@
+h
+	Folder used to store all the web page pages. All the html indexes are stored inside its respective folder.
+
+s
+	Stands for "shortener". It is the shortener system I implemented to index pages.
