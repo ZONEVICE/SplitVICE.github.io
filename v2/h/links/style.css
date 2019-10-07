@@ -1,14 +1,26 @@
+.LINKS_TITLE {text-align: center; }
 
+.LINKS_TEXT_CATEGORY{font-size: 23px;}
 
-@media only screen and (min-width: 600px){
-    img {max-width: 400px;}
+.LINK_BLOCK {
+    height: 88px;
 }
 
-@media only screen and (min-width: 400px){
-    img {max-width: 400px;}
+.LINK_BLOCK_IMG {
+    float: left;
+    width: 73px;
 }
 
+.LINK_BLOCK_TEXT {
+    padding-left: 90px;
+}
 
-@media only screen and (min-width: 200px){
-    img {max-width: 360px;}
+.LINK_BLOCK_A {
+    font-size: 23px;
+}
+
+.LINK_BLOCK_P {
+    font-size: 14px;
+    margin-left: 25px;
+    color: gray;
 }
