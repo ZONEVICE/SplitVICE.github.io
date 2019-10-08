@@ -1,7 +1,3 @@
 .navigatorUl a {font-size: 21px;}
 .navigatorUl span {padding-left: 25px; font-size: 14.7px;color:rgb(163, 163, 163);}
-.mainContentInfoTitleBlock {padding-left: 55px;}
-
-@media only screen and (max-width: 1024px) {
-    .mainContentInfoTitleBlock {padding-left: 0px; text-align: center;}
-}
+.mainContentInfoTitleBlock {text-align: center;}
