@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- HTML5 coding protocole -->
+    <meta charset="utf-8">
+
+    <!-- Responsive tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap and JQuery imports -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS and JS imports/templates -->
+    <!-- <link rel="stylesheet" href="XXXXXXXXX"> -->
+    <!-- <script src="XXXXXXX"></script> -->
+    <link rel="stylesheet" href="/v2/globalAssets/css/headerFooterAsideMainContent.css">
+    <script src="/v2/globalAssets/javascript/loadStaticHtmlsWithAjax.js"></script>
+    <script src="/v2/globalAssets/javascript/showOrHideAsideWhenScreenIsSmall.js"></script>
+
+    <!-- Browser tab icon -->
+    <link rel="shortcut icon" type="image/png" href="/v2/globalAssets/images/favicon.png">
+
+    <!-- Browser tab title -->
+    <title>JUST VICE</title>
+</head>
+
+<body>
+
+    <header>
+        <div id="headerContentAjaxId">
+        </div>
+    </header>
+
+    <div class="customContainer">
+        <aside id="asideId">
+            <div id="asideContentAjaxId">
+
+            </div>
+        </aside>
+
+        <div class="mainContent">
+            <div class="breadCrumb">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="../../">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Programs</li>
+                    </ol>
+                </nav>
+
+            </div>
+
+            <h4>Programs</h4>
+
+        </div>
+
+        <footer>
+            <div id="footerContentAjaxId">
+
+            </div>
+        </footer>
+
+        <script>
+            loadHeaderWithAjax();
+            loadFooterWithAjax();
+            loadAsideWithAjax();
+            loadMessageToAllPages();
+        </script>
+
+        
+</body>
+
+</html>
