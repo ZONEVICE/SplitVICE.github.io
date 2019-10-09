@@ -1,0 +1,12 @@
+.VICE_IMG {width: 140px;display: block;
+    margin-left: auto;
+    margin-right: auto;}
+
+.CONTACT_DESCRIPTION{margin-left: 29px;}
+
+span{font-weight: bold;}
+
+@media only screen and (max-width: 1024px){
+    .VICE_IMG{display: block;margin-left: auto;margin-right: auto;margin-top: 40px;}
+}
+
