@@ -3,3 +3,5 @@ h
 
 s
 	Stands for "shortener". It is the shortener system I implemented to index pages.
+	
+header default color: #bd0058
