@@ -1,31 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
-<!-- YO YOU ARE NOT SUPPOSED TO BE SEEING THIS!! WHERE YA THINK YOU'RE GOING!?! -->
-<!-- WENDIGOS AREN'T ALLOWED HERE NEITHER -->
-
-<!--    ------------------
-      /                    \
-    /                        \
-  /     - - - -      - - - -   \
-/      /        \   /        \  \
-|     |         |  |         |   |
-|     |         |  |         |   | 
-|       - - - -      - - - -     |
-|      - -                - -    |
-|    |     |            |     |  |
-\      - -      - -       - -    /
-  \            |    |          /
-    \           - -          /
-      \--------------------/ -->
-
 <head>
-        <script>
-                window.location.href = "v2/";
-        </script>
-    <!-- #region head imports -->
+    <!-- HTML5 coding protocole -->
     <meta charset="utf-8">
+
+    <!-- Responsive tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Sets a color to adress bar on mobile browsers. -->
+    <meta name="theme-color" content="#bd0058" />
+
+    <!-- Bootstrap and JQuery imports -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -37,106 +23,135 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/css/global.css">
-    <script src="/js/global.js"></script>
-    <!-- #endregion -->
-    <title>JVICE</title>
-    <link rel="shortcut icon" type="image/png" href="/img/favicon.png">
+
+    <!-- CSS and JS imports/templates -->
+    <!-- <link rel="stylesheet" href="XXXXXXXXX"> -->
+    <!-- <script src="XXXXXXX"></script> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/globalAssets/css/headerFooterAsideMainContent.css">
+    <script src="/globalAssets/javascript/loadStaticHtmlsWithAjax.js"></script>
+    <script src="/globalAssets/javascript/showOrHideAsideWhenScreenIsSmall.js"></script>
+
+    <!-- Browser tab icon -->
+    <link rel="shortcut icon" type="image/png" href="/globalAssets/images/favicon.png">
+
+    <!-- Browser tab title -->
+    <title>JUST VICE</title>
 </head>
 
 <body>
 
-    <!-- HEADER -->
-    <div class="row">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 ">
-            <header>
-                <a href="#">
-                    <h1 class="text_header text-center">VICE <img src="/img/logo-jv-1.png" class="index_logo "
-                            alt="Missing logo!" height="35" width="35"></h1>
-                </a>
-
-            </header>
+    <header>
+        <div id="headerContentAjaxId">
         </div>
-    </div>
-    <!-- HEADER -->
+    </header>
 
-    <div class="container">
+    <div class="customContainer">
+        <aside id="asideId">
+            <div id="asideContentAjaxId">
 
-
-        <div class="row">
-            <div class="col-12 col-sm-1 col-md-2 col-lg-3"></div>
-            <div class="col-12 col-sm-10 col-md-8 col-lg-6">
-
-                <p>Welcome to VICE's documentation index page. Available documentation: </p>
-
-                <h4 style="text-align: center;">
-                    This page is currently getting a rebuild.
-                    <br>
-                    <a href="v2/">Click here to check it out</a>
-
-                    <p style="font-size: 14px;color:grey;">
-                        It's still a work in progress...
-                    </p>
-
-                </h4>
-
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <a href="/links/">Content Links
-                        </a><br>
-                        <a href="https://justvice.wixsite.com/info">Content Links (WIX version)</a>
-                        <p class="text-black-50" style="font-size:75%;">Wanna see my stuff or contact me? Click one of
-                            those</p>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="/drawesome/">Drawesome</a>
-                        <p class="text-black-50" style="font-size:75%;">Junk notes... tbh.</p>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="miscellaneous/">Miscellaneous</a><br>
-                        <span class="text-black-50" style="font-size:75%;"><span class="font-weight-bold">New
-                                Content</span> - Wendivice emote</span>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="https://www.dropbox.com/sh/4byy53i0tieot4m/AADPit01NinJa4oIHep_fRTxa?dl=0">Drawing
-                            reference library (DROPBOX)<span style="color:red;"> (NSFW WARNING)</span></a>
-                        <p class="text-black-50" style="font-size:75%;">Wendigos are not allowed!</p>
-                    </li>
-                </ul>
-                </br>
-                </br>
-                <div class="card">
-                    <div class="card-header">
-                        Planned documentation:
-                    </div>
-                    <div class="card-body">
-                        <ul>
-                            <li>
-                                <p> <a href="/programs/">Programs</a> developed documentation</p>
-                            <li>
-                                <a href="/v2/">Webpage version 2 (work in progress)</a>
-                            </li>
-                        </ul>
-                    </div>
-
-
-                </div>
-
-                <div class="text-center">
-                    <p>This page is getting a remake</p>
-                    <div class="spinner-border" role="status">
-                        <span class="sr-only">Loading...</span>
-
-                    </div>
-                </div>
             </div>
+        </aside>
+
+        <div class="mainContent">
+            <div class="breadCrumb">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active" aria-current="page">Home</li>
+                    </ol>
+                </nav>
+            </div>
+            <div id="MESSAGE_TO_ALL_PAGES">
+
+            </div>
+            <h3 style="text-align: center;">VICE's archive</h3>
+
+            <hr>
+            <h3 class="mainContentInfoTitleBlock">Art</h3>
+            <p>
+                My art has been <span class="textBold">considered cursed/scary</span> from different sources (SFW and
+                NSFW).
+            </p>
+            <ul class="navigatorUl">
+                <li>
+                    <a href="h/links/">Content links</a>
+                    <br>
+                    <span>List of links where you can find all my work.</span>
+                </li>
+                <li>
+                    <a target="_blank"
+                        href="https://www.dropbox.com/sh/4byy53i0tieot4m/AADPit01NinJa4oIHep_fRTxa?dl=0">Art references
+                        folder </a>
+                    <br>
+                    <span style="color:red;" class="mainContentInfoTitleBlock">(NSFW WARNING)
+                        NSFW content ahead... twisted NSFW content</span>
+                    <br>
+
+                    <span>Wendigos are not allowed!</span>
+                </li>
+            </ul>
+            <hr>
+            <h3 class="mainContentInfoTitleBlock">Technology</h3>
+            <p>
+                Java programs mostly. Most of them are useless and were made for practice. Two or Three of them might be
+                interesting, however.
+                <br>
+                If you are interested on downloading any of them, click the link below to go to the tech section.
+            </p>
+            <ul class="navigatorUl">
+                <li>
+                    <a href="h/technology/">Technology documentation</a>
+                    <br>
+                    <span>Guidelines of the current tech related material I have made.</span>
+                </li>
+            </ul>
+            <hr>
+            <h3 class="mainContentInfoTitleBlock">Miscellaneous</h3>
+            <p>
+                Information or posts not related to art or technology will be listed here.
+                <br>
+                The content can vary one another a lot.
+            </p>
+            <ul class="navigatorUl">
+
+                <li>
+                    <a href="h/drawesome/">Drawesome</a>
+                    <br>
+                    <span>Drawesome.ly junky stash</span>
+                </li>
+
+                <li>
+                    <a href="h/report-issue/">Report an issue</a>
+                    <br>
+                    <span>If there is a problem with the page or any tech material.</span>
+                </li>
+                <li>
+                    <a href="h/junk-stash/">The Junk Stash</a>
+                    <br>
+                    <span>Content that was discarded, but has some sort of value to be stored.</span>
+                </li>
+                <li>
+                    <a href="h/about/">About</a>
+                    <br>
+                    <span>Some info about what I am and do.</span>
+                </li>
+            </ul>
         </div>
 
-        <footer class="text-center text-black-50" style="font-size:72%;">Last changes: 2019/SEP/15</footer>
     </div>
 
-    
+    <footer>
+        <div id="footerContentAjaxId">
 
+        </div>
+    </footer>
+
+    <script>
+        loadHeaderWithAjax();
+        loadFooterWithAjax();
+        loadAsideWithAjax();
+        loadMessageToAllPages();
+    </script>
 
 </body>
 
