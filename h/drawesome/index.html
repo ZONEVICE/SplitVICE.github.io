@@ -27,7 +27,7 @@
     <!-- CSS and JS imports/templates -->
     <!-- <link rel="stylesheet" href="XXXXXXXXX"> -->
     <!-- <script src="XXXXXXX"></script> -->
-    <script src="js.js"></script>
+    <script src="vice-mp3.js"></script>
     <link rel="stylesheet" href="style.css">
 
     <link rel="stylesheet" href="/globalAssets/css/headerFooterAsideMainContent.css">
@@ -35,7 +35,7 @@
     <script src="/globalAssets/javascript/showOrHideAsideWhenScreenIsSmall.js"></script>
 
     <!-- Browser tab icon -->
-    <link rel="shortcut icon" type="image/png" href="/v2/globalAssets/images/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="/globalAssets/images/favicon.png">
 
     <!-- Browser tab title -->
     <title>JUST VICE</title>
@@ -73,10 +73,16 @@
 
             <hr>
             <div class="ENTRY_BLOCK">
-                <iframe width="641" height="481" src="https://www.youtube.com/embed/BSsfjHCFosw?autoplay=1"
-                    frameborder="0" allow="accelerometer; 
-                     autoplay; 
-                     encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div style="text-align:center;">
+                    <p>
+                        The music you are hearing was asked by Wendigo to be played here. I don't know why.
+                        <img src="https://i.imgur.com/7ZRSOhK.png" alt="wendy" width="21px">
+                    </p>
+                    
+                    <button onclick="MP3_TOOGLE_PLAY_STOP_BUTTON_METHOD()" type="button" class="btn btn-dark">
+                        Toggle stop/play music
+                    </button>
+                </div>
             </div>
             <hr>
             <div class="ENTRY_BLOCK">
@@ -110,7 +116,10 @@
         loadFooterWithAjax();
         loadAsideWithAjax();
         loadMessageToAllPages();
-        PLAY_MP3(true);
+        MP3_SET_URL("https://dl.dropboxusercontent.com/s/ew5wuaqje4nibui/DOOM_MUSIC.mp3?dl=0");
+        MP3_SET_VOLUME(0.2);
+        MP3_SET_LOOP_STATE(true);
+        MP3_PLAY();
     </script>
 </body>
 
