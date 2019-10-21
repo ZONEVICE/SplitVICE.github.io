@@ -33,6 +33,24 @@
 
     <!-- Browser tab title -->
     <title>JUST VICE</title>
+
+    <!-- Style of the page -->
+    <style>
+        .IMAGE_404 {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        .TEXT_404 {
+            text-align: center;
+        }
+
+        .GRAY_SMALL_TEXT {
+            color: rgb(177, 177, 177);
+            font-size: 12px;
+        }
+    </style>
 </head>
 
 <body>
@@ -50,21 +68,36 @@
         </aside>
 
         <div class="mainContent">
-            <h1>404 ERROR!!</h1>
-
-            <p>
-                The page you are looking for does not exist.
-            </p>
+            <img class="IMAGE_404" 
+            src="/globalAssets/images/404-image.png" 
+            alt="404! Missing 404 image lol haha">
+            <br>
+            <div class="TEXT_404">
+                <h1>Uhhh... </h1>
+                <p>
+                    Well, it seems the page you are looking for does not exist.
+                </p>
+                <p class="GRAY_SMALL_TEXT">
+                    Error code: 404 - Page not found.
+                </p>
+            </div>
             <hr>
-            <h5>Use the navigation bar to go to another place.</h5>
-
+            <h6>Here are some helpful links instead:</h6>
             <ul>
                 <li>
-                    <a href="/">Home page</a>
+                    <a href="/">Home</a>
                 </li>
                 <li>
                     <a href="/h/links/">Links page</a>
                 </li>
+            </ul>
+            <hr>
+            <p>
+                If you want to report this 404 error as missing content that should be up in this page,
+                send an issue message at the <b>Send a Message</b> page:
+            </p>
+            <ul>
+                <li><a href="/h/send-message/">Send a message</a></li>
             </ul>
 
         </div>
