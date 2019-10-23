@@ -1,23 +1,23 @@
 
 /* IFRAME RESPONSIVE SETTINGS */
-iframe {width: 740px; height: 1270px;}
+iframe {width: 740px; height: 1290px;}
 
 @media only screen and (max-width: 1024px){
-    iframe {width: 880px; height: 1280px;}
+    iframe {width: 880px; height: 1300px;}
 }
 
 @media only screen and (max-width: 923px){
-    iframe {width: 700px; height: 1270px;}
+    iframe {width: 700px; height: 1290px;}
 }
 
 @media only screen and (max-width: 788px){
-    iframe {width: 600px; height: 1270px;}
+    iframe {width: 600px; height: 1290px;}
 }
 
 @media only screen and (max-width: 655px){
-    iframe {width: 470px; height: 1080px;}
+    iframe {width: 470px; height: 1100px;}
 }
 
 @media only screen and (max-width: 520px){
-    iframe {width: 300px; height: 1100px;}
+    iframe {width: 300px; height: 1120px;}
 }
