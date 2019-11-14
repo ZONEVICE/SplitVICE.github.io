@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="/globalAssets/css/headerFooterAsideMainContent.css">
     <script src="/globalAssets/javascript/showOrHideAsideWhenScreenIsSmall.js"></script>
     <script src="/globalAssets/javascript/loadStaticHtmlsWithAjax.js"></script>
+    <script src="/globalAssets/javascript/regexMatcher.js"></script>
 
     <!-- Browser tab icon -->
     <link rel="shortcut icon" type="image/png" href="/globalAssets/images/favicon.png">
@@ -114,7 +115,12 @@
         loadHeaderWithAjax();
         loadFooterWithAjax();
         loadAsideWithAjax();
-        //alert(document.location.href);
+        var url = document.location.href;
+        //alert(url);
+       /*  if(url == "https://justvice.github.io/links"){
+            window.location.href = "https://justvice.github.io/h/links";
+        } */
+        regexMatcher_links_page(url);
     </script>
 </body>
 
