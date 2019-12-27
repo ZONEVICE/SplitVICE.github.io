@@ -32,3 +32,5 @@ footer {color: black;margin-top: 20px;width: 100%;display: inline-table;text-ali
     .customContainer {margin-top: 0px;}
     .headerImage{display:inline;margin-left: 10px;}
 }
+
+.center {text-align: center; }
