@@ -6,48 +6,32 @@ const MESSAGE_TO_ALL_PAGES_PATH = "/staticHtmls/messageToAllPages.html";
 
 /* LOADS THE HEADER WITH AJAX */
 function loadHeaderWithAjax() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("headerContentAjaxId").innerHTML = this.responseText;
-    }
-  };
-  xhttp.open("GET", headerPath, true);
-  xhttp.send();
+  AJAX("headerContentAjaxId",headerPath);
 }
 
 /* LOADS THE FOOTER WITH AJAX */
 function loadFooterWithAjax() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("footerContentAjaxId").innerHTML = this.responseText;
-    }
-  };
-  xhttp.open("GET", footerPath, true);
-  xhttp.send();
+  AJAX("footerContentAjaxId",footerPath);
 }
 
 /* LOADS THE ASIDE WITH AJAX */
 function loadAsideWithAjax() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("asideContentAjaxId").innerHTML = this.responseText;
-    }
-  };
-  xhttp.open("GET", asidePath, true);
-  xhttp.send();
+  AJAX("asideContentAjaxId",asidePath);
 }
 
 /* LOADS A MESSAGE THAT WILL BE DISPLAYED ON ALL PAGES WITH AJAX */
 function loadMessageToAllPages() {
+  AJAX("MESSAGE_TO_ALL_PAGES",MESSAGE_TO_ALL_PAGES_PATH);
+}
+
+/* AJAX METHOD */
+function AJAX(id, path) {
   var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
+  xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("MESSAGE_TO_ALL_PAGES").innerHTML = this.responseText;
+      document.getElementById(id).innerHTML = this.responseText;
     }
   };
-  xhttp.open("GET", MESSAGE_TO_ALL_PAGES_PATH, true);
+  xhttp.open("GET", path, true);
   xhttp.send();
 }
