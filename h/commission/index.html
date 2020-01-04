@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="/globalAssets/css/headerFooterAsideMainContent.css">
     <script src="/globalAssets/javascript/showOrHideAsideWhenScreenIsSmall.js"></script>
     <script src="/globalAssets/javascript/loadStaticHtmlsWithAjax.js"></script>
+    <script src="loadCommissionContent.js"></script>
 
     <!-- Browser tab icon -->
     <link rel="shortcut icon" type="image/png" href="/globalAssets/images/favicon.png">
@@ -66,17 +67,14 @@
             </div>
             <div id="MESSAGE_TO_ALL_PAGES">
             </div>
-            <h4 style="text-align: center;">Commission</h4>
-            <p class="center">
-                This page is still in development.
-            </p>
+            <h3 style="text-align: center;">Commission</h3>
             <hr>
             <div id="commission_status">
-                    <h1 class="center">
-                        Commissions status: open
-                    </h1>
+                <div class="spinner-border text-danger center" role="status">
+                    <span class="sr-only">Loading...</span>
+                  </div>
+                  loading...
             </div>
-
             <hr>
             Commissions types:
             <ul>
