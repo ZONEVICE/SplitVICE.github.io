@@ -27,10 +27,12 @@
     <!-- CSS and JS imports/templates -->
     <!-- <link rel="stylesheet" href="XXXXXXXXX"> -->
     <!-- <script src="XXXXXXX"></script> -->
+
+    <!-- DEFAULT ASSET IMPORTS -->
     <link rel="stylesheet" href="/globalAssets/css/headerFooterAsideMainContent.css">
-    <link rel="stylesheet" href="/globalAssets/css/otherCSSStyles.css">
-    <script src="/globalAssets/javascript/loadStaticHtmlsWithAjax.js"></script>
     <script src="/globalAssets/javascript/showOrHideAsideWhenScreenIsSmall.js"></script>
+    <script src="/globalAssets/javascript/loadStaticHtmlsWithAjax.js"></script>
+    <link rel="stylesheet" href="iFrameResponsiveTemplate.css">
 
     <!-- Browser tab icon -->
     <link rel="shortcut icon" type="image/png" href="/globalAssets/images/favicon.png">
@@ -57,62 +59,36 @@
             <div class="breadCrumb">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="../../">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Technology</li>
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Changelog</li>
+                        <!-- <li class="breadcrumb-item active" aria-current="page">ACTIVE PAGE</li> -->
                     </ol>
                 </nav>
-
             </div>
             <div id="MESSAGE_TO_ALL_PAGES">
-
             </div>
-            <h1 style="text-align: center;">Technology</h1>
+            <h2 style="text-align: center;">Changelog</h2>
             <hr>
-            <h3>Java programs</h3>
             <p>
-                To use any of these, you must install <a target="_black"
-                    href="https://www.java.com/es/download/">Java</a>.
+                Changes and content added over time.
             </p>
-            <ul>
-                <li> <a href="java/passwords-stash/">Passwords Stash</a> </li>
-                <li><a href="/h/technology/java/v-chatspammer/">V-ChatSpammer</a></li>
-                <li> <a href="/h/technology/java/auto-save/">AutoSave</a> </li>
-                <li> <a href="/h/technology/java/timer-shutdown/">Timer Shutdown</a> </li>
-                <li> <a href="/h/technology/java/id-generator/">IDGenerator</a> </li>
-                <li> <a href="/h/technology/java/text-encryptor/">Text Encryptor</a></li>
-                <!-- <li> <a href="">V-AESEncrypter</a> </li> -->
-                <!--  <li> <a href="">ListhisFiles</a> </li>
-                <li> <a href="">DrawesomeD.P.</a> </li> -->
-            </ul>
-            <hr>
-            <h3>C# programs</h3>
-            <p>
-                <ul>
-                <li><a href="CSharp/shutdown-after-input/">Shutdown After Input</a></li>
-                <li><a href="">Clipboard Board N/A</a></li>
-                </ul>
-            </p>
-            <hr>
-            <h4>Web Software</h4>
-            <ul>
-                <li>
-                    <a href="/h/technology/web-software/v-webpage-s1/">V-WebPage S1</a>
-                </li>
-            </ul>
+            <iframe frameborder="0" src="https://docs.google.com/document/d/e/2PACX-1vSA9EBZ_N8_t8voliKppuU2Jxkctgxx3UakY7F-COLX68pGaTNuNUo8cNKFpww8I1DnSkT5R5m_bH_F/pub?embedded=true"></iframe>
         </div>
 
-        <footer>
-            <div id="footerContentAjaxId">
+    </div>
 
-            </div>
-        </footer>
+    <footer>
+        <div id="footerContentAjaxId">
 
-        <script>
-            loadHeaderWithAjax();
-            loadFooterWithAjax();
-            loadAsideWithAjax();
-            loadMessageToAllPages();
-        </script>
+        </div>
+    </footer>
+
+    <script>
+        loadHeaderWithAjax();
+        loadFooterWithAjax();
+        loadAsideWithAjax();
+        loadMessageToAllPages();
+    </script>
 </body>
 
 </html>
