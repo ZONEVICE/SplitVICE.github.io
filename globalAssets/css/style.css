@@ -1,19 +1,20 @@
 /* HEADER */
-header {background-color: #bd0058;}
+header {background-color: rgb(189, 0, 88);}
 .headerImage {max-width:180px; padding-top: 9px; padding-bottom: 9px;display:block;margin-left:auto;margin-right:auto;}
 .headerNavbarButtonImage {float: right;margin: 12px;margin-top: 17px;margin-right: 20px;}
 
 /* ASIDE */
 aside {float: left;}
-.asideListTitle {background-color: rgb(207, 207, 207);padding-left: 20px;padding-top: 4px;padding-bottom: 4px;font-size: 15px;font-weight: 650;}
-.asideBlock {background-color: #F9F9F9;margin-bottom: 13px;width: 219px;padding-bottom: 1px;}
+.asideListTitle {background-color: rgb(255, 78, 160);color:white;padding-left: 20px;padding-top: 4px;padding-bottom: 4px;font-size: 15px;font-weight: 650;}
+.asideBlock {background-color: rgb(255, 255, 255);margin-bottom: 13px;width: 219px;padding-bottom: 1px;}
 .asideBlock .asideLiStyle {list-style-type: square;}
+.ASIDE_CATEGORIES{padding-left: 12px;font-size: 17px;font-family: "Trebuchet MS", sans-serif;}
 
 /* CONTAINER AND OVERALL CONTENT */
-body {background-color: rgb(219, 219, 219);}
+body {background: rgb(185,250,255);background: linear-gradient(0deg, rgba(185,250,255,1) 0%, rgba(255,255,255,1) 100%);;}
 .customContainer {margin: 0 auto;margin-top: 11px;max-width: 1020px;}
 .mainContent {margin-left: 230px;padding: 25px;padding-top: 9px; background-color: white;}
-.breadcrumb{margin:0px;padding:5px;padding-left:10px;margin-bottom: 10px;}
+.breadcrumb{margin:0px;padding:5px;padding-left:10px;margin-bottom: 10px;background: rgb(255, 237, 246);}
 .textBold{font-weight: bold;}
 
 /* FOOTER */
