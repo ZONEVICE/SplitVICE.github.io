@@ -65,18 +65,16 @@
             <img class="headerImage" src="/globalAssets/images/header-image.png" alt="missing logo!">
         </a>
         <a href="#" onclick="show_hide_aside()">
-            <img class="headerNavbarButtonImage" src="/globalAssets/images/navbar-button.png" width="30px" alt="Missing navbar button!">
+            <img class="headerNavbarButtonImage" src="/globalAssets/images/navbar-button.png" width="30px"
+                alt="Missing navbar button!">
         </a>
     </header>
-    <div class="customContainer">
-        <div class="animated zoomIn">
-            <aside id="asideId">
-                <div id="asideContentAjaxId">
-
-                </div>
-            </aside>
-        </div>
-        <div class="mainContent animated zoomIn">
+    <div class="customContainer animated zoomIn">
+        <aside id="asideId">
+            <div id="asideContentAjaxId">
+            </div>
+        </aside>
+        <div class="mainContent">
             <div class="breadCrumb">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
@@ -181,7 +179,6 @@
                 </li>
             </ul>
         </div>
-
     </div>
 
     <footer>
@@ -191,7 +188,7 @@
     </footer>
 
     <script>
-        loadHeaderWithAjax();
+        /* loadHeaderWithAjax(); */
         loadFooterWithAjax();
         loadAsideWithAjax();
         loadMessageToAllPages();
