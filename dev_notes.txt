@@ -1,16 +1,12 @@
 FOLDERS MEANING
----------------------------------------------------------------------------------------------------------------
-h: To store all the other pages folders in order to keep organization.
-
-s: Stands for "shortener". It contains pages that work as shorteners. I can also change the url destiny as I wish.
----------------------------------------------------------------------------------------------------------------
+	h: To store all the other pages folders in order to keep organization.
+	s: Stands for "shortener". It contains pages that work as shorteners. I can also change the url destiny as I wish.
 
 DEFAULT VALUES
----------------------------------------------------------------------------------------------------------------	
-header default color: #bd0058
----------------------------------------------------------------------------------------------------------------
+	header default color: #bd0058
 
 MEDIA VIEWPORT CHANGES
----------------------------------------------------------------------------------------------------------------
-Responsive reaction 1: 922px
----------------------------------------------------------------------------------------------------------------
+	Responsive reaction 1: 922px
+
+Header
+	The header inside all the pages is static but the one at home page.
