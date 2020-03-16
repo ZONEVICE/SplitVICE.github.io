@@ -1,4 +1,4 @@
-const status_sttled_link = "https://dl.dropboxusercontent.com/s/q8kd0hrjxetcmgd/comstatus.txt?dl=0";
+const status_sttled_link = "https://dl.dropboxusercontent.com/s/34rxt9edvlo0p4i/art_com_status.txt?dl=0";
 const open_com_html_path = "comopen.html";
 const closed_com_html_path = "comclosed.html";
 const div_id = "commission_status";

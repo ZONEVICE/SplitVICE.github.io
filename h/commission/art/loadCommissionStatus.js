@@ -1,10 +1,10 @@
-const status_sttled_link = "https://dl.dropboxusercontent.com/s/q8kd0hrjxetcmgd/comstatus.txt?dl=0";
+const status_sttled_link = "https://dl.dropboxusercontent.com/s/34rxt9edvlo0p4i/art_com_status.txt?dl=0";
 const div_id = "commission_status";
 var com_status = "";
 
-const COMOPEN_CONTENT = "<div class=\"center\" style=\"font-size:14px;\"><b>COMMISSIONS:</b> <b style=\"color:lightgreen;\">OPEN</b>";
-const COMCLOSED_CONTENT = "<div class=\"center\" style=\"font-size:22px;\"><hr><b>COMMISSIONS:</b> <b style=\"color:red;\">CLOSED</b>"+
-"<span style=\"font-size:15px;\"><p>You can still look at the commission process.<br>If you still want to commission, you must be willing to pay extras!<br>Either fill the form or send a message for more info.</p></span>";
+const COMOPEN_CONTENT = '<div class="center" style="font-size:14px;"><b>COMMISSIONS:</b> <b style="color:lightgreen;">OPEN</b>';
+const COMCLOSED_CONTENT = '<div class="center" style="font-size:22px;"><hr><b>COMMISSIONS:</b> <b style="color:red;">CLOSED</b>'+
+'<span style="font-size:15px;"><p>You can still look at the commission process.<br>If you still want to commission, you must be willing to pay extras!<br>Either fill the form or send a message for more info.</p></span>';
 
 
 load_commission_status();
@@ -29,16 +29,4 @@ function load_commissions_content() {
         console.log("Commissions closed");
         document.getElementById(div_id).innerHTML = COMCLOSED_CONTENT;
     }
-}
-
-//AJAX loads the HTML content.
-function loadDoc(id, path) {
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            document.getElementById(id).innerHTML = this.responseText;
-        }
-    };
-    xhttp.open("GET", path, true);
-    xhttp.send();
 }
