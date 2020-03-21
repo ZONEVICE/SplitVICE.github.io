@@ -2,7 +2,7 @@ const status_sttled_link = "https://dl.dropboxusercontent.com/s/34rxt9edvlo0p4i/
 const open_com_html_path = "comopen.html";
 const closed_com_html_path = "comclosed.html";
 const div_id = "commission_status";
-var com_status = "";
+var commission_value = "";
 
 
 load_commission_status();
@@ -14,13 +14,13 @@ function load_commission_status() {
     xmlhttp = new XMLHttpRequest();
     xmlhttp.open('GET', status_sttled_link, false);
     xmlhttp.send();
-    com_status = xmlhttp.responseText
-    console.log("Loaded commission status: " + com_status);
+    commission_value = xmlhttp.responseText
+    console.log("Value loaded: '" + commission_value + "'");
 }
 
 //Logic to decide what commission content to choose
 function load_commissions_content() {
-    if (com_status == "open") {
+    if (commission_value.includes("open")) {
         console.log("Commissions open");
         loadDoc(div_id, open_com_html_path);
         console.log("Commissions open settled.");
