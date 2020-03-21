@@ -17,12 +17,12 @@ function load_commission_status() {
     xmlhttp.open('GET', status_sttled_link, false);
     xmlhttp.send();
     com_status = xmlhttp.responseText
-    console.log("Loaded commission status: " + com_status);
+    console.log("Value: " + com_status);
 }
 
 //Logic to decide what commission content to choose
 function load_commissions_content() {
-    if (com_status == "open") {
+    if (com_status.includes("open")) {
         console.log("Commissions open");
         document.getElementById(div_id).innerHTML = COMOPEN_CONTENT;
     } else {
