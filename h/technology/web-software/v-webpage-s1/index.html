@@ -29,12 +29,13 @@
     <!-- <script src="XXXXXXX"></script> -->
 
     <!-- DEFAULT ASSET IMPORTS -->
-    <link rel="stylesheet" href="/globalAssets/css/style.css">
-    <script src="/globalAssets/javascript/showOrHideAsideWhenScreenIsSmall.js"></script>
-    <script src="/globalAssets/javascript/loadStaticHtmlsWithAjax.js"></script>
+    <link rel="stylesheet" href="/public/css/style.css">
+    <script src="/public/script/aside_script.js"></script>
+    <script src="/public/script/load_htmlViews.js"></script>
+    <script src="/public/script/ajax.js"></script>
 
     <!-- Browser tab icon -->
-    <link rel="shortcut icon" type="image/png" href="/globalAssets/images/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
 
     <!-- Browser tab title -->
     <title>JUST VICE</title>
@@ -43,13 +44,13 @@
 <body>
 
     <header>
-        <div id="headerContentAjaxId">
+        <div id="header_content_id">
         </div>
     </header>
 
     <div class="customContainer">
-        <aside id="asideId">
-            <div id="asideContentAjaxId">
+        <aside id="aside_id">
+            <div id="aside_content_id">
 
             </div>
         </aside>
@@ -66,7 +67,7 @@
                     </ol>
                 </nav>
             </div>
-            <div id="MESSAGE_TO_ALL_PAGES">
+            <div id="message_to_all_pages_content_id">
             </div>
             <h1 style="text-align: center;">V-WebPage S1</h1>
             <hr>
@@ -90,10 +91,10 @@
             <img src="https://i.imgur.com/5XMWCgq.png" alt="missing img">
             <hr>
             <!-- <h6>Software features</h6>
-            <ul>
-                <li>work in progress...</li>
-            </ul>
-            <hr> -->
+                <ul>
+                    <li>work in progress...</li>
+                </ul>
+                <hr> -->
             <h6>Links</h6>
             <ul>
                 <li>
@@ -121,16 +122,18 @@
             </style>
         </div>
     </div>
+
     <footer>
-        <div id="footerContentAjaxId">
+        <div id="footer_content_id">
 
         </div>
     </footer>
+
     <script>
-        loadHeaderWithAjax();
-        loadFooterWithAjax();
-        loadAsideWithAjax();
-        loadMessageToAllPages();
+        load_header();
+        load_footer();
+        load_aside();
+        load_messageToAllPages();
     </script>
 </body>
 

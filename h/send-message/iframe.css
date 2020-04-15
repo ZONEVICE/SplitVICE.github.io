@@ -1,8 +1,8 @@
 
 /* IFRAME RESPONSIVE SETTINGS */
-iframe {width: 740px; height: 1260px;}
+iframe {width: 740px; height: 1360px;}
 
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1090px){
     iframe {width: 880px; height: 1260px;}
 }
 

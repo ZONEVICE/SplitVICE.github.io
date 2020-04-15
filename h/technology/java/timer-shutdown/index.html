@@ -1,53 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- HTML5 coding protocole -->
-<meta charset="utf-8">
 
-<!-- Responsive tag -->
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+    <!-- HTML5 coding protocole -->
+    <meta charset="utf-8">
 
-<!-- Sets a color to adress bar on mobile browsers. -->
-<meta name="theme-color" content="#bd0058" />
+    <!-- Responsive tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<!-- Bootstrap and JQuery imports -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+    <!-- Sets a color to adress bar on mobile browsers. -->
+    <meta name="theme-color" content="#bd0058" />
 
-<!-- CSS and JS imports/templates -->
-<!-- <link rel="stylesheet" href="XXXXXXXXX"> -->
-<!-- <script src="XXXXXXX"></script> -->
+    <!-- Bootstrap and JQuery imports -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
-<!-- DEFAULT ASSET IMPORTS -->
-<link rel="stylesheet" href="/globalAssets/css/style.css">
-<script src="/globalAssets/javascript/showOrHideAsideWhenScreenIsSmall.js"></script>
-<script src="/globalAssets/javascript/loadStaticHtmlsWithAjax.js"></script>
+    <!-- CSS and JS imports/templates -->
+    <!-- <link rel="stylesheet" href="XXXXXXXXX"> -->
+    <!-- <script src="XXXXXXX"></script> -->
 
-<!-- Browser tab icon -->
-<link rel="shortcut icon" type="image/png" href="/globalAssets/images/favicon.png">
+    <!-- DEFAULT ASSET IMPORTS -->
+    <link rel="stylesheet" href="/public/css/style.css">
+    <script src="/public/script/aside_script.js"></script>
+    <script src="/public/script/load_htmlViews.js"></script>
+    <script src="/public/script/ajax.js"></script>
 
-<!-- Browser tab title -->
-<title>JUST VICE</title>
+    <!-- Browser tab icon -->
+    <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
+
+    <!-- Browser tab title -->
+    <title>JUST VICE</title>
 </head>
 
 <body>
 
     <header>
-        <div id="headerContentAjaxId">
+        <div id="header_content_id">
         </div>
     </header>
 
     <div class="customContainer">
-        <aside id="asideId">
-            <div id="asideContentAjaxId">
+        <aside id="aside_id">
+            <div id="aside_content_id">
 
             </div>
         </aside>
@@ -64,7 +67,7 @@
                     </ol>
                 </nav>
             </div>
-            <div id="MESSAGE_TO_ALL_PAGES">
+            <div id="message_to_all_pages_content_id">
             </div>
             <h1 style="text-align: center;">Timer Shutdown</h1>
             <hr>
@@ -120,16 +123,16 @@
     </div>
 
     <footer>
-        <div id="footerContentAjaxId">
+        <div id="footer_content_id">
 
         </div>
     </footer>
 
     <script>
-        loadHeaderWithAjax();
-        loadFooterWithAjax();
-        loadAsideWithAjax();
-        loadMessageToAllPages();
+        load_header();
+        load_footer();
+        load_aside();
+        load_messageToAllPages();
     </script>
 </body>
 

@@ -27,13 +27,15 @@
     <!-- CSS and JS imports/templates -->
     <!-- <link rel="stylesheet" href="XXXXXXXXX"> -->
     <!-- <script src="XXXXXXX"></script> -->
-    <link rel="stylesheet" href="/globalAssets/css/style.css">
-    <link rel="stylesheet" href="/globalAssets/css/otherCSSStyles.css">
-    <script src="/globalAssets/javascript/loadStaticHtmlsWithAjax.js"></script>
-    <script src="/globalAssets/javascript/showOrHideAsideWhenScreenIsSmall.js"></script>
+
+    <!-- DEFAULT ASSET IMPORTS -->
+    <link rel="stylesheet" href="/public/css/style.css">
+    <script src="/public/script/aside_script.js"></script>
+    <script src="/public/script/load_htmlViews.js"></script>
+    <script src="/public/script/ajax.js"></script>
 
     <!-- Browser tab icon -->
-    <link rel="shortcut icon" type="image/png" href="/globalAssets/images/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
 
     <!-- Browser tab title -->
     <title>JUST VICE</title>
@@ -42,13 +44,13 @@
 <body>
 
     <header>
-        <div id="headerContentAjaxId">
+        <div id="header_content_id">
         </div>
     </header>
 
     <div class="customContainer">
-        <aside id="asideId">
-            <div id="asideContentAjaxId">
+        <aside id="aside_id">
+            <div id="aside_content_id">
 
             </div>
         </aside>
@@ -63,7 +65,7 @@
                 </nav>
 
             </div>
-            <div id="MESSAGE_TO_ALL_PAGES">
+            <div id="message_to_all_pages_content_id">
 
             </div>
             <h1 style="text-align: center;">Technology</h1>
@@ -110,19 +112,20 @@
                 </li>
             </ul>
         </div>
+    </div>
 
-        <footer>
-            <div id="footerContentAjaxId">
+    <footer>
+        <div id="footer_content_id">
 
-            </div>
-        </footer>
+        </div>
+    </footer>
 
-        <script>
-            loadHeaderWithAjax();
-            loadFooterWithAjax();
-            loadAsideWithAjax();
-            loadMessageToAllPages();
-        </script>
+    <script>
+        load_header();
+        load_footer();
+        load_aside();
+        load_messageToAllPages();
+    </script>
 </body>
 
 </html>

@@ -44,13 +44,14 @@
     <!-- CSS and JS imports/templates -->
     <!-- <link rel="stylesheet" href="XXXXXXXXX"> -->
     <!-- <script src="XXXXXXX"></script> -->
-    <link rel="stylesheet" href="/globalAssets/css/style.css">
-    <script src="/globalAssets/javascript/loadStaticHtmlsWithAjax.js"></script>
-    <script src="/globalAssets/javascript/showOrHideAsideWhenScreenIsSmall.js"></script>
+    <link rel="stylesheet" href="/public/css/style.css">
+    <script src="/public/script/aside_script.js"></script>
+    <script src="/public/script/load_htmlViews.js"></script>
+    <script src="/public/script/ajax.js"></script>
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
 
     <!-- Browser tab icon -->
-    <link rel="shortcut icon" type="image/png" href="/globalAssets/images/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
 
     <!-- Browser tab title -->
     <title>JUST VICE</title>
@@ -80,16 +81,16 @@
         <!-- <div id="headerContentAjaxId">
         </div> -->
         <a href="/">
-            <img class="headerImage" src="/globalAssets/images/header-image.png" alt="missing logo!">
+            <img class="headerImage" src="/public/img/header-image.png" alt="missing logo!">
         </a>
         <a href="#" onclick="show_hide_aside()">
-            <img class="headerNavbarButtonImage" src="/globalAssets/images/navbar-button.png" width="30px"
+            <img class="headerNavbarButtonImage" src="/public/img/navbar-button.png" width="30px"
                 alt="Missing navbar button!">
         </a>
     </header>
     <div class="customContainer animated zoomIn">
-        <aside id="asideId">
-            <div id="asideContentAjaxId">
+        <aside id="aside_id">
+            <div id="aside_content_id">
             </div>
         </aside>
         <div class="mainContent">
@@ -100,7 +101,7 @@
                     </ol>
                 </nav>
             </div>
-            <div id="MESSAGE_TO_ALL_PAGES">
+            <div id="message_to_all_pages_content_id">
 
             </div>
             <h1 style="text-align: center;">VICE's Archive</h1>
@@ -183,16 +184,15 @@
     </div>
 
     <footer>
-        <div id="footerContentAjaxId">
+        <div id="footer_content_id">
 
         </div>
     </footer>
 
     <script>
-        /* loadHeaderWithAjax(); */
-        loadFooterWithAjax();
-        loadAsideWithAjax();
-        loadMessageToAllPages();
+        load_footer();
+        load_aside();
+        load_messageToAllPages();
     </script>
 
 

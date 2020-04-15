@@ -22,23 +22,11 @@ function load_commission_status() {
 function load_commissions_content() {
     if (commission_value.includes("open")) {
         console.log("Commissions open");
-        loadDoc(DIV_ID, COM_OPEN_HTML_PATH);
+        AJAX(DIV_ID, COM_OPEN_HTML_PATH);
         console.log("Commissions open settled.");
     } else {
         console.log("Commissions closed");
-        loadDoc(DIV_ID, COM_CLOSED_HTML_PATH);
+        AJAX(DIV_ID, COM_CLOSED_HTML_PATH);
         console.log("Commissions closed settled.");
     }
-}
-
-//AJAX loads the HTML content.
-function loadDoc(id, path) {
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = () => {
-        if (this.readyState == 4 && this.status == 200) {
-            document.getElementById(id).innerHTML = this.responseText;
-        }
-    };
-    xhttp.open("GET", path, true);
-    xhttp.send();
 }

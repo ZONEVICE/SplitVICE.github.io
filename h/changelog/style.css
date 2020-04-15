@@ -1,4 +1,3 @@
-
 /* IFRAME RESPONSIVE SETTINGS */
 iframe {width: 740px; height: 1100px;}
 
@@ -15,9 +14,9 @@ iframe {width: 740px; height: 1100px;}
 }
 
 @media only screen and (max-width: 655px){
-    iframe {width: 470px; height: 1200px;}
+    iframe {width: 470px; height: 1400px;}
 }
 
 @media only screen and (max-width: 520px){
-    iframe {width: 300px; height: 1500px;}
+    iframe {width: 300px; height: 1700px;}
 }
