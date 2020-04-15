@@ -1,7 +1,7 @@
-const status_sttled_link = "https://dl.dropboxusercontent.com/s/34rxt9edvlo0p4i/art_com_status.txt?dl=0";
-const open_com_html_path = "comopen.html";
-const closed_com_html_path = "comclosed.html";
-const div_id = "commission_status";
+const STATUS = "https://dl.dropboxusercontent.com/s/34rxt9edvlo0p4i/art_com_status.txt?dl=0";
+const COM_OPEN_HTML_PATH = "comopen.html";
+const COM_CLOSED_HTML_PATH = "comclosed.html";
+const DIV_ID = "commission_status";
 var commission_value = "";
 
 
@@ -12,7 +12,7 @@ load_commissions_content();
 function load_commission_status() {
     var xmlhttp;
     xmlhttp = new XMLHttpRequest();
-    xmlhttp.open('GET', status_sttled_link, false);
+    xmlhttp.open('GET', STATUS, false);
     xmlhttp.send();
     commission_value = xmlhttp.responseText
     console.log("Value loaded: '" + commission_value + "'");
@@ -22,11 +22,11 @@ function load_commission_status() {
 function load_commissions_content() {
     if (commission_value.includes("open")) {
         console.log("Commissions open");
-        loadDoc(div_id, open_com_html_path);
+        loadDoc(DIV_ID, COM_OPEN_HTML_PATH);
         console.log("Commissions open settled.");
     } else {
         console.log("Commissions closed");
-        loadDoc(div_id, closed_com_html_path);
+        loadDoc(DIV_ID, COM_CLOSED_HTML_PATH);
         console.log("Commissions closed settled.");
     }
 }
@@ -34,7 +34,7 @@ function load_commissions_content() {
 //AJAX loads the HTML content.
 function loadDoc(id, path) {
     var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function () {
+    xhttp.onreadystatechange = () => {
         if (this.readyState == 4 && this.status == 200) {
             document.getElementById(id).innerHTML = this.responseText;
         }
