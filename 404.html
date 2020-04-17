@@ -8,6 +8,9 @@
     <!-- Responsive tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Sets a color to adress bar on mobile browsers. -->
+    <meta name="theme-color" content="#bd0058" />
+
     <!-- Bootstrap and JQuery imports -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -24,17 +27,18 @@
     <!-- CSS and JS imports/templates -->
     <!-- <link rel="stylesheet" href="XXXXXXXXX"> -->
     <!-- <script src="XXXXXXX"></script> -->
-    <link rel="stylesheet" href="/globalAssets/css/style.css">
-    <script src="/globalAssets/javascript/showOrHideAsideWhenScreenIsSmall.js"></script>
-    <script src="/globalAssets/javascript/loadStaticHtmlsWithAjax.js"></script>
-    <script src="/globalAssets/javascript/regexMatcher.js"></script>
+
+    <!-- DEFAULT ASSET IMPORTS -->
+    <link rel="stylesheet" href="/public/css/style.css">
+    <script src="/public/script/aside_script.js"></script>
+    <script src="/public/script/load_htmlViews.js"></script>
+    <script src="/public/script/ajax.js"></script>
 
     <!-- Browser tab icon -->
-    <link rel="shortcut icon" type="image/png" href="/globalAssets/images/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
 
     <!-- Browser tab title -->
     <title>JUST VICE</title>
-
     <!-- Style of the page -->
     <style>
         .IMAGE_404 {
@@ -57,21 +61,19 @@
 <body>
 
     <header>
-        <div id="headerContentAjaxId">
+        <div id="header_content_id">
         </div>
     </header>
 
     <div class="customContainer">
-        <aside id="asideId">
-            <div id="asideContentAjaxId">
+        <aside id="aside_id">
+            <div id="aside_content_id">
 
             </div>
         </aside>
 
         <div class="mainContent">
-            <img class="IMAGE_404" 
-            src="/globalAssets/images/404-image.png" 
-            alt="404! Missing 404 image lol haha">
+            <img class="IMAGE_404" src="/globalAssets/images/404-image.png" alt="404! Missing 404 image lol haha">
             <br>
             <div class="TEXT_404">
                 <h1>Uhhh... </h1>
@@ -102,19 +104,19 @@
             </ul>
 
         </div>
-
     </div>
 
     <footer>
-        <div id="footerContentAjaxId">
+        <div id="footer_content_id">
 
         </div>
     </footer>
 
     <script>
-        loadHeaderWithAjax();
-        loadFooterWithAjax();
-        loadAsideWithAjax();
+        load_header();
+        load_footer();
+        load_aside();
+        load_messageToAllPages();
         var url = document.location.href;
         regexMatcher_links_page(url);
     </script>
