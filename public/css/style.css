@@ -142,7 +142,7 @@ footer {
 
 
 /* IFRAME RESPONSIVE SETTINGS */
-iframe {width: 740px; height: 1170px;}
+/* iframe {width: 740px; height: 1170px;}
 
 @media only screen and (max-width: 1024px){
     iframe {width: 880px; height: 1200px;}
@@ -162,4 +162,4 @@ iframe {width: 740px; height: 1170px;}
 
 @media only screen and (max-width: 520px){
     iframe {width: 300px; height: 1200px;}
-}
+} */

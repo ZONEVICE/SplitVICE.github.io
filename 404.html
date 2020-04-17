@@ -33,6 +33,7 @@
     <script src="/public/script/aside_script.js"></script>
     <script src="/public/script/load_htmlViews.js"></script>
     <script src="/public/script/ajax.js"></script>
+    <script src="/public/script/regexMatcher.js"></script>
 
     <!-- Browser tab icon -->
     <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
@@ -116,7 +117,7 @@
         load_header();
         load_footer();
         load_aside();
-        load_messageToAllPages();
+        //load_messageToAllPages();
         var url = document.location.href;
         regexMatcher_links_page(url);
     </script>
