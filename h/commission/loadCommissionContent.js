@@ -1,4 +1,4 @@
-const STATUS = "https://dl.dropboxusercontent.com/s/34rxt9edvlo0p4i/art_com_status.txt?dl=0";
+const STATUS = "https://gist.githubusercontent.com/JustVice/bf4ac34de3694ba401daadcb9756ac57/raw/artcomstatus.txt";
 const COM_OPEN_HTML_PATH = "comopen.html";
 const COM_CLOSED_HTML_PATH = "comclosed.html";
 const DIV_ID = "commission_status";
