@@ -27,12 +27,13 @@
     <!-- CSS and JS imports/templates -->
     <!-- <link rel="stylesheet" href="XXXXXXXXX"> -->
     <!-- <script src="XXXXXXX"></script> -->
-    
+
     <!-- DEFAULT ASSET IMPORTS -->
     <link rel="stylesheet" href="/public/css/style.css">
     <script src="/public/script/aside_script.js"></script>
     <script src="/public/script/load_htmlViews.js"></script>
     <script src="/public/script/ajax.js"></script>
+    <script src="script.js"></script>
 
     <link rel="stylesheet" href="./style.css">
 
@@ -74,8 +75,9 @@
             <p>
                 Changes and content added over time.
             </p>
-            <iframe frameborder="0"
-                src="https://docs.google.com/document/d/e/2PACX-1vSjy_w1A1ClGUu3SOodbltO9QUh6BigXry-nPWsXZYgYe_xn00ODmgWnaAjM2ORZf7NENIKOJ9ZyXtQ/pub?embedded=true"></iframe>
+            <div id="changeLogDivContent_id">
+            
+            </div>
         </div>
     </div>
     </div>
@@ -91,6 +93,7 @@
         load_footer();
         load_aside();
         load_messageToAllPages();
+        load_changeLogContent();
     </script>
 </body>
 

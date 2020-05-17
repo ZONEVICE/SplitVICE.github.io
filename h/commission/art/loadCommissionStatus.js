@@ -1,4 +1,4 @@
-const status_sttled_link = "https://dl.dropboxusercontent.com/s/34rxt9edvlo0p4i/art_com_status.txt?dl=0";
+const status_sttled_link = "gist.githubusercontent.com/JustVice/bf4ac34de3694ba401daadcb9756ac57/raw/artcomstatus.txt";
 const div_id = "commission_status";
 var com_status = "";
 
