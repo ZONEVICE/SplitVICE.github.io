@@ -1,4 +1,4 @@
-const status_sttled_link = "gist.githubusercontent.com/JustVice/bf4ac34de3694ba401daadcb9756ac57/raw/artcomstatus.txt";
+const status_sttled_link = "https://gist.githubusercontent.com/JustVice/bf4ac34de3694ba401daadcb9756ac57/raw/artcomstatus.txt";
 const div_id = "commission_status";
 var com_status = "";
 
