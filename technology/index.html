@@ -33,30 +33,12 @@
     <script src="/public/script/aside_script.js"></script>
     <script src="/public/script/load_htmlViews.js"></script>
     <script src="/public/script/ajax.js"></script>
-    <script src="/public/script/regexMatcher.js"></script>
 
     <!-- Browser tab icon -->
     <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
 
     <!-- Browser tab title -->
     <title>JUST VICE</title>
-    <!-- Style of the page -->
-    <style>
-        .IMAGE_404 {
-            margin-left: auto;
-            margin-right: auto;
-            display: block;
-        }
-
-        .TEXT_404 {
-            text-align: center;
-        }
-
-        .GRAY_SMALL_TEXT {
-            color: rgb(177, 177, 177);
-            font-size: 12px;
-        }
-    </style>
 </head>
 
 <body>
@@ -74,36 +56,61 @@
         </aside>
 
         <div class="mainContent">
-            <img class="IMAGE_404" src="/public/img/404-image.png" alt="404! Missing 404 image lol haha">
-            <br>
-            <div class="TEXT_404">
-                <h1>Uhhh... </h1>
-                <p>
-                    Well, it seems the page you are looking for does not exist.
-                </p>
-                <p class="GRAY_SMALL_TEXT">
-                    Error code: 404 - Page not found.
-                </p>
+            <div class="breadCrumb">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="../../">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Technology</li>
+                    </ol>
+                </nav>
+
+            </div>
+            <div id="message_to_all_pages_content_id">
+
+            </div>
+            <h1 style="text-align: center;">Technology</h1>
+            <div class="center">
+                The index of projects that I have developed.
             </div>
             <hr>
-            <h6>Here are some helpful links instead:</h6>
+            <h3>C# programs</h3>
+            <p>
+                <ul>
+                    <li><a href="CSharp/passwords-stash-lite/">Passwords Stash Lite</a></li>
+                    <li><a href="CSharp/shutdown-after-input/">Shutdown After Input</a></li>
+                    <li><a href="CSharp/clipboard-board/">Clipboard Board (discarded)</a></li>
+                </ul>
+            </p>
+            <h3>Java programs</h3>
+            <p>
+                To use any of these, you must install <a target="_black"
+                    href="https://www.java.com/es/download/">Java</a>.
+            </p>
+            <ul>
+                <li> <a href="java/passwords-stash/">Passwords Stash</a> </li>
+                <li> <a href="/technology/java/auto-save/">AutoSave</a> </li>
+                <li> <a href="/technology/java/timer-shutdown/">Timer Shutdown</a> </li>
+                <li> <a href="/technology/java/id-generator/">IDGenerator</a> </li>
+                <li> <a href="/technology/java/text-encryptor/">Text Encryptor</a></li>
+                <li><a href="/technology/java/v-chatspammer/">V-ChatSpammer</a></li>
+                <!-- <li> <a href="">V-AESEncrypter</a> </li> -->
+                <!--  <li> <a href="">ListhisFiles</a> </li>
+                <li> <a href="">DrawesomeD.P.</a> </li> -->
+            </ul>
+            <hr>
+            <h4>Python programs</h4>
             <ul>
                 <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/links/">Links page</a>
+                    <a href="python/auto-backup/">AutoBackup</a>
                 </li>
             </ul>
             <hr>
-            <p>
-                If you want to report this 404 error as missing content that should be up in this page,
-                send an issue message at the <b>Send a Message</b> page:
-            </p>
+            <h4>Web Software</h4>
             <ul>
-                <li><a href="/send-message/">Send a message</a></li>
+                <li>
+                    <a href="/technology/web-software/v-webpage-s1/">V-WebPage S1</a>
+                </li>
             </ul>
-
         </div>
     </div>
 
@@ -117,17 +124,7 @@
         load_header();
         load_footer();
         load_aside();
-        //load_messageToAllPages();
-        var currentUrl = document.location.href;
-        regexMatcher_webpageRoutes(currentUrl, "/h/about/", "/about/")
-        regexMatcher_webpageRoutes(currentUrl, "/h/changelog/", "/changelog/")
-        regexMatcher_webpageRoutes(currentUrl, "/h/commission/", "/commission/")
-        regexMatcher_webpageRoutes(currentUrl, "/h/drawesome/", "/drawesome/")
-        regexMatcher_webpageRoutes(currentUrl, "/h/links/", "/links/")
-        regexMatcher_webpageRoutes(currentUrl, "/h/nsfw-alert-mf/", "/nsfw-alert-mf/")
-        regexMatcher_webpageRoutes(currentUrl, "/h/send-message/", "/send-message/")
-        regexMatcher_webpageRoutes(currentUrl, "/h/technology/", "/technology/")
-        regexMatcher_webpageRoutes(currentUrl, "/h/the-junk-stash/", "/the-junk-stash/")
+        load_messageToAllPages();
     </script>
 </body>
 

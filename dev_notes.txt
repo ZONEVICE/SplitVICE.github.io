@@ -10,3 +10,7 @@ MEDIA VIEWPORT CHANGES
 
 Header
 	The header inside all the pages is static but the one at home page.
+
+Changes 2020/05/28
+	I decided to put all folders/routers at the project root so that all the pages will have
+	the structure justvice.github.io/page instead of justvice.github.io/h/page
