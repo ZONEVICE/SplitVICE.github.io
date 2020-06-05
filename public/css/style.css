@@ -1,165 +1,23 @@
-/* HEADER */
-
-header {
-    background-color: rgb(189, 0, 88);
-}
-
-.headerImage {
-    max-width: 180px;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.headerNavbarButtonImage {
-    float: right;
-    margin: 12px;
-    margin-top: 17px;
-    margin-right: 20px;
-}
-
-
-/* ASIDE */
-
-aside {
-    float: left;
-}
-
-.asideListTitle {
-    background-color: rgb(255, 78, 160);
-    color: white;
-    padding-left: 20px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    font-size: 15px;
-    font-weight: 650;
-}
-
-.asideBlock {
-    background-color: rgb(255, 255, 255);
-    margin-bottom: 13px;
-    width: 219px;
-    padding-bottom: 1px;
-}
-
-.asideBlock .asideLiStyle {
-    list-style-type: square;
-}
-
-.ASIDE_CATEGORIES {
-    padding-left: 12px;
-    font-size: 17px;
-    font-family: "Trebuchet MS", sans-serif;
-}
-
-
-/* CONTAINER AND OVERALL CONTENT */
-
-body {
-    background: rgb(185, 250, 255);
-    background: linear-gradient(0deg, rgba(185, 250, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
-    ;
-}
-
-.customContainer {
-    margin: 0 auto;
-    margin-top: 11px;
-    max-width: 1020px;
-}
-
-.mainContent {
-    margin-left: 230px;
-    padding: 25px;
-    padding-top: 9px;
-    background-color: white;
-}
-
-.breadcrumb {
-    margin: 0px;
-    padding: 5px;
-    padding-left: 10px;
-    margin-bottom: 10px;
-    background: rgb(255, 237, 246);
-}
-
-.textBold {
-    font-weight: bold;
-}
-
-
-/* FOOTER */
-
-footer {
-    color: black;
-    margin-top: 20px;
-    width: 100%;
-    display: inline-table;
-    text-align: center;
-}
-
-
-/* RESPONSIVE MEDIA SCREEN ELEMENTS */
-
-@media only screen and (min-width: 1025px) {
-    .headerNavbarButtonImage {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 1024px) {
-    aside {
-        display: none;
-        width: 100%;
-    }
-    .asideShowWhenScreenIsSmallClass {
-        display: block;
-    }
-    .asideBlock {
-        border-style: none;
-        width: auto;
-        margin-bottom: 0px;
-    }
-    .mainContent {
-        margin-left: 0px;
-        border-style: none;
-    }
-    .customContainer {
-        margin-top: 0px;
-    }
-    .headerImage {
-        display: inline;
-        margin-left: 10px;
-    }
-}
-
-.center {
-    text-align: center;
-}
-
-.PAGE_DESCRIPTION {text-align: center; color: gray;font-size: 12px;}
-
-
-/* IFRAME RESPONSIVE SETTINGS */
-/* iframe {width: 740px; height: 1170px;}
-
-@media only screen and (max-width: 1024px){
-    iframe {width: 880px; height: 1200px;}
-}
-
-@media only screen and (max-width: 923px){
-    iframe {width: 700px; height: 1200px;}
-}
-
-@media only screen and (max-width: 788px){
-    iframe {width: 600px; height: 1200px;}
-}
-
-@media only screen and (max-width: 655px){
-    iframe {width: 470px; height: 1200px;}
-}
-
-@media only screen and (max-width: 520px){
-    iframe {width: 300px; height: 1200px;}
-} */
+header{background-color:rgb(189, 0, 88);}
+.headerImage{max-width:180px;padding-top:9px;padding-bottom:9px;display:block;margin-left:auto;margin-right:auto;}
+.headerNavbarButtonImage{float:right;margin:12px;margin-top:17px;margin-right:20px;}
+aside{float:left;}
+.asideListTitle{background-color:rgb(255, 78, 160);color:white;padding-left:20px;padding-top:4px;padding-bottom:4px;font-size:15px;font-weight:650;}
+.asideBlock{background-color:rgb(255, 255, 255);margin-bottom:13px;width:219px;padding-bottom:1px;}
+.asideBlock .asideLiStyle{list-style-type:square;}
+.ASIDE_CATEGORIES{padding-left:12px;font-size:17px;font-family:"Trebuchet MS", sans-serif;}
+body{background:rgb(185, 250, 255);background:linear-gradient(0deg, rgba(185, 250, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);;}
+.customContainer{margin:0 auto;margin-top:11px;max-width:1020px;}
+.mainContent{margin-left:230px;padding:25px;padding-top:9px;background-color:white;}
+.breadcrumb{margin:0px;padding:5px;padding-left:10px;margin-bottom:10px;background:rgb(255, 237, 246);}
+.textBold{font-weight:bold;}
+footer{color:black;margin-top:20px;width:100%;display:inline-table;text-align:center;}
+@media only screen and (min-width:1025px){.headerNavbarButtonImage{display:none;}}
+@media only screen and (max-width:1024px){aside{display:none;width:100%;}
+ .asideShowWhenScreenIsSmallClass{display:block;}
+ .asideBlock{border-style:none;width:auto;margin-bottom:0px;}
+ .mainContent{margin-left:0px;border-style:none;}
+ .customContainer{margin-top:0px;}
+ .headerImage{display:inline;margin-left:10px;}}
+.center{text-align:center;}
+.PAGE_DESCRIPTION{text-align:center;color:gray;font-size:12px;}
