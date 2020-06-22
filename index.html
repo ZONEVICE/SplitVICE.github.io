@@ -41,14 +41,11 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-    <!-- CSS and JS imports/templates -->
-    <!-- <link rel="stylesheet" href="XXXXXXXXX"> -->
-    <!-- <script src="XXXXXXX"></script> -->
+    <!-- Scrips and styles imports -->
     <link rel="stylesheet" href="/public/css/style.css">
     <script src="/public/script/aside_script.js"></script>
     <script src="/public/script/load_htmlViews.js"></script>
     <script src="/public/script/ajax.js"></script>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
 
     <!-- Browser tab icon -->
     <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
@@ -56,9 +53,9 @@
     <!-- Browser tab title -->
     <title>JUST VICE</title>
 
-    <!-- Google AdSense -->
-    <!-- <script data-ad-client="ca-pub-4899030217251400" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
 </head>
+
+<!-- Personalized style for just this page -->
 <style>
     .navigatorUl a {
         font-size: 21px;
@@ -76,9 +73,9 @@
 </style>
 
 <body>
-    <header class="animated slideInDown">
-        <!-- <div id="headerContentAjaxId">
-        </div> -->
+
+    <!-- Header section -->
+    <header>
         <a href="/">
             <img class="headerImage" src="/public/img/header-image.png" alt="missing logo!">
         </a>
@@ -87,12 +84,20 @@
                 alt="Missing navbar button!">
         </a>
     </header>
-    <div class="customContainer animated zoomIn">
+
+    <!-- Custom container contains all the HTML content after the header -->
+    <div class="customContainer">
+
+        <!-- Aside of the page which works as the navigator  -->
         <aside id="aside_id">
             <div id="aside_content_id">
             </div>
         </aside>
+
+        <!-- Current page's main content -->
         <div class="mainContent">
+
+            <!-- Breadcrumb -->
             <div class="breadCrumb">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
@@ -100,23 +105,25 @@
                     </ol>
                 </nav>
             </div>
+
+            <!-- Message to all pages container -->
             <div id="message_to_all_pages_content_id">
 
             </div>
+
             <h1 style="text-align: center;">VICE's Archive</h1>
+
+            <!-- Home content -->
             <ul class="navigatorUl">
                 <li>
                     <a href="/links/">Content links</a>
                     <br>
                     <span>List of links where you can find all my work: art and tech alike material.</span>
                 </li>
-                <li>
-                    <a href="/changelog/">Changelog</a>
-                    <br>
-                    <span>All the changes this page has suffered over the time.</span>
-                </li>
             </ul>
             <hr>
+
+            <!-- Art section -->
             <h3 class="mainContentInfoTitleBlock">Art</h3>
             <p>
                 My art has been <span class="textBold">considered cursed/scary</span> from different sources (SFW and
@@ -125,6 +132,11 @@
                 Go to <a href="/links/">content links</a> to find me in social medias where I share my art.
             </p>
             <ul class="navigatorUl">
+                <li>
+                    <a href="/art/art-references-folder/">Art References Folder</a>
+                    <br>
+                    <span>My Art References Folder. Wendigos are not still allowed.</span>
+                </li>
                 <li>
                     <a href="/commission/">Commission art</a>
                     <br>
@@ -137,6 +149,8 @@
                 </li>
             </ul>
             <hr>
+
+            <!-- Technology section -->
             <h3 class="mainContentInfoTitleBlock">Technology</h3>
             <p>
                 I like to code and sharing is living so here you go.
@@ -150,6 +164,8 @@
                 </li>
             </ul>
             <hr>
+
+            <!-- Miscellaneous section -->
             <h3 class="mainContentInfoTitleBlock">Miscellaneous</h3>
             <p>
                 Varied information or pages not related to art or technology somewhat worthy to be shown in this
@@ -176,6 +192,11 @@
                     <span>Don't enter.</span>
                 </li>
                 <li>
+                    <a href="/changelog/">Changelog</a>
+                    <br>
+                    <span>All the changes this page has suffered over the time.</span>
+                </li>
+                <li>
                     <a href="/about/">About</a>
                     <br>
                     <span>Info about this web page, third party source code, testers, and me.</span>
@@ -190,6 +211,7 @@
         </div>
     </footer>
 
+    <!-- Scripts that load all the static HTML -->
     <script>
         load_footer();
         load_aside();

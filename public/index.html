@@ -8,7 +8,7 @@
     <!-- Responsive tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Sets a color to address bar on mobile browsers. -->
+    <!-- Sets a color to the address bar on mobile browsers. -->
     <meta name="theme-color" content="#bd0058" />
 
     <!-- Bootstrap and JQuery imports -->
@@ -24,11 +24,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-    <!-- CSS and JS imports/templates -->
-    <!-- <link rel="stylesheet" href="XXXXXXXXX"> -->
-    <!-- <script src="XXXXXXX"></script> -->
-
-    <!-- DEFAULT ASSET IMPORTS -->
+    <!-- Default scripts and styles imports -->
     <link rel="stylesheet" href="/public/css/style.css">
     <script src="/public/script/aside_script.js"></script>
     <script src="/public/script/load_htmlViews.js"></script>
@@ -48,14 +44,20 @@
         </div>
     </header>
 
+    <!-- Custom container contains all the HTML content but header and footer -->
     <div class="customContainer">
+
+        <!-- Aside of the page which works as the navigator  -->
         <aside id="aside_id">
             <div id="aside_content_id">
 
             </div>
         </aside>
 
+        <!-- Current page's main content -->
         <div class="mainContent">
+
+            <!-- Breadcrumb -->
             <div class="breadCrumb">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
@@ -64,11 +66,15 @@
                     </ol>
                 </nav>
             </div>
+
+            <!-- Message to all pages container -->
             <div id="message_to_all_pages_content_id">
             </div>
+
+            <!-- Editable content -->
             <h1 style="text-align: center;">Page title</h1>
             <hr>
-
+            This is the template I use when I create new pages.
         </div>
     </div>
 
@@ -78,6 +84,7 @@
         </div>
     </footer>
 
+    <!-- Scripts that load all the static HTML -->
     <script>
         load_header();
         load_footer();

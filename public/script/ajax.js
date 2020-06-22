@@ -1,3 +1,5 @@
+// Function that responses HTML code and gives it to an element
+// by id.
 function AJAX(id, path) {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {

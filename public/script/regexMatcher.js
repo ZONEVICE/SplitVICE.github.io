@@ -1,8 +1,8 @@
 // This regex checks the current page route and will route the user
-// to another route.
+// to another route if match.
 // currentUrl: current url and route where the user is.
 // matcher: chunk of the current url to do the Regex match process.
-// destinationRoute: route where the user will be redirected if regex has
+// destinationRoute: route where the user will be redirected if regex has a match.
 function regexMatcher_webpageRoutes(currentUrl, regexExpression, destinationRoute) {
     const regex = new RegExp(regexExpression,'g');
     let m;
