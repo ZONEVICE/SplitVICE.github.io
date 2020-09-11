@@ -1,5 +1,6 @@
-1-At the home page, there is a VICE text art inside the code.
-2-At the Drawesome page, there is DOOM music playing.
+1-At the home page, there is a VICE text art inside the HTML code.
+2-At route website/drawesome, there is DOOM music playing.
 3-At The Junk Stash - Old Web Page V1 home page. There is the Planned documentation section where you can read the block "Programs developed documentation". The "C" of the word "documentation" brings you to a hidden old Commissions page.
-3.1-At the page "Form", in the second paragraph, you can read every 1 word the phrase: "no easter eggs here"
-3.2-At the page "Guidelines" in the end of the paragraph reading from right to left every last letter from every word, you can read the phrase: "hello mate :>"
+3.1-At the page "Form", in the second paragraph, you can read every 1 word the phrase: "no easter eggs here".
+3.2-At the page "Guidelines" at the end of the paragraph reading from the right to left at every last letter from every word, you can read the phrase: "hello mate :>".
+4- At route website/drawesome: the page will show a Wendigo holding a gun if you stay at the page for 5 minutes (time for reaction might have been changed).

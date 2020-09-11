@@ -5,9 +5,6 @@ FOLDERS MEANING
 DEFAULT VALUES
 	header default color: #bd0058
 
-MEDIA VIEWPORT CHANGES
-	Responsive reaction 1: 922px
-
 Header
 	The header inside all the pages is static but the one at home page.
 
