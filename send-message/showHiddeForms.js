@@ -15,16 +15,16 @@ function main() {
         })
         .then(function (response) {
             let obj = JSON.parse(response);
-            if(obj.status){
-                if(obj.status == "up"){
+            if (obj.status) {
+                if (obj.status == "up") {
                     console.log("NodeJS Email Sender's service is up.");
                     sendMessageForm_native.style.display = "inline";
                     loadSpinner.style.display = "none";
-                }else{
+                } else {
                     sendMessageForm_wordpress.style.display = "inline";
                     loadSpinner.style.display = "none";
                 }
-            }else{
+            } else {
                 sendMessageForm_wordpress.style.display = "inline";
                 loadSpinner.style.display = "none";
             }
@@ -32,6 +32,12 @@ function main() {
         .catch(function (err) {
             console.error(err);
         });
+}
+
+function showWordpressForm() {
+    sendMessageForm_native.style.display = "none";
+    loadSpinner.style.display = "none";
+    sendMessageForm_wordpress.style.display = "inline";
 }
 
 main();

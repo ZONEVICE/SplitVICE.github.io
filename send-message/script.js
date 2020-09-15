@@ -33,14 +33,14 @@ function sendMessage(msg) {
     const url = "https://vicemailer.herokuapp.com/sendemail";
 
     const textMessage =
-        `Message Type: ${msg.messageType} \r\n
-        Contact info: ${msg.contactInfo} \r\n
-        Message body: ${msg.yourMessage} \r\n
+        `Message Type: ${msg.messageType}<br><br>
+        Contact info: ${msg.contactInfo}<br><br>
+        Message body: ${msg.yourMessage}<br><br>
         End of the message. \r\n
     `;
 
     const messageStructure = {
-        "subject": "Message from Send a Message - justvice.github.io",
+        "subject": `Message from Send a Message - justvice.github.io - Type: ${msg.messageType}`,
         "text": "Plaintext content of the Email.",
         "html": textMessage
     }
@@ -97,7 +97,7 @@ function getMessageType() {
     if (op6.checked) {
         return "Other";
     }
-    return "No defined.";
+    return "Not defined.";
 }
 
 // Checks if user has written a message.

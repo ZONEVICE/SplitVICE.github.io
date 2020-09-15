@@ -37,7 +37,7 @@
     <!-- SWEETALERT2 -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
-    <link rel="stylesheet" href="iframe.css">
+    <link rel="stylesheet" href="style.css">
 
     <!-- Browser tab icon -->
     <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
@@ -71,19 +71,22 @@
             </div>
             <div id="message_to_all_pages_content_id">
             </div>
-            <h4 style="text-align: center;">Send a message</h4>
+            <div class="h2" style="text-align: center;">Send a Message</div>
             <hr>
-            <p>
-                If there is a message you want to send to me regarding:
+            <p class="text-muted">
+                Last maintenance on this section page: 2020/09/15
             </p>
+            <p>
+                Fill the following form and an email will be sent to me. Use for the following:
             <ul>
-                <li>Any kind of missing content such as information, images or pages.</li>
-                <li>Any kind of issue inside this page or program such as bugs, spelling errors or malfunction.</li>
-                <li>A suggestion about a future drawing or program or new features for a program of this web page</li>
-                <li>Easter egg...</li>
+                <li>Bug, glitch, or error reports on any of my software.</li>
+                <li>Suggestions on this page, future or to update software, future drawings, or to remind me to sleep 8
+                    hours a day and to drink water.
+                </li>
+                <li>If you want to say hi and to dedicate some words. Either love of hate.</li>
+                <li>Any commission/business enquiries.</li>
             </ul>
-            feel free to message me by filling the following form:
-            <br>
+            </p>
             <hr>
             <div id="interactiveArea">
                 <div id="sendMessageForm_native">
@@ -92,11 +95,10 @@
                             <label for="exampleInputEmail1">Contact info.</label>
                             <input placeholder="In case you want a response" type="email" class="form-control"
                                 id="contactInfo" aria-describedby="emailHelp">
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                                else.</small>
+                            <small id="emailHelp" class="form-text text-muted">Your info will be confidential.</small>
                         </div>
                         <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Your message.</label>
+                            <label for="exampleFormControlTextarea1">Your message. <span class="red">*</span></label>
                             <textarea id="yourMessage" class="form-control" id="exampleFormControlTextarea1"
                                 rows="6"></textarea>
                         </div>
@@ -151,10 +153,16 @@
                 </div>
                 <div id="loadSpinner">
                     <div id="loadingSpinner_text">
-                        Loading... content not loading? Try out my Twitter clicking <a
-                            href="https://justvice.github.io/s/twitter" target="_blank"
-                            rel="noopener noreferrer">here.</a>
+                        Loading, please wait... content not loading? Try out my Twitter or Wordpress by clicking the
+                        following.
+                        <br><br>
+                        <a href="https://justvice.github.io/s/twitter" target="_blank" rel="noopener noreferrer">
+                            <button class="btn btn-primary" type="button">Visit Twitter</button>
+                        </a>
+                        <button class="btn btn-primary" type="button" onclick="showWordpressForm()">Use Wordpress
+                            form</button>
                     </div>
+                    <br>
                     <div class="spinner-border text-primary" role="status">
                         <span class="sr-only">Loading...</span>
                     </div>
