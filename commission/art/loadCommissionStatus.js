@@ -1,32 +1,52 @@
-const status_sttled_link = "https://gist.githubusercontent.com/JustVice/bf4ac34de3694ba401daadcb9756ac57/raw/artcomstatus.txt";
-const div_id = "commission_status";
-var com_status = "";
+// ------------------------------------------------------------------------------------
+// Commission status origin and div tag capture.
+// ------------------------------------------------------------------------------------
+const url = "https://gist.githubusercontent.com/JustVice/bf4ac34de3694ba401daadcb9756ac57/raw/artcomstatus.txt";
+const commission_status = document.getElementById("commission_status");
 
-const COMOPEN_CONTENT = '<div class="center" style="font-size:14px;"><b>COMMISSIONS:</b> <b style="color:lightgreen;">OPEN</b>';
-const COMCLOSED_CONTENT = '<div class="center" style="font-size:22px;"><hr><b>COMMISSIONS:</b> <b style="color:red;">CLOSED</b>'+
-'<span style="font-size:15px;"><p>You can still look at the commission process.<br>If you still want to commission, you must be willing to pay extras!<br>Either fill the form or send a message for more info.</p></span>';
+// ------------------------------------------------------------------------------------
+// Content to show depending of commission's status.
+// ------------------------------------------------------------------------------------
+const comOpen_content = `
+<div class="center" style="font-size:14px;">
+    <b>COMMISSIONS:</b> <b style="color:lightgreen;">OPEN</b>
+</div>
+`;
 
+const comClosed_content = `
+<div class="center" style="font-size:22px;">
+    <hr>
+    <b>COMMISSIONS:</b> <b style="color:red;">CLOSED</b>
+    <span style="font-size:15px;">
+        <p>
+            You can still look at the commission process.
+            <br>
+            If you still want to commission, you must be willing to pay extras!
+            <br>
+            Either fill the form or <a href="/send-message">send a message</a> for more info.
+        </p>
+    </span>
+</div>
+`;
 
-load_commission_status();
-load_commissions_content();
-
-//Loads if the txt file stored inside personal cloud says "open" or "closed"
-function load_commission_status() {
-    var xmlhttp;
-    xmlhttp = new XMLHttpRequest();
-    xmlhttp.open('GET', status_sttled_link, false);
-    xmlhttp.send();
-    com_status = xmlhttp.responseText
-    console.log("Value: " + com_status);
+// ------------------------------------------------------------------------------------
+// Loads current commission status. Sets content depending of result.
+// ------------------------------------------------------------------------------------
+function load_content() {
+    fetch(url).then(function (response) {
+        return response.text();
+    })
+        .then(function (response) {
+            if (response == "open") {
+                commission_status.innerHTML = comOpen_content;
+            } else {
+                commission_status.innerHTML = comClosed_content;
+            }
+        })
+        .catch(function (err) {
+            console.error(err);
+        });
 }
 
-//Logic to decide what commission content to choose
-function load_commissions_content() {
-    if (com_status.includes("open")) {
-        console.log("Commissions open");
-        document.getElementById(div_id).innerHTML = COMOPEN_CONTENT;
-    } else {
-        console.log("Commissions closed");
-        document.getElementById(div_id).innerHTML = COMCLOSED_CONTENT;
-    }
-}
+// Call of function.
+load_content();

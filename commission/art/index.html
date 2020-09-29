@@ -1,132 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <!-- HTML5 coding protocole -->
-        <meta charset="utf-8">
-    
-        <!-- Responsive tag -->
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-        <!-- Sets a color to adress bar on mobile browsers. -->
-        <meta name="theme-color" content="#bd0058" />
-    
-        <!-- Bootstrap and JQuery imports -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
-    
-        <!-- CSS and JS imports/templates -->
-        <!-- <link rel="stylesheet" href="XXXXXXXXX"> -->
-        <!-- <script src="XXXXXXX"></script> -->
-    
-        <!-- DEFAULT ASSET IMPORTS -->
-        <link rel="stylesheet" href="/public/css/style.css">
-        <script src="/public/script/aside_script.js"></script>
-        <script src="/public/script/load_htmlViews.js"></script>
-        <script src="/public/script/ajax.js"></script>
-    
-        <!-- Browser tab icon -->
-        <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
-    
-        <!-- Browser tab title -->
-        <title>JUST VICE</title>
-    </head>
+<head>
+    <!-- HTML5 coding protocole -->
+    <meta charset="utf-8">
 
-    <body>
+    <!-- Responsive tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <header>
-            <div id="header_content_id">
+    <!-- Sets a color to adress bar on mobile browsers. -->
+    <meta name="theme-color" content="#bd0058" />
+
+    <!-- Bootstrap and JQuery imports -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS and JS imports/templates -->
+    <!-- <link rel="stylesheet" href="XXXXXXXXX"> -->
+    <!-- <script src="XXXXXXX"></script> -->
+
+    <!-- DEFAULT ASSET IMPORTS -->
+    <link rel="stylesheet" href="/public/css/style.css">
+    <script src="/public/script/aside_script.js"></script>
+    <script src="/public/script/load_htmlViews.js"></script>
+    <script src="/public/script/ajax.js"></script>
+
+    <!-- Browser tab icon -->
+    <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
+
+    <!-- Browser tab title -->
+    <title>JUST VICE</title>
+</head>
+
+<body>
+
+    <header>
+        <div id="header_content_id">
+        </div>
+    </header>
+
+    <div class="customContainer">
+        <aside id="aside_id">
+            <div id="aside_content_id">
+
             </div>
-        </header>
-    
-        <div class="customContainer">
-            <aside id="aside_id">
-                <div id="aside_content_id">
-    
+        </aside>
+
+        <div class="mainContent">
+            <div class="breadCrumb">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item "><a href="../">Commission</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Art</li>
+                        <!-- <li class="breadcrumb-item active" aria-current="page">ACTIVE PAGE</li> -->
+                    </ol>
+                </nav>
+            </div>
+            <div id="message_to_all_pages_content_id">
+            </div>
+            <div class="center h2">Art Commission</div>
+            <div id="commission_status">
+                <hr>
+                <div class="spinner-border text-danger center" role="status">
+                    <span class="sr-only">Loading...</span>
                 </div>
-            </aside>
-    
-            <div class="mainContent">
-                <div class="breadCrumb">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="/">Home</a></li>
-                            <li class="breadcrumb-item "><a href="../">Commission</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Art</li>
-                            <!-- <li class="breadcrumb-item active" aria-current="page">ACTIVE PAGE</li> -->
-                        </ol>
-                    </nav>
-                </div>
-                <div id="message_to_all_pages_content_id">
-                </div>
-                <h2 class="center">Art Commission</h2>
-                <div id="commission_status">
+                loading...
+            </div>
+            <hr>
+            <h5 class="title_1">
+                Guidelines
+            </h5>
+            <div class="first_information_block">
+                <p>
+                    To request a commission from me, I ask you to read my <b>terms of service</b>.
+                    <br>
+                    <br>
+                    In order to <b>keep the process organized</b> it is necessary to set a few <b>rules</b> and to keep
+                    you aware of
+                    some <b>information of your interest</b>.
+                    <br>
+                    <br>
+                    To speed up the process, I ask you to fill the <b>commission form</b>.
                     <hr>
-                    COMMISSION STATUS
-                </div>
-                <hr>
-                <h5 class="title_1">
-                    Guidelines
-                </h5>
-                <div class="first_information_block">
-                    <p>
-                        To request a commission from me, I ask you to read my <b>terms of service</b>.
+                </p>
+            </div>
+            <div class="center">
+                <h3 class="title_1">
+                    Terms of service and commission form.
+                    </h4>
+                    <div class="external_links">
+                        <a target="_black" href="../../s/art-commission-contract/">
+                            Click here to read the Terms of Service.</a>
                         <br>
-                        <br>
-                        In order to <b>keep the process organized</b> it is necessary to set a few <b>rules</b> and to keep
-                        you aware of
-                        some <b>information of your interest</b>.
-                        <br>
-                        <br>
-                        To speed up the process, I ask you to fill the <b>commission form</b>.
-                        <hr>
-                    </p>
-                </div>
-                <div class="center">
-                    <h3 class="title_1">
-                        Terms of service and commission form.
-                        </h4>
-                        <div class="external_links">
-                            <a target="_black"
-                                href="../../s/art-commission-contract/">
-                                Click here to read the Terms of Service.</a>
-                            <br>
-                            <a target="_black"
-                                href="../../s/art-commission-form/">Click
-                                here to open the commission form.</a>
-                        </div>
-                </div>
-                <hr>
-                <div class="information_block_2">
-                    If you have any kind of question, feel free to dm me on <b><a target="_blank"
-                            href="/s/twitter/">Twitter</a></b> or send a message at
-                    <b><a href="/send-message/">Send a Message</a></b> section.
-                </div>
+                        <a target="_black" href="../../s/art-commission-form/">Click
+                            here to open the commission form.</a>
+                    </div>
+            </div>
+            <hr>
+            <div class="information_block_2">
+                If you have any kind of question, feel free to dm me on <b><a target="_blank"
+                        href="/s/twitter/">Twitter</a></b> or send a message at
+                <b><a href="/send-message/">Send a Message</a></b> section.
             </div>
         </div>
-    
-        <footer>
-            <div id="footer_content_id">
-    
-            </div>
-        </footer>
-    
-        <script>
-            load_header();
-            load_footer();
-            load_aside();
-            load_messageToAllPages();
-        </script>
-        <script src="loadCommissionStatus.js"></script>
-    </body>
+    </div>
+
+    <footer>
+        <div id="footer_content_id">
+
+        </div>
+    </footer>
+
+    <script>
+        load_header();
+        load_footer();
+        load_aside();
+        load_messageToAllPages();
+    </script>
+    <script src="loadCommissionStatus.js"></script>
+</body>
 
 </html>

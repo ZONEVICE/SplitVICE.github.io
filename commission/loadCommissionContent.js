@@ -1,32 +1,53 @@
-const STATUS = "https://gist.githubusercontent.com/JustVice/bf4ac34de3694ba401daadcb9756ac57/raw/artcomstatus.txt";
-const COM_OPEN_HTML_PATH = "comopen.html";
-const COM_CLOSED_HTML_PATH = "comclosed.html";
-const DIV_ID = "commission_status";
-var commission_value = "";
+// ------------------------------------------------------------------------------------
+// Commission status origin and div tag capture.
+// ------------------------------------------------------------------------------------
+const url = "https://gist.githubusercontent.com/JustVice/bf4ac34de3694ba401daadcb9756ac57/raw/artcomstatus.txt";
+const commission_status = document.getElementById("commission_status"); // Div tag id.
 
+// ------------------------------------------------------------------------------------
+// Content to show depending of commission's status.
+// ------------------------------------------------------------------------------------
+const comClosed_content = `
+    <div class="center h1">
+        Commissions status: <span style="color:red;">CLOSED</span>
+    </div>
+    <p class="center">
+        At this moment <b>I am not accepting commissions</b>
+        <br>
+        However, you can still see the instructions, terms of service, and contract versions by <a href="art/">clicking here.</a>
+        <br>
+        <br>
+        <b>You can still commission me if you are willing to pay extras.</b>
+    </p>
+`;
 
-load_commission_status();
-load_commissions_content();
+const comOpen_content = `
+    <div class="center h1">
+        Commissions status: <span style="color:lightgreen;">open</span>
+    </div>
+    <p class="center">
+        At this moment I am accepting <b>art commissions</b>. <a href="art/">Click here</a> to see the instructions, terms of service, and the commission form.
+    </p>
+`;
 
-//Loads if the txt file stored inside personal cloud says "open" or "closed"
-function load_commission_status() {
-    var xmlhttp;
-    xmlhttp = new XMLHttpRequest();
-    xmlhttp.open('GET', STATUS, false);
-    xmlhttp.send();
-    commission_value = xmlhttp.responseText
-    console.log("Value loaded: '" + commission_value + "'");
+// ------------------------------------------------------------------------------------
+// Loads current commission status. Sets content depending of result.
+// ------------------------------------------------------------------------------------
+function load_content() {
+    fetch(url).then(function (response) {
+        return response.text();
+    })
+        .then(function (response) {
+            if (response == "open") {
+                commission_status.innerHTML = comOpen_content;
+            } else {
+                commission_status.innerHTML = comClosed_content;
+            }
+        })
+        .catch(function (err) {
+            console.error(err);
+        });
 }
 
-//Logic to decide what commission content to choose
-function load_commissions_content() {
-    if (commission_value.includes("open")) {
-        console.log("Commissions open");
-        AJAX(DIV_ID, COM_OPEN_HTML_PATH);
-        console.log("Commissions open settled.");
-    } else {
-        console.log("Commissions closed");
-        AJAX(DIV_ID, COM_CLOSED_HTML_PATH);
-        console.log("Commissions closed settled.");
-    }
-}
+// Call of function.
+load_content();
