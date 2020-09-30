@@ -1,6 +1,10 @@
+// This script is the responsible of sending the message.
+
+// ----------------------------------------------------------------------------------------
+// DOM elements capture.
+// ----------------------------------------------------------------------------------------
 const contactInfo = document.getElementById("contactInfo");
 const yourMessage = document.getElementById("yourMessage");
-const interactiveArea = document.getElementById("interactiveArea");
 
 const op1 = document.getElementById("op1");
 const op2 = document.getElementById("op2");
@@ -9,8 +13,12 @@ const op4 = document.getElementById("op4");
 const op5 = document.getElementById("op5");
 const op6 = document.getElementById("op6");
 
-function submitForm_native() {
+// ----------------------------------------------------------------------------------------
+// Primary functions.
+// ----------------------------------------------------------------------------------------
 
+// Checks if user has written down a valid message. If so, sends the message.
+function submitForm_native() {
     let messageType = getMessageType();
 
     const msg = {
@@ -18,10 +26,10 @@ function submitForm_native() {
         "yourMessage": yourMessage.value,
         "messageType": messageType
     };
-    if (areThereAMessage(msg)) {
+    if (areThereAMessage(msg)) { // Checks if a message was written.
         sendMessage(msg);
     } else {
-        Swal.fire({
+        Swal.fire({ // Modal showing no message was written.
             icon: 'error',
             title: 'Invalid message',
             text: 'You cannot send an empty message.'
@@ -29,22 +37,25 @@ function submitForm_native() {
     }
 }
 
+// Builds message to be sent. Connects to Mail backend service's API to send the message.
 function sendMessage(msg) {
-    const url = "https://vicemailer.herokuapp.com/sendemail";
+    const url = "https://vicemailer.herokuapp.com/sendemail"; // Mail backend service API url.
 
-    const textMessage =
+    const textMessage = // Body message content.
         `Message Type: ${msg.messageType}<br><br>
         Contact info: ${msg.contactInfo}<br><br>
         Message body: ${msg.yourMessage}<br><br>
         End of the message. \r\n
     `;
 
+    // Entire message structure to be sent.
     const messageStructure = {
         "subject": `Message from Send a Message - justvice.github.io - Type: ${msg.messageType}`,
         "text": "Plaintext content of the Email.",
         "html": textMessage
     }
 
+    // API connection.
     fetch(url, {
         method: 'POST',
         body: JSON.stringify(messageStructure), // data can be `string` or {object}!
@@ -52,22 +63,22 @@ function sendMessage(msg) {
             'Content-Type': 'application/json'
         }
     }).then(res => res.json())
-        .catch((error) => {
+        .catch((error) => { // If error occurred, message is displayed notifying so.
             console.error('Error:', error)
             interactiveArea.innerHTML =
                 `
-            <div class="alert alert-danger" role="alert">
-                An internal server error has happened! Sorry about that!.
-            </div>
-            Here's the message you wrote:
-            ${msg.messageType}${msg.contactInfo}${msg.yourMessage}
-            <br><br>
-            Please, try it again with the Wordpress form.<br>
-            If that does not work either, try reaching me on Twitter.
-            `
+                <div class="alert alert-danger" role="alert">
+                    An internal server error has happened! Sorry about that!.
+                </div>
+                Here's the message you wrote:
+                ${msg.messageType}${msg.contactInfo}${msg.yourMessage}
+                <br><br>
+                Please, try it again with the Wordpress form.<br>
+                If that does not work either, try reaching me on Twitter.
+                `
             sendMessageForm_wordpress.style.display = "inline";
         })
-        .then((response) => {
+        .then((response) => { // If message sent, success message is displayed.
             console.log(response)
             interactiveArea.innerHTML =
                 `
@@ -78,6 +89,11 @@ function sendMessage(msg) {
         });
 }
 
+// ----------------------------------------------------------------------------------------
+// Secondary functions.
+// ----------------------------------------------------------------------------------------
+
+// Returns string of type of message selected.
 function getMessageType() {
     if (op1.checked) {
         return "Friendly or hate message";
