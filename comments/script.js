@@ -6,7 +6,7 @@
 // ------------------------------------------------------------------------------
 // DOM elements capture.
 // ------------------------------------------------------------------------------
-const input_newComment = document.getElementById("input_newComment");
+const inputText_newComment = document.getElementById("inputText_newComment");
 const btn_newComment = document.getElementById("btn_newComment");
 const comments = document.getElementById("comments");
 const API_Connection_Token = "13c4ae8e38567da5981106230513aecb5ae05f533c15015c0cad15f675675ef05ce8cb";
@@ -16,7 +16,6 @@ const url = "https://online-notes-vice.herokuapp.com"; // Heroku gives free HTTP
 // Functions.
 // ------------------------------------------------------------------------------
 
-// ==============================================================================
 // ==============================================================================
 // ==============================================================================
 // Fetch comments.
@@ -35,11 +34,11 @@ function fetch_comments() {
         })
         .then(function (response) {
             let obj = JSON.parse(response);
-            //console.log(obj);
             render_comments(obj);
         })
         .catch(function (err) {
             console.error(err);
+            error_503_message();
         });
 }
 
@@ -48,41 +47,40 @@ function render_comments(comments_input) {
         console.log("Status: warning");
         if (comments_input["description"] == "user does not have private notes") {
             comments.innerHTML = `
-            There are not comments registered.
+            There are no comments registered.
             `;
         }
     } else { // There are comments.
         comments.innerHTML = "";
         array_length = comments_input.length;
-        let counter = 1;
         for (let i = array_length; i > 0; i--) {
             comments.innerHTML += `
-            Comment #${counter}: ${comments_input[i - 1]["description"]}<br>
+            <div class="alert alert-secondary" role="alert">
+                ${comments_input[i - 1]["description"]}
+            </div>
             `;
-            counter++;
         }
     }
 }
 
 // ==============================================================================
 // ==============================================================================
-// ==============================================================================
 // Publish comments.
 
 btn_newComment.addEventListener("click", function () {
-    if (input_newComment.value != "") { // If content written.
-        publish_comment(input_newComment.value);
+    if (inputText_newComment.value != "") { // If content written.
+        publish_comment(inputText_newComment.value);
     }else{
         no_comment_written_alert();
     }
 });
 
 // Handles the process to publish a new comment.
-function publish_comment(input_newComment_value) {
+function publish_comment(inputText_newComment_value) {
     const url_api = url + "/api/token/insert-private-note.php";
     var json_request = {
         title: "JustVice.Github.io Comment",
-        description: input_newComment_value,
+        description: inputText_newComment_value,
         token: API_Connection_Token
     };
     fetch(url_api, {
@@ -92,7 +90,7 @@ function publish_comment(input_newComment_value) {
         .then((response) => {
             if (response.status == "success") {
                 fetch_comments();
-                input_newComment.value = "";
+                inputText_newComment.value = "";
                 message_posted_alert();
             } else {
                 alert("An error has occurred. Please, report at Send a Message section.");
@@ -131,8 +129,12 @@ function no_comment_written_alert(){
 
 // ==============================================================================
 // ==============================================================================
-// ==============================================================================
-// On startup function calls.
+// Error notification functions.
 
-// Comments are loaded.
-fetch_comments();
+function error_503_message(){
+    comments.innerHTML = `
+    <div class="alert alert-danger" role="alert">
+        Error 503 - Server error. <a href="../send-message">Report error here.</a>
+    </div>
+    `;
+}

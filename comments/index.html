@@ -95,13 +95,16 @@
                 </div>
             </div>
             <hr>
-            <textarea id="input_newComment" rows="3" placeholder="Your comment here."></textarea>
+            <textarea id="inputText_newComment" rows="3" placeholder="Your comment here."></textarea>
             <br>
-            <button class="btn btn-primary btn-block" type="button" id="btn_newComment">Publish comment</button>
+            <button id="btn_newComment" class="btn btn-primary btn-block" type="button">Publish comment</button>
             <hr>
             <div class="h3">List of comments:</div>
             <div id="comments">
-
+                <div class="spinner-border text-danger" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                Loading comments, please wait up to 10 seconds...
             </div>
         </div>
     </div>
@@ -120,6 +123,7 @@
         load_messageToAllPages();
     </script>
     <script src="script.js"></script>
+    <script>fetch_comments();</script>
 </body>
 
 </html>
