@@ -21,7 +21,7 @@ const API_Connection_Token = "13c4ae8e38567da5981106230513aecb5ae05f533c15015c0c
 // Fetch comments.
 
 function fetch_comments() {
-    const url = "http://onlinenotes.ml/api/token/read-private-note.php";
+    const url = "https://onlinenotes.ml/api/token/read-private-note.php";
     let json_request = {
         token: API_Connection_Token
     };
