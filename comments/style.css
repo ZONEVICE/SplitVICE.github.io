@@ -1,0 +1,4 @@
+/* Makes textarea to take entire page width. */
+textarea{
+    width: 100%;
+}
