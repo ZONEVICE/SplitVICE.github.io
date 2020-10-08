@@ -78,7 +78,7 @@ btn_newComment.addEventListener("click", function () {
 
 // Handles the process to publish a new comment.
 function publish_comment(input_newComment_value) {
-    const url = "http://onlinenotes.ml/api/token/insert-private-note.php";
+    const url = "https://onlinenotes.ml/api/token/insert-private-note.php";
     var json_request = {
         title: "JustVice.Github.io Comment",
         description: input_newComment_value,
