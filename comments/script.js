@@ -10,6 +10,7 @@ const input_newComment = document.getElementById("input_newComment");
 const btn_newComment = document.getElementById("btn_newComment");
 const comments = document.getElementById("comments");
 const API_Connection_Token = "13c4ae8e38567da5981106230513aecb5ae05f533c15015c0cad15f675675ef05ce8cb";
+const url = "https://online-notes-vice.herokuapp.com"; // Heroku gives free HTTPS SSL service.
 
 // ------------------------------------------------------------------------------
 // Functions.
@@ -21,11 +22,11 @@ const API_Connection_Token = "13c4ae8e38567da5981106230513aecb5ae05f533c15015c0c
 // Fetch comments.
 
 function fetch_comments() {
-    const url = "http://onlinenotes.ml/api/token/read-private-note.php";
+    const url_api = url + "/api/token/read-private-note.php";
     let json_request = {
         token: API_Connection_Token
     };
-    fetch(url, {
+    fetch(url_api, {
         body: JSON.stringify(json_request)
         , method: 'POST'
     })
@@ -78,13 +79,13 @@ btn_newComment.addEventListener("click", function () {
 
 // Handles the process to publish a new comment.
 function publish_comment(input_newComment_value) {
-    const url = "http://onlinenotes.ml/api/token/insert-private-note.php";
+    const url_api = url + "/api/token/insert-private-note.php";
     var json_request = {
         title: "JustVice.Github.io Comment",
         description: input_newComment_value,
         token: API_Connection_Token
     };
-    fetch(url, {
+    fetch(url_api, {
         method: 'POST',
         body: JSON.stringify(json_request)
     }).then(res => res.json())
