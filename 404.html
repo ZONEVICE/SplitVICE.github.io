@@ -24,10 +24,6 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-    <!-- CSS and JS imports/templates -->
-    <!-- <link rel="stylesheet" href="XXXXXXXXX"> -->
-    <!-- <script src="XXXXXXX"></script> -->
-
     <!-- DEFAULT ASSET IMPORTS -->
     <link rel="stylesheet" href="/public/css/style.css">
     <script src="/public/script/aside_script.js"></script>
@@ -117,17 +113,18 @@
         load_header();
         load_footer();
         load_aside();
-        //load_messageToAllPages();
         var currentUrl = document.location.href;
         regexMatcher_webpageRoutes(currentUrl, "/h/about", "/about/")
         regexMatcher_webpageRoutes(currentUrl, "/h/changelog", "/changelog/")
         regexMatcher_webpageRoutes(currentUrl, "/h/commission", "/commission/")
         regexMatcher_webpageRoutes(currentUrl, "/h/drawesome", "/drawesome/")
         regexMatcher_webpageRoutes(currentUrl, "/h/links", "/links/")
+        regexMatcher_webpageRoutes(currentUrl, "/h/link", "/links/")
         regexMatcher_webpageRoutes(currentUrl, "/h/nsfw-alert-mf", "/nsfw-alert-mf/")
         regexMatcher_webpageRoutes(currentUrl, "/h/send-message", "/send-message/")
         regexMatcher_webpageRoutes(currentUrl, "/h/technology", "/technology/")
         regexMatcher_webpageRoutes(currentUrl, "/h/the-junk-stash", "/the-junk-stash/")
+        regexMatcher_webpageRoutes(currentUrl, "/h/technology/java/auto-save/", "/technology/java/auto-save")
     </script>
 </body>
 
