@@ -18,7 +18,7 @@ const url = "https://online-notes-vice.herokuapp.com"; // Heroku gives free HTTP
 
 // ==============================================================================
 // ==============================================================================
-// Fetch comments.
+// Comments rendering.
 
 function fetch_comments() {
     const url_api = url + "/api/token/read-private-note.php";
@@ -69,6 +69,10 @@ function render_comments(comments_input) {
             }
         }
     }
+}
+
+function comment_containsURL(comment){
+    if(regexMatcher_extractURL(comment) != "No link given.") return false; else return true;
 }
 
 // ==============================================================================
