@@ -6,11 +6,6 @@ const interactiveArea = document.getElementById("interactiveArea");
 const loadSpinner = document.getElementById("loadSpinner");
 
 // ----------------------------------------------------------------------------------------
-// Initial page config.
-// ----------------------------------------------------------------------------------------
-sendMessageForm_native.style.display = "none";
-
-// ----------------------------------------------------------------------------------------
 // Functions
 // ----------------------------------------------------------------------------------------
 // Checks if the mail backend is up. If so, shows the form to send the message.
@@ -31,8 +26,6 @@ function checkBackendStatus() {
             if (obj.status) {
                 if (obj.status == "up") { // Service is available and working.
                     console.log("NodeJS Email Sender's service is up.");
-                    sendMessageForm_native.style.display = "inline";
-                    loadSpinner.style.display = "none";
                 } else { // Service is unavailable.
                     errorFailedToFetch();
                 }
@@ -55,7 +48,7 @@ checkBackendStatus();
 function errorFailedToFetch() {
     interactiveArea.innerHTML = `
         <div class="alert alert-danger" role="alert">
-            <div class="h6">Service unavailable</div>
+            <div class="h6">Service unavailable - Error 500</div>
             <hr>
             <p>The email delivery service is unavailable at this moment. Try reaching me out on <a target="_blank" href="/s/twitter">Twitter.</a></p>
         </div>
