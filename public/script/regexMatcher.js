@@ -6,16 +6,29 @@
 function regexMatcher_webpageRoutes(currentUrl, regexExpression, destinationRoute) {
     const regex = new RegExp(regexExpression,'g');
     let m;
-
     while ((m = regex.exec(currentUrl)) !== null) {
         if (m.index === regex.lastIndex) {
             regex.lastIndex++;
         }
         m.forEach((match, groupIndex) => {
             // if entered here, there is a match.
-
             // User get redirected to the established route.
             window.location.href = destinationRoute;
         });
     }
+}
+
+// Checks if the given url is an image.
+function regexMatcher_isURLAnImage(url) {
+    const regex = new RegExp("/\.(jpeg|jpg|gif|png)$/",'g');
+    let m;
+    while ((m = regex.exec(url)) !== null) {
+        if (m.index === regex.lastIndex) {
+            regex.lastIndex++;
+        }
+        m.forEach((match, groupIndex) => {
+            return false;
+        });
+    }
+    return true;
 }

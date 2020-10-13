@@ -54,11 +54,19 @@ function render_comments(comments_input) {
         comments.innerHTML = "";
         array_length = comments_input.length;
         for (let i = array_length; i > 0; i--) {
-            comments.innerHTML += `
-            <div class="alert alert-secondary" role="alert">
-                ${comments_input[i - 1]["description"]}
-            </div>
-            `;
+            if (!regexMatcher_isURLAnImage(comments_input[i - 1])) { // If comment is not an image.
+                comments.innerHTML += `
+                <div class="alert alert-secondary comment" role="alert">
+                    ${comments_input[i - 1]["description"]}
+                </div>
+                `;
+            } else { // If comment is an image.
+                comments.innerHTML += `
+                <div class="alert alert-secondary comment" role="alert">
+                    <img class="comment_image" src="${comments_input[i - 1]["description"]}" alt="Missing image.">
+                </div>
+                `;
+            }
         }
     }
 }
@@ -70,7 +78,7 @@ function render_comments(comments_input) {
 btn_newComment.addEventListener("click", function () {
     if (inputText_newComment.value != "") { // If content written.
         publish_comment(inputText_newComment.value);
-    }else{
+    } else {
         no_comment_written_alert();
     }
 });
@@ -107,19 +115,19 @@ function message_posted_alert() {
         timer: 1500,
         timerProgressBar: true,
         didOpen: (toast) => {
-          toast.addEventListener('mouseenter', Swal.stopTimer)
-          toast.addEventListener('mouseleave', Swal.resumeTimer)
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
         }
-      })
-      
-      Toast.fire({
+    })
+
+    Toast.fire({
         icon: 'success',
         title: 'Comment posted'
-      })
+    })
 }
 
 // Shows a message when user tries to post a comment with no content.
-function no_comment_written_alert(){
+function no_comment_written_alert() {
     Swal.fire({ // Modal showing no message was written.
         icon: 'error',
         title: 'Invalid comment',
@@ -131,7 +139,7 @@ function no_comment_written_alert(){
 // ==============================================================================
 // Error notification functions.
 
-function error_503_message(){
+function error_503_message() {
     comments.innerHTML = `
     <div class="alert alert-danger" role="alert">
         Error 503 - Server error. <a href="../send-message">Report error here.</a>
