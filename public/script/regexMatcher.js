@@ -20,17 +20,13 @@ function regexMatcher_webpageRoutes(currentUrl, regexExpression, destinationRout
 
 // Checks if the given url is an image.
 function regexMatcher_isURLAnImage(url) {
-    const regex = new RegExp("/\.(jpeg|jpg|gif|png)$/", 'g');
-    let m;
-    while ((m = regex.exec(url)) !== null) {
-        if (m.index === regex.lastIndex) {
-            regex.lastIndex++;
-        }
-        m.forEach((match, groupIndex) => {
-            return false;
-        });
+    try {
+        var urlRegex = /([a-z\-_0-9\/\:\.]*\.(jpg|jpeg|png|gif))/i;
+        var url = url.match(urlRegex)[1];
+        return true;
+    } catch (error) {
+        return false;
     }
-    return true;
 }
 
 // Checks if the input_string contains an URL.
@@ -67,4 +63,14 @@ function regexMatcher_convertURLIntoClickeableURL(input_string) {
         return "500 Error!";
     }
 
+}
+
+// Receives a string which has a image URL inside the plaintext then returns
+// same string but adds <img> to the image URL.
+// Example: Hello i.imgur.com/image word -> Returns: Hello <img src="i.imgur.com/image" /> word.
+function regexMatcher_addImgTagToPlainTextString(plain_text){
+    // Source: https://stackoverflow.com/questions/38349684/javascript-plugin-for-finding-images-links-in-plain-text-and-converting-them-to
+    const regexp = /\b(https?:\/\/\S+(?:png|jpe?g|gif)\S*)\b/ig;
+    const replace = "<img src='$1'>";
+    return plain_text.replace(regexp, replace);
 }

@@ -54,25 +54,21 @@ function render_comments(comments_input) {
         comments.innerHTML = "";
         array_length = comments_input.length;
         for (let i = array_length; i > 0; i--) {
-            if (!regexMatcher_isURLAnImage(comments_input[i - 1])) { // If comment is not an image.
+            if (!regexMatcher_isURLAnImage(comments_input[i - 1]["description"])) { // If doesn't contain an image.
                 comments.innerHTML += `
                 <div class="alert alert-secondary comment" role="alert">
                     ${comments_input[i - 1]["description"]}
                 </div>
                 `;
-            } else { // If comment is an image.
+            } else { // If comment contains an image.
                 comments.innerHTML += `
                 <div class="alert alert-secondary comment" role="alert">
-                    <img class="comment_image" src="${comments_input[i - 1]["description"]}" alt="Missing image.">
+                    ${imageFinderAndReplace(comments_input[i - 1]["description"])}
                 </div>
                 `;
             }
         }
     }
-}
-
-function comment_containsURL(comment){
-    if(regexMatcher_extractURL(comment) != "No link given.") return false; else return true;
 }
 
 // ==============================================================================
@@ -149,4 +145,15 @@ function error_503_message() {
         Error 503 - Server error. <a href="../send-message">Report error here.</a>
     </div>
     `;
+}
+
+// ==============================================================================
+// ==============================================================================
+// Regex functions.
+
+// Finds image links inside plain-text strings and adds <img> tag.
+function imageFinderAndReplace(plain_text){
+    const regexp = /\b(https?:\/\/\S+(?:png|jpe?g|gif)\S*)\b/ig;
+    const replace = "<img class='comment_image' src='$1'>";
+    return plain_text.replace(regexp, replace);
 }
