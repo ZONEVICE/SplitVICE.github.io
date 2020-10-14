@@ -154,6 +154,10 @@ function error_503_message() {
 // Finds image links inside plain-text strings and adds <img> tag.
 function imageFinderAndReplace(plain_text){
     const regexp = /\b(https?:\/\/\S+(?:png|jpe?g|gif)\S*)\b/ig;
-    const replace = "<img class='comment_image' src='$1'>";
+    const replace = `
+    <a target='_black' href='$1'>
+        <img class='comment_image' src='$1'>
+    </a>
+    `;
     return plain_text.replace(regexp, replace);
 }
