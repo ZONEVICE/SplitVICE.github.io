@@ -9,7 +9,7 @@
 const inputText_newComment = document.getElementById("inputText_newComment");
 const btn_newComment = document.getElementById("btn_newComment");
 const comments = document.getElementById("comments");
-const API_Connection_Token = "13c4ae8e38567da5981106230513aecb5ae05f533c15015c0cad15f675675ef05ce8cb";
+const API_Connection_Token = "3a37462bcc2b6fec5119f08cdc36d17a33f01246aabee8d7eb2ba81404b14499d28293";
 const url = "https://online-notes-vice.herokuapp.com"; // Heroku gives free HTTPS SSL service.
 
 // ------------------------------------------------------------------------------
@@ -34,7 +34,17 @@ function fetch_comments() {
         })
         .then(function (response) {
             let obj = JSON.parse(response);
-            render_comments(obj);
+            if (!obj["status"]) { // No errors nor warnings.
+                render_comments(obj); 
+            } else {
+                if(obj["status"] == "failed"){ // An error has occurred.
+                    console.log(obj);
+                    error_switch(obj);
+                }else{ // Warning.
+                    console.log(obj);
+                    render_comments(obj); 
+                }
+            }
         })
         .catch(function (err) {
             console.error(err);
@@ -44,10 +54,9 @@ function fetch_comments() {
 
 function render_comments(comments_input) {
     if (comments_input["status"] == "warning") {
-        console.log("Status: warning");
         if (comments_input["description"] == "user does not have private notes") {
             comments.innerHTML = `
-            There are no comments registered.
+            No comments yet.
             `;
         }
     } else { // There are comments.
@@ -101,7 +110,8 @@ function publish_comment(inputText_newComment_value) {
                 inputText_newComment.value = "";
                 message_posted_alert();
             } else {
-                alert("An error has occurred. Please, report at Send a Message section.");
+                console.log(response);
+                error_switch(response);
             }
         });
 }
@@ -139,12 +149,38 @@ function no_comment_written_alert() {
 // ==============================================================================
 // Error notification functions.
 
+function error_switch(error){
+    if(error["description"] == "read permission disallowed"){
+        comments_are_disabled();
+    }else if(error["description"] == "publish permission disallowed"){
+        to_comment_disabled();
+    }else{
+        error_503_message();
+    }
+}
+
 function error_503_message() {
     comments.innerHTML = `
     <div class="alert alert-danger" role="alert">
-        Error 503 - Server error. <a href="../send-message">Report error here.</a>
+        Error 503 - Server error. <a href="../send-message">Please, report error here.</a>
     </div>
     `;
+}
+
+function comments_are_disabled(){
+    comments.innerHTML = `
+    <div class="alert alert-warning" role="alert">
+        Reading comments is currently disabled.
+    </div>
+    `;
+}
+
+function to_comment_disabled(){
+    Swal.fire({ // Modal showing no message was written.
+        icon: 'error',
+        title: 'Comments are disabled',
+        text: 'Sorry! Comments right now are disabled!'
+    })
 }
 
 // ==============================================================================
@@ -152,7 +188,7 @@ function error_503_message() {
 // Regex functions.
 
 // Finds image links inside plain-text strings and adds <img> tag.
-function imageFinderAndReplace(plain_text){
+function imageFinderAndReplace(plain_text) {
     const regexp = /\b(https?:\/\/\S+(?:png|jpe?g|gif)\S*)\b/ig;
     const replace = `
     <a target='_black' href='$1'>
