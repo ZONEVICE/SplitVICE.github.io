@@ -93,19 +93,23 @@
                     Notifications won't be sent to me.
                     <br>
                     Comments can be wiped at any time.
+                    <br>
+                    Comments are 100% anonymous.
                 </div>
             </div>
             <hr>
-            <textarea id="inputText_newComment" rows="3" placeholder="Your comment here."></textarea>
-            <br>
-            <button id="btn_newComment" class="btn btn-primary btn-block" type="button">Publish comment</button>
-            <hr>
-            <div class="h3">Comments list:</div>
-            <div id="comments">
-                <div class="spinner-border text-danger" role="status">
-                    <span class="sr-only">Loading...</span>
+            <div id="CommentsArea">
+                <textarea id="TextArea_newComment" rows="3" placeholder="Your comment here."></textarea>
+                <br>
+                <button id="btn_PostNewComment" class="btn btn-primary btn-block" type="button">Post comment</button>
+                <hr>
+                <div class="h6">Comments</div>
+                <div id="CommentsList">
+                    <div class="spinner-border text-danger" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    Loading comments, please wait up to 10 seconds...
                 </div>
-                Loading comments, please wait up to 10 seconds...
             </div>
         </div>
     </div>
@@ -123,7 +127,7 @@
         load_aside();
         load_messageToAllPages();
     </script>
-    <script src="script.js"></script>
+    <script src="OnlineNotesComments.js"></script>
     <script>fetch_comments();</script>
 </body>
 
