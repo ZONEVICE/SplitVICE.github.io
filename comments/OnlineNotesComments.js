@@ -55,13 +55,14 @@ function render_comments(comments_input) {
         CommentsList.innerHTML = `No comments yet.`;
     else {
         CommentsList.innerHTML = "";
+        let temporalComment = "";
         array_length = comments_input.length;
         for (let i = array_length; i > 0; i--) {
+            temporalComment = linkify(comments_input[i - 1]["description"]);
             CommentsList.innerHTML += `
                 <div class="alert alert-secondary comment" role="alert">
-                    ${imageFinderAndReplace(comments_input[i - 1]["description"])}
-                </div>
-                `;
+                    ${temporalComment}
+                </div>`;
         }
     }
 }
@@ -201,9 +202,35 @@ function no_comment_written_alert() {
 function imageFinderAndReplace(plain_text) {
     const regexp = /\b(https?:\/\/\S+(?:png|jpe?g|gif)\S*)\b/ig;
     const replace = `
-    <a target='_black' href='$1'>
+    <a target='_blank' href='$1'>
         <img class='comment_image' src='$1'>
     </a>
     `;
     return plain_text.replace(regexp, replace);
+}
+
+// Reads plain-text string. Checks for links and images. Returns <a> and <img> tags arround 
+// plain-text input if required.
+function linkify(inputText) {
+    // Source: https://stackoverflow.com/questions/49634850/javascript-convert-plain-text-links-to-clickable-links
+    // Version 1.0
+    var replacedText, replacePattern1, replacePattern2, replacePattern3, replacePattern4;
+
+    //URLs starting with http://, https://, or ftp://
+    replacePattern1 = /(\b(https?|ftp):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/gim;
+    replacedText = inputText.replace(replacePattern1, '<a href="$1" target="_blank">$1</a>');
+
+    //URLs starting with "www." (without // before it, or it'd re-link the ones done above).
+    replacePattern2 = /(^|[^\/])(www\.[\S]+(\b|$))/gim;
+    replacedText = replacedText.replace(replacePattern2, '$1<a href="http://$2" target="_blank">$2</a>');
+
+    //Change email addresses to mailto:: links.
+    replacePattern3 = /(([a-zA-Z0-9\-\_\.])+@[a-zA-Z\_]+?(\.[a-zA-Z]{2,6})+)/gim;
+    replacedText = replacedText.replace(replacePattern3, '<a href="mailto:$1">$1</a>');
+
+    //Change img addresses to <img> tag.
+	replacePattern4 = /(?<=>)(https?:\/\/\S+(?:png|jpe?g|gif)[^<]*)/g;
+    replacedText = replacedText.replace(replacePattern4, '<img src="$1" class="comment_image">');
+
+    return replacedText;
 }
