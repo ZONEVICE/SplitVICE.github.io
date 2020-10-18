@@ -1,5 +1,3 @@
-// This script is the responsible of sending the message.
-
 // ----------------------------------------------------------------------------------------
 // DOM elements capture.
 // ----------------------------------------------------------------------------------------
@@ -26,9 +24,9 @@ function submitForm_native() {
         "yourMessage": yourMessage.value,
         "messageType": messageType
     };
-    if (areThereAMessage(msg)) { // Checks if a message was written.
+    if (areThereAMessage(msg)) // Checks if a message was written.
         sendMessage(msg);
-    } else {
+    else {
         Swal.fire({ // Modal showing no message was written.
             icon: 'error',
             title: 'Invalid message',
@@ -59,9 +57,7 @@ function sendMessage(msg) {
     fetch(url, {
         method: 'POST',
         body: JSON.stringify(messageStructure), // data can be `string` or {object}!
-        headers: {
-            'Content-Type': 'application/json'
-        }
+        headers: { 'Content-Type': 'application/json' }
     }).then(res => res.json())
         .catch((error) => { // If error occurred, message is displayed notifying so.
             console.error('Error:', error)
@@ -73,8 +69,7 @@ function sendMessage(msg) {
                 Here's the message you wrote:
                 ${msg.messageType}${msg.contactInfo}${msg.yourMessage}
                 <br><br>
-                Please, try it again with the Wordpress form.<br>
-                If that does not work either, try reaching me on Twitter.
+                Please, try reaching me on <a href="../s/twitter">Twitter</a>.
                 `
             sendMessageForm_wordpress.style.display = "inline";
         })
@@ -95,31 +90,16 @@ function sendMessage(msg) {
 
 // Returns string of type of message selected.
 function getMessageType() {
-    if (op1.checked) {
-        return "Friendly or hate message";
-    }
-    if (op2.checked) {
-        return "Question";
-    }
-    if (op3.checked) {
-        return "Error report";
-    }
-    if (op4.checked) {
-        return "Suggestion";
-    }
-    if (op5.checked) {
-        return "Commission or business enquiries";
-    }
-    if (op6.checked) {
-        return "Other";
-    }
+    if (op1.checked) return "Friendly or hate message";
+    if (op2.checked) return "Question";
+    if (op3.checked) return "Error report";
+    if (op4.checked) return "Suggestion";
+    if (op5.checked) return "Commission or business enquiries";
+    if (op6.checked) return "Other";
     return "Not defined.";
 }
 
 // Checks if user has written a message.
 function areThereAMessage(msg) {
-    if (msg.yourMessage != "") {
-        return true;
-    }
-    return false;
+    if (msg.yourMessage != "") return true; else return false;
 }
