@@ -198,17 +198,6 @@ function no_comment_written_alert() {
 // ==============================================================================
 // Programmability functions.
 
-// Finds image links inside plain-text strings and adds <img> tag.
-function imageFinderAndReplace(plain_text) {
-    const regexp = /\b(https?:\/\/\S+(?:png|jpe?g|gif)\S*)\b/ig;
-    const replace = `
-    <a target='_blank' href='$1'>
-        <img class='comment_image' src='$1'>
-    </a>
-    `;
-    return plain_text.replace(regexp, replace);
-}
-
 // Reads plain-text string. Checks for links and images. Returns <a> and <img> tags arround 
 // plain-text input if required.
 function linkify(inputText) {
