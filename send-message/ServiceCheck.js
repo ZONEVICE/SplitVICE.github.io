@@ -10,7 +10,7 @@ const submit_btn = document.getElementById("submit_btn");
 // ----------------------------------------------------------------------------------------
 // Functions
 // ----------------------------------------------------------------------------------------
-// Checks if the mail backend is up. If so, shows the form to send the message.
+// Checks if the mail backend is up. If so, enables button to send messages.
 function checkBackendStatus() {
     const url = "https://vicemailer.herokuapp.com/sendemail";
 
