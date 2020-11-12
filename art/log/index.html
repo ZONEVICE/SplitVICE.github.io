@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- HTML5 coding protocol -->
+    <meta charset="utf-8">
+
+    <!-- Responsive tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Sets a color to the address bar on mobile browsers. -->
+    <meta name="theme-color" content="#bd0058" />
+
+    <!-- Bootstrap and JQuery imports -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- Default scripts and styles imports -->
+    <link rel="stylesheet" href="/public/css/style.css">
+    <script src="/public/script/aside_script.js"></script>
+    <script src="/public/script/load_htmlViews.js"></script>
+    <script src="/public/script/ajax.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./OnlineNotesComments.css">
+
+    <!-- sweetalert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <!-- Browser tab icon -->
+    <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
+
+    <!-- Browser tab title -->
+    <title>JUST VICE</title>
+</head>
+
+<body>
+
+    <header>
+        <div id="header_content_id">
+        </div>
+    </header>
+
+    <div class="customContainer">
+
+        <aside id="aside_id">
+            <div id="aside_content_id">
+            </div>
+        </aside>
+
+        <div class="mainContent">
+
+            <div class="breadCrumb">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Art</li>
+                        <li class="breadcrumb-item active" aria-current="page">Log</li>
+                    </ol>
+                </nav>
+            </div>
+
+            <div id="message_to_all_pages_content_id">
+            </div>
+
+            <div class="h1" style="text-align: center;">Art log</div>
+            <hr>
+            <div class="h5">My art log</div>
+            <div>
+                A complete log of the art I have posted on the Internet publicly.
+            </div>
+            <ul>
+                <li>
+                    Date format: Year-Month-Day
+                </li>
+                <li>
+                    Broken link? <a href="../../send-message/">report here.</a>
+                </li>
+                <li>
+                    There is a comments section at the <a href="#CommentsArea">bottom.</a>
+                </li>
+                <li>
+                    There is music that can be played labeled under each year. It represents a song signature of my mood
+                    when drawing each year.
+                </li>
+                <!-- <li>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="checkbox_PlayMusicAutomatically">
+                        <label class="form-check-label" for="checkbox_PlayMusicAutomatically">Play music automatically</label>
+                    </div>
+                </li> -->
+            </ul>
+            <div class="h5">How to download full resolution images</div>
+            <ul>
+                <li>Copy interested art's ID.</li>
+                <li>Go to my Mega folder <a target="_blank" href="../../nsfw-alert-mf/">here.</a></li>
+                <li>Use Mega's search tool to paste the ID.</li>
+                <li>Download.</li>
+                <li>Small tutorial <a target="_blank"
+                        href="https://dl.dropboxusercontent.com/s/mx2kevywwesywap/Art%20Log%20-%20Download%20using%20ID%20tutorial.mp4?dl=0https://www.dropbox.com/s/mx2kevywwesywap/Art%20Log%20-%20Download%20using%20ID%20tutorial.mp4?dl=0">here.</a>
+                </li>
+            </ul>
+            <div class="h6">Fast navigation</div>
+            <ul>
+                <li>
+                    <a href="#_2020_title">2020</a>
+                    <a href="#_2019_title">2019</a>
+                    <a href="#_2018_title">2018</a>
+                </li>
+            </ul>
+            <hr>
+            <div id="_2020_title" class="text-center">
+                <img class="img-fluid" src="https://dl.dropboxusercontent.com/s/ywpdb8z2oxbxzpd/2020.png?dl=0"
+                    alt="Missing demo image!">
+                <br>
+                <button id="btn_player0" class="btn btn-success btn-sm" type="button" onclick="video_controller(0)">Play
+                    music</button>
+                <br>
+                <a href="https://youtu.be/Y_PCjw5WKpo" target="_blank" class="MusicSource text-muted">Source</a>
+                <br>
+                <br>
+            </div>
+
+            <div id="_2020" class="table-responsive TableVice"></div>
+
+            <div id="_2019_title" class="text-center">
+                <img class="img-fluid" src="https://dl.dropboxusercontent.com/s/1ty8kf7bef1y6tq/2019.png?dl=0"
+                    alt="Missing demo image!">
+                <br>
+                <button id="btn_player1" class="btn btn-success btn-sm" type="button" onclick="video_controller(1)">Play
+                    music</button>
+                <br>
+                <a href="https://youtu.be/7AqTB30d-Mc" target="_blank" class="MusicSource text-muted">Source</a>
+            </div>
+
+            <div id="_2019" class="table-responsive TableVice"></div>
+
+            <div id="_2018_title" class="text-center">
+                <img class="img-fluid" src="https://dl.dropboxusercontent.com/s/h96qznziar5nllr/2018.png?dl=0"
+                    alt="Missing demo image!">
+                <br>
+                <button id="btn_player2" class="btn btn-success btn-sm" type="button" onclick="video_controller(2)">Play
+                    music</button>
+                <br>
+                <a href="https://youtu.be/-rIfNR2DDt4" target="_blank" class="MusicSource text-muted">Source</a>
+            </div>
+
+            <div id="_2018" class="table-responsive TableVice"></div>
+
+            <br>
+            <div class="h4">Comments</div><br>
+
+            <div id="CommentsArea">
+                <textarea id="TextArea_newComment" rows="3" placeholder="Your comment here."
+                    class="comment_textArea"></textarea>
+                <br>
+                <button id="btn_PostNewComment" class="btn btn-primary btn-block" type="button">Post comment</button>
+                <hr>
+                <div class="h6">Comments</div>
+                <div id="CommentsList">
+                    <div class="spinner-border text-danger" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    Loading comments, please wait up to 10 seconds...
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="player_2020"></div>
+    <div id="player_2019"></div>
+    <div id="player_2018"></div>
+
+    <footer>
+        <div id="footer_content_id">
+
+        </div>
+    </footer>
+
+    <script>
+        load_header();
+        load_footer();
+        load_aside();
+        load_messageToAllPages();
+    </script>
+    <script src="registries.js"></script>
+    <script src="script.js"></script>
+    <script src="OnlineNotesComments.js"></script>
+    <script>fetch_comments();</script>
+    <script src="music.js"></script>
+</body>
+
+</html>
