@@ -1,0 +1,1 @@
+const serverHost = 'https://justvice-github-io-backend.herokuapp.com';

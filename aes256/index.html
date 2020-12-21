@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- HTML5 coding protocol -->
+    <meta charset="utf-8">
+
+    <!-- Responsive tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Sets a color to the address bar on mobile browsers. -->
+    <meta name="theme-color" content="#bd0058" />
+
+    <!-- Bootstrap and JQuery imports -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- Default scripts and styles imports -->
+    <link rel="stylesheet" href="/public/css/style.css">
+    <script src="/public/script/aside_script.js"></script>
+    <script src="/public/script/load_htmlViews.js"></script>
+    <script src="/public/script/ajax.js"></script>
+
+    <!-- sweetalert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <!-- Browser tab icon -->
+    <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
+
+    <!-- Browser tab title -->
+    <title>JUST VICE</title>
+</head>
+
+<body>
+
+    <header>
+        <div id="header_content_id">
+        </div>
+    </header>
+
+    <div class="customContainer">
+
+        <aside id="aside_id">
+            <div id="aside_content_id">
+            </div>
+        </aside>
+
+        <div class="mainContent">
+
+            <div class="breadCrumb">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">AES256</li>
+                    </ol>
+                </nav>
+            </div>
+
+            <div id="message_to_all_pages_content_id">
+            </div>
+
+            <div class="h2" style="text-align: center;">AES256 Service</div>
+            <hr>
+            <div class="h5">Encrypt and decrypt text</div>
+            Encrypt text strings with a password key given by you. Come again anytime to decrypt your encrypted text
+            with the same password key given.
+            <br><br>
+            <div class="h6">About</div>
+            <ul>
+                <li>All information given to encrypt is not stored.</li>
+                <li>Information is send through secure HTTPS channel.</li>
+            </ul>
+            <br>
+
+            <div id="aes256Content">
+
+                <input class="form-control" type="text" name="key" id="key" placeholder="Password key">
+                <br>
+
+                <div class="row">
+
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                        <textarea class="form-control" name="input_encode" id="input_1" cols="47" rows="6"
+                            placeholder="Paste text to encode."></textarea>
+                        <button id="btn_input1" class="btn btn-light">Text encrypt</button>
+                        <button id="btn_input1_copyClipboard" class="btn btn-light">Copy to clipboard</button>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                        <textarea class="form-control" name="input_encode" id="input_2" cols="47" rows="6"
+                            placeholder="Paste text to decode."></textarea>
+                        <button id="btn_input2" class="btn btn-light" style="float:right;">Text decrypt</button>
+                        <button id="btn_input2_copyClipboard" class="btn btn-light" style="float:right;">Copy to
+                            clipboard</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="h6">Troubleshooting</div>
+            <p>
+                If the decoded result is not readable, it means password key is not valid.
+            </p>
+
+            <div class="h6">Credits</div>
+            <a href="https://www.npmjs.com/package/aes256" target="_blank">AES256 NPM module</a>
+
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer_content_id">
+
+        </div>
+    </footer>
+
+    <script>
+        load_header();
+        load_footer();
+        load_aside();
+        load_messageToAllPages();
+    </script>
+    <script src="../public/script/global.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

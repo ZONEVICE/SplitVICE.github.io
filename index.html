@@ -134,6 +134,13 @@
                         Post any comments anonymously on a board that can be read by anyone who visits the section.
                     </span>
                 </li>
+                <li>
+                    <a href="/aes256/">AES256 text encryption</a>
+                    <br>
+                    <span>
+                        Want to encrypt some text? It's your lucky day fella. Click above.
+                    </span>
+                </li>
             </ul>
             <hr>
 
@@ -233,8 +240,34 @@
         load_aside();
         load_messageToAllPages();
     </script>
+    <script src="./public/script/global.js"></script>
+    <script>
+        async function checkServiceUp() {
+            try {
+                let request = await fetch(serverHost + "/api/isup", {
+                    method: 'GET',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    }
+                });
 
-
+                // Awakes the lazy server. Comments below? To lazy to fix uwu.
+                let response = await request.json();
+                if (response.status == "up")
+                    console.log("Backend server: OK");
+                /*} else {
+                    serviceNotAvailable_renderHTMLError();
+                } */
+            } catch (error) {
+                /* if (error == "TypeError: Failed to fetch") {
+                    console.log("Server unreachable");
+                    serviceNotAvailable_renderHTMLError();
+                } */
+            }
+        }
+        checkServiceUp();
+    </script>
 </body>
 
 </html>
