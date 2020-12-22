@@ -33,21 +33,19 @@ const comOpen_content = `
 // ------------------------------------------------------------------------------------
 // Loads current commission status. Sets content depending of result.
 // ------------------------------------------------------------------------------------
-function load_content() {
-    fetch(url).then(function (response) {
-        return response.text();
-    })
-        .then(function (response) {
-            if (response == "open") {
-                commission_status.innerHTML = comOpen_content;
-            } else {
-                commission_status.innerHTML = comClosed_content;
-            }
-        })
-        .catch(function (err) {
-            console.error(err);
-        });
+async function loadStatus() {
+    let request = await fetch(serverHost + "/api/pagesettings", {
+        method: 'GET',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        }
+    });
+    let response = await request.json();
+    if (response[0].Settings.artCommissionStatus)
+        commission_status.innerHTML = comOpen_content;
+    else
+        commission_status.innerHTML = comClosed_content;
 }
 
-// Call of function.
-load_content();
+loadStatus();
