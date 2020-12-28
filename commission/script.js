@@ -1,39 +1,86 @@
 // ------------------------------------------------------------------------------------
 // Commission status origin and div tag capture.
 // ------------------------------------------------------------------------------------
-const url = "https://gist.githubusercontent.com/JustVice/bf4ac34de3694ba401daadcb9756ac57/raw/artcomstatus.txt";
-const commission_status = document.getElementById("commission_status"); // Div tag id.
+const art_commission_status = document.getElementById("art_commission_status");
+const software_commission_status_ = document.getElementById("software_commission_status_");
+
+/**
+ * Main.
+ */
+loadCommissionStatus();
 
 // ------------------------------------------------------------------------------------
-// Content to show depending of commission's status.
+// HTML content rendering.
 // ------------------------------------------------------------------------------------
-const comClosed_content = `
-    <div class="center h1">
-        Commissions status: <span style="color:red;">CLOSED</span>
+
+/**
+ * Art Commission content.
+ */
+const artCommissionOpen_content = `
+    <div class="h3">
+        Art Commission: <span style="color:green;">Open</span>
     </div>
-    <p class="center">
-        At this moment <b>I am not accepting commissions</b>
+    <p>
+    At this moment I'm accepting art commissions.
+    <br>
+    Won't draw list included in the Commission form.
+    <ul>
+        <li><a target="_blank" href="../s/art-commission-contract">Terms of Service</a></li>
+        <li><a target="_blank" href="../s/art-commission-form">Commission form</a></li>
+    </ul>
+    </p>
+`;
+const artCommissionClosed_content = `
+    <div class="h3">
+        Art Commissions: <span style="color:red;">Closed</span>
+    </div>
+    <p>
+        At this moment <b>I am not accepting art commissions.</b>
         <br>
-        However, you can still see the instructions, terms of service, and contract versions by <a href="art/">clicking here.</a>
-        <br>
-        <br>
-        <b>You can still commission me if you are willing to pay extras.</b>
+        However, you can still commission me <b>if you are willing to pay extras</b> by filling the commission form.
+        <br><br>
+        Won't draw list included in the Commission form.
+        <ul>
+        <li><a target="_blank" href="../s/art-commission-contract">Terms of Service</a></li>
+        <li><a target="_blank" href="../s/art-commission-form">Commission form</a></li>
+        </ul>
     </p>
 `;
 
-const comOpen_content = `
-    <div class="center h1">
-        Commissions status: <span style="color:lightgreen;">open</span>
+/**
+ * Software Commission content.
+ */
+const softwareCommissionClosed_content = `
+    <div class="h3">
+        Software Commissions: <span style="color:red;">Closed</span>
     </div>
-    <p class="center">
-        At this moment I am accepting <b>art commissions</b>. <a href="art/">Click here</a> to see the instructions, terms of service, and the commission form.
+    <p>
+    At this moment <b>I am not accepting software commissions.</b>
+    <br>
+    However, you can still commission me <b>if you are willing to pay extras</b> by filling the commission form.
+    <ul>
+        <li><a target="_blank" href="../s/software-commission-contract">Terms of Service</a></li>
+        <li><a target="_blank" href="../s/software-commission-form">Commission form</a></li>
+    </ul>
+    </p>
+`;
+const softwareCommissionOpen_content = `
+    <div class="h3">
+        Software Commission: <span style="color:green;">Open</span>
+    </div>
+    <p>
+        At this moment I'm accepting software commissions.
+        <ul>
+            <li><a target="_blank" href="../s/software-commission-contract">Terms of Service</a></li>
+            <li><a target="_blank" href="../s/software-commission-form">Commission form</a></li>
+        </ul>
     </p>
 `;
 
 // ------------------------------------------------------------------------------------
-// Loads current commission status. Sets content depending of result.
+// Loads current commission status (both kinds of commission). Sets content depending of result.
 // ------------------------------------------------------------------------------------
-async function loadStatus() {
+async function loadCommissionStatus() {
     let request = await fetch(serverHost + "/api/pagesettings", {
         method: 'GET',
         headers: {
@@ -43,9 +90,12 @@ async function loadStatus() {
     });
     let response = await request.json();
     if (response[0].Settings.artCommissionStatus)
-        commission_status.innerHTML = comOpen_content;
+        art_commission_status.innerHTML = artCommissionOpen_content;
     else
-        commission_status.innerHTML = comClosed_content;
-}
+        art_commission_status.innerHTML = artCommissionClosed_content;
 
-loadStatus();
+    if (response[0].Settings.softwareCommissionStatus)
+        software_commission_status_.innerHTML = softwareCommissionOpen_content;
+    else
+        software_commission_status_.innerHTML = softwareCommissionClosed_content;
+}
