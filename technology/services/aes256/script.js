@@ -1,3 +1,8 @@
+/**
+ * ==================================================================================
+ * DOM elements capture.
+ * ==================================================================================
+ */
 const input_1 = document.getElementById("input_1");
 const input_2 = document.getElementById("input_2");
 const key = document.getElementById("key");
@@ -7,7 +12,10 @@ const btn_input1_copyClipboard = document.getElementById("btn_input1_copyClipboa
 const btn_input2_copyClipboard = document.getElementById("btn_input2_copyClipboard");
 const aes256Content = document.getElementById("aes256Content");
 
-// Main
+/**
+ * ==================================================================================
+ * MAIN
+ */
 checkServiceUp();
 
 // Checks if backend service is up.
@@ -35,7 +43,15 @@ async function checkServiceUp() {
     }
 }
 
-// Buttons click handling.
+/**
+ * ==================================================================================
+ */
+
+/**
+ * ==================================================================================
+ * Event listener declarations.
+ * ==================================================================================
+ */
 btn_input1.addEventListener("click", () => {
     if (checkRequiresParams_ToEncrypt())
         encrypt();
@@ -56,6 +72,10 @@ btn_input2_copyClipboard.addEventListener("click", () => {
         copy_text_to_clipboard(input_2.value);
 });
 
+/**
+ * ==================================================================================
+ * Logic
+ */
 async function encrypt() {
     try {
         const request = await fetch(serverHost + "/api/aes256service/encrypt", {
@@ -101,7 +121,11 @@ async function decrypt() {
     }
 }
 
-// Checks if all parameters where given.
+/**
+ * ==================================================================================
+ * Helper functions.
+ */
+
 function checkRequiresParams_ToEncrypt() {
     return input_1.value != "" && key.value != ""
 }
@@ -110,6 +134,10 @@ function checkRequiresParams_ToDecrypt() {
     return input_2.value != "" && key.value != ""
 }
 
+/**
+ * Copies into user's clipboard text.
+ * @param { String } text_to_copy The text to copy into user's clipboard.
+ */
 function copy_text_to_clipboard(text_to_copy) {
     var dummy = document.createElement("textarea");
     document.body.appendChild(dummy);
@@ -119,6 +147,11 @@ function copy_text_to_clipboard(text_to_copy) {
     document.body.removeChild(dummy);
     message_posted_alert();
 }
+
+/**
+ * ==================================================================================
+ * --- SweetAlert 2 functions.
+ */
 
 // Shows a message alert when copy to clipboard button was pressed.
 function message_posted_alert() {
@@ -140,10 +173,14 @@ function message_posted_alert() {
     })
 }
 
+/**
+ * ==================================================================================
+ * Displayable error functions
+ */
+
 // If service is not available, error is rendered in HTML.
 function serviceNotAvailable_renderHTMLError() {
-    aes256Content.innerHTML =
-        `
+    aes256Content.innerHTML = `
     <div class="alert alert-danger" role="alert">
         Error 503 - Service unavailable. Sorry about that! Report here: <a href="../../../send-message">Send a message</a>
     </div>
