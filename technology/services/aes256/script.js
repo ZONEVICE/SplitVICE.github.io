@@ -24,11 +24,11 @@ async function checkServiceUp() {
         let response = await request.json();
         if (response.status == "up") {
             console.log("Server OK");
-        }else{
+        } else {
             serviceNotAvailable_renderHTMLError();
         }
     } catch (error) {
-        if(error == "TypeError: Failed to fetch"){
+        if (error == "TypeError: Failed to fetch") {
             console.log("Server unreachable");
             serviceNotAvailable_renderHTMLError();
         }
@@ -57,40 +57,48 @@ btn_input2_copyClipboard.addEventListener("click", () => {
 });
 
 async function encrypt() {
-    const request = await fetch(serverHost + "/api/aes256service/encrypt", {
-        method: 'POST',
-        headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(
-            {
-                key: key.value,
-                plaintext: input_1.value
-            }
-        )
-    });
-    const response = await request.json();
-    input_2.value = response;
+    try {
+        const request = await fetch(serverHost + "/api/aes256service/encrypt", {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(
+                {
+                    key: key.value,
+                    plaintext: input_1.value
+                }
+            )
+        });
+        const response = await request.json();
+        input_2.value = response;
+    } catch (error) {
+        serviceNotAvailable_renderHTMLError();
+    }
 }
 
 async function decrypt() {
-    const request = await fetch(serverHost + "/api/aes256service/decrypt", {
-        method: 'POST',
-        headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(
-            {
-                key: key.value,
-                plaintext: input_2.value
-            }
-        )
-    });
-    const response = await request.json();
-    console.log(response)
-    input_1.value = response;
+    try {
+        const request = await fetch(serverHost + "/api/aes256service/decrypt", {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(
+                {
+                    key: key.value,
+                    plaintext: input_2.value
+                }
+            )
+        });
+        const response = await request.json();
+        console.log(response)
+        input_1.value = response;
+    } catch (error) {
+        serviceNotAvailable_renderHTMLError();
+    }
 }
 
 // Checks if all parameters where given.
@@ -133,11 +141,11 @@ function message_posted_alert() {
 }
 
 // If service is not available, error is rendered in HTML.
-function serviceNotAvailable_renderHTMLError(){
-    aes256Content.innerHTML = 
-    `
+function serviceNotAvailable_renderHTMLError() {
+    aes256Content.innerHTML =
+        `
     <div class="alert alert-danger" role="alert">
-        Error 503 - Service unavailable. Sorry about that! Report here: <a href="../send-message/">Send a message</a>
+        Error 503 - Service unavailable. Sorry about that! Report here: <a href="../../../send-message">Send a message</a>
     </div>
     `;
 }
