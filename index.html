@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-
 <!--    ------------------
       /                    \
     /                        \
   /     - - - -      - - - -   \
 /      /        \   /        \  \
 |     |         |  |         |   |
-|     |         |  |         |   | 
+|     |         |  |         |   |
 |       - - - -      - - - -     |
 |      - -                - -    |
 |    |     |            |     |  |
@@ -15,20 +14,18 @@
     \           - -          /
       \--------------------/ VICE.
     Hey there, hope you are having a nice day! :>-->
-
 <html lang="en">
 
 <head>
-    <!-- HTML5 coding protocole -->
     <meta charset="utf-8">
-
-    <!-- Responsive tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Sets a color to adress bar on mobile browsers. -->
     <meta name="theme-color" content="#bd0058" />
-
-    <!-- Bootstrap and JQuery imports -->
+    <meta name="author" content="JUSTVICE">
+    <meta name="description"
+        content="Just VICE web page. N/SFW digital artist and computer engineer.">
+        <meta name="keywords" content="justvice, vice, just vice, art, coding">
+    <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
+    <title>JUST VICE</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -40,41 +37,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
-    <!-- Scrips and styles imports -->
     <link rel="stylesheet" href="/public/css/style.css">
     <script src="/public/script/aside_script.js"></script>
     <script src="/public/script/load_htmlViews.js"></script>
     <script src="/public/script/ajax.js"></script>
-
-    <!-- Browser tab icon -->
-    <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
-
-    <!-- Browser tab title -->
-    <title>JUST VICE</title>
-
 </head>
-
-<!-- Personalized style for just this page -->
-<style>
-    .navigatorUl a {
-        font-size: 21px;
-    }
-
-    .navigatorUl span {
-        padding-left: 25px;
-        font-size: 14.7px;
-        color: rgb(163, 163, 163);
-    }
-
-    .mainContentInfoTitleBlock {
-        text-align: center;
-    }
-</style>
 
 <body>
 
-    <!-- Header section -->
     <header>
         <a href="/">
             <img class="headerImage" src="/public/img/header-image.png" alt="missing logo!">
@@ -85,19 +55,15 @@
         </a>
     </header>
 
-    <!-- Custom container contains all the HTML content after the header -->
     <div class="customContainer">
 
-        <!-- Aside of the page which works as the navigator  -->
         <aside id="aside_id">
             <div id="aside_content_id">
             </div>
         </aside>
 
-        <!-- Current page's main content -->
         <div class="mainContent">
 
-            <!-- Breadcrumb -->
             <div class="breadCrumb">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
@@ -106,14 +72,12 @@
                 </nav>
             </div>
 
-            <!-- Message to all pages container -->
             <div id="message_to_all_pages_content_id">
 
             </div>
 
             <h1 style="text-align: center;">VICE's Archive</h1>
 
-            <!-- Home content -->
             <ul class="navigatorUl">
                 <li>
                     <a href="/links/">Content links</a>
@@ -137,8 +101,7 @@
             </ul>
             <hr>
 
-            <!-- Art section -->
-            <h3 class="mainContentInfoTitleBlock">Art</h3>
+            <div class="mainContentInfoTitleBlock h3">Art</div>
             <p>
                 My art has been <span class="textBold">considered cursed/scary</span> from different sources (SFW and
                 NSFW).
@@ -174,8 +137,7 @@
             </ul>
             <hr>
 
-            <!-- Technology section -->
-            <h3 class="mainContentInfoTitleBlock">Technology</h3>
+            <div class="mainContentInfoTitleBlock h3">Technology</div>
             <p>
                 I like to code and sharing is living so here you go.
                 <br> Collection of programs I made for either practice, personal use, fun or all of the above.
@@ -202,8 +164,7 @@
             </ul>
             <hr>
 
-            <!-- Miscellaneous section -->
-            <h3 class="mainContentInfoTitleBlock">Miscellaneous</h3>
+            <div class="mainContentInfoTitleBlock h3">Miscellaneous</div>
             <p>
                 Varied information or pages not related to art or technology somewhat worthy to be shown in this
                 website.
@@ -240,15 +201,13 @@
         </div>
     </footer>
 
-    <!-- Scripts that load all the static HTML -->
+    <script src="./public/script/global.js"></script>
     <script>
         load_footer();
         load_aside();
         load_messageToAllPages();
-    </script>
-    <script src="./public/script/global.js"></script>
-    <script>
-        async function checkServiceUp() {
+
+        async function checkBackendStatus() {
             try {
                 let request = await fetch(serverHost + "/api/isup", {
                     method: 'GET',
@@ -257,23 +216,33 @@
                         'Content-Type': 'application/json'
                     }
                 });
-
-                // Awakes the lazy server. Comments below? To lazy to fix uwu.
                 let response = await request.json();
                 if (response.status == "up")
                     console.log("Backend server: OK");
-                /*} else {
-                    serviceNotAvailable_renderHTMLError();
-                } */
+                else
+                    console.error('Server unreachable');
             } catch (error) {
-                /* if (error == "TypeError: Failed to fetch") {
-                    console.log("Server unreachable");
-                    serviceNotAvailable_renderHTMLError();
-                } */
+                console.error(error);
             }
         }
-        checkServiceUp();
+        checkBackendStatus();
     </script>
+
+    <style>
+        .navigatorUl a {
+            font-size: 21px;
+        }
+
+        .navigatorUl span {
+            padding-left: 25px;
+            font-size: 14.7px;
+            color: rgb(163, 163, 163);
+        }
+
+        .mainContentInfoTitleBlock {
+            text-align: center;
+        }
+    </style>
 </body>
 
 </html>
