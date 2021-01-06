@@ -21,10 +21,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#bd0058" />
     <meta name="author" content="JUSTVICE">
-    <meta name="description"
-        content="Just VICE web page. N/SFW digital artist and computer engineer.">
-        <meta name="keywords" content="justvice, vice, just vice, art, coding">
     <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
+    <meta property="og:title" content="JUST VICE" />
+    <meta property="og:url" content="https://justvice.github.io/" />
+    <meta property="og:image" content="/public/img/favicon.png" />
+    <meta property="twitter:site" content="@_justvice">
+    <meta name="description" content="Just VICE web page. N/SFW digital artist and computer engineer.">
+    <meta name="keywords" content="justvice, vice, just vice, art, coding">
     <title>JUST VICE</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -209,14 +212,14 @@
 
         async function checkBackendStatus() {
             try {
-                let request = await fetch(serverHost + "/api/isup", {
+                const request = await fetch(serverHost + "/api/isup", {
                     method: 'GET',
                     headers: {
                         'Accept': 'application/json',
                         'Content-Type': 'application/json'
                     }
                 });
-                let response = await request.json();
+                const response = await request.json();
                 if (response.status == "up")
                     console.log("Backend server: OK");
                 else
