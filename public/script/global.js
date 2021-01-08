@@ -23,16 +23,26 @@ if (localStorage.getItem('darkmode')) { // Exists.
 
 // Checkbox control to toggle dark and light mode.
 let checkbox_darkmode = undefined;
-window.onload = () => {
-    checkbox_darkmode = document.getElementById('checkbox_darkmode');
-    const setCheckboxChecked = () => { // Sets checkbox checked or unchecked.
-        checkbox_darkmode.checked = localStorage.getItem('darkmode') == 'on' ? true : false;
-    };
-    setCheckboxChecked();
-    checkbox_darkmode.addEventListener('click', () => { // Event when checkbox is clicked.
-        toggleDarkMode();
+function loadCheckboxControl() {
+    try {
+        checkbox_darkmode = document.getElementById('checkbox_darkmode');
+        const setCheckboxChecked = () => { // Sets checkbox checked or unchecked.
+            checkbox_darkmode.checked = localStorage.getItem('darkmode') == 'on' ? true : false;
+        };
         setCheckboxChecked();
-    });
+        checkbox_darkmode.addEventListener('click', () => { // Event when checkbox is clicked.
+            toggleDarkMode();
+            setCheckboxChecked();
+        });
+    } catch (error) {
+        console.error(error);
+        setTimeout(() => {
+            loadCheckboxControl();
+        }, 500);
+    }
+}
+window.onload = () => {
+    loadCheckboxControl();
 }
 
 // ----------------------------------------------------------------------------------------
@@ -59,4 +69,3 @@ function setLight() {
 function setDark() {
     document.getElementById('pagestyle').setAttribute('href', '/public/css/style.darkmode.css');
 }
-
