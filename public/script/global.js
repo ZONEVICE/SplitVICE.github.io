@@ -35,7 +35,6 @@ function loadCheckboxControl() {
             setCheckboxChecked();
         });
     } catch (error) {
-        console.error(error);
         setTimeout(() => {
             loadCheckboxControl();
         }, 500);
