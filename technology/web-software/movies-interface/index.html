@@ -2,16 +2,19 @@
 <html lang="en">
 
 <head>
-    <!-- HTML5 coding protocole -->
+    <meta name="author" content="JUSTVICE">
+    <meta name="description"
+        content="Movies Interface by JustVice. Webserver to broadcast videos from your PC to your local network using an Apache server.">
+    <meta name="keywords" content="justvice, vice, just vice, art, coding, movies, movies interface">
+    <title>JUST VICE - Movies Interface</title>
+    <meta property="og:title" content="JUST VICE - Movies Interface" />
+    <meta property="og:url" content="https://just-vice.com/technology/web-software/movies-interface/" />
+    <meta property="og:image"
+        content="https://dl.dropboxusercontent.com/s/gbdnxcu8zzwnf2s/movies-interface-demo.png?dl=0" />
+    <meta property="twitter:site" content="@_justvice">
     <meta charset="utf-8">
-
-    <!-- Responsive tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Sets a color to adress bar on mobile browsers. -->
     <meta name="theme-color" content="#bd0058" />
-
-    <!-- Bootstrap and JQuery imports -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -23,22 +26,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
-    <!-- CSS and JS imports/templates -->
-    <!-- <link rel="stylesheet" href="XXXXXXXXX"> -->
-    <!-- <script src="XXXXXXX"></script> -->
-
-    <!-- DEFAULT ASSET IMPORTS -->
     <link id="pagestyle" rel="stylesheet" href="/public/css/style.css">
     <script src="/public/script/aside_script.js"></script>
     <script src="/public/script/load_htmlViews.js"></script>
     <script src="/public/script/ajax.js"></script>
-
-    <!-- Browser tab icon -->
     <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
-
-    <!-- Browser tab title -->
-    <title>JUST VICE</title>
     <script src="/public/script/global.js"></script>
 </head>
 
@@ -75,11 +67,13 @@
             <ul>
                 <li>Author: VICE</li>
                 <li>License: MIT</li>
-                <li>Latest version: 1.0.0</li>
-                <li>Programming language: PHP</li>
+                <li>Latest version: 1.1.0</li>
+                <li>Programming language: PHP backend. JavaScript Vanilla frontend.</li>
                 <li>Language: English</li>
                 <li>First release date: 2020/06/07</li>
+                <li>Last update: 2021 January 24</li>
             </ul>
+            <a href="#changelog" class="mx-4">Changelog</a>
             <hr>
             <h6>Program description</h6>
             <p>
@@ -97,15 +91,19 @@
             <p>
                 <b>Note</b>
                 <br>
-                Movies Interface uses integrated web player which means only the following formats are supported:
+                Movies Interface uses HTML5 web player which means only the following formats are supported:
             <ul>
+                <li>mkv</li>
                 <li>mp4</li>
                 <li>WebM</li>
-                <li>.ogg</li>
+                <li>ogg</li>
+                <li>ogg</li>
+                <li>mov</li>
             </ul>
             </p>
             <p>
-                Please, go to <a target="_blank" href="https://github.com/JustVice/movies-interface">Movies Interface's Github repository</a> to read the guidelines of how
+                Please, go to <a target="_blank" href="https://github.com/JustVice/movies-interface">Movies Interface's
+                    Github repository</a> to read the guidelines of how
                 to setup Movies Interface.
             </p>
             <hr>
@@ -119,14 +117,15 @@
                 <li>Light local network bandwidth consumption.</li>
                 <li>Compatible with most browsers.</li>
                 <li>Responsive to screen size (can be used on mobile devices).</li>
+                <li>Link to direct download the movies integrated.</li>
             </ul>
             <hr>
             <h5>Links</h5>
             <ul>
                 <li>
                     <a target="_blank"
-                        href="https://github.com/JustVice/movies-interface/releases/download/v1.0.0/Movies.Interface-1.0.0.zip">Direct
-                        download: Movies Interface 1.0.0</a>
+                        href="https://github.com/JustVice/movies-interface/releases/download/1.1.0/Movies.Interface.1.1.0.zip">Direct
+                        download: Movies Interface 1.1.0</a>
                 </li>
                 <li>
                     <a target="_blank" href="https://mega.nz/#F!mvQwmIgJ!1ErN51p9NRehylkS99M6jA">Mega archive</a>
@@ -134,6 +133,14 @@
                 <li>
                     <a target="_blank" href="https://github.com/JustVice/movies-interface">Github repository</a>
                 </li>
+            </ul>
+            <hr>
+            <div class="h6" id="changelog">Changelog</div>
+            1.1.0
+            <ul>
+                <li>Link for movie direct download.</li>
+                <li>Small user interface enhancements.</li>
+                <li>Application now checks for compatible formats and notifies this to user.</li>
             </ul>
             <hr>
             <h6>Support</h6>
@@ -158,6 +165,7 @@
         load_aside();
         load_messageToAllPages();
     </script>
+    <h1 style="visibility: hidden;">Movies Interface by JustVice</h1>
 </body>
 
 </html>
