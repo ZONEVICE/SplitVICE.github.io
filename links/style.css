@@ -15,3 +15,8 @@
 .PAGE_DESCRIPTION {text-align: center; color: gray;font-size: 12px;}
 
 .linktree {font-size: 13px;}
+
+.invisible{
+    visibility: hidden;
+    position: absolute;
+}
