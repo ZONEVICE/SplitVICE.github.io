@@ -12,7 +12,7 @@ const submit_btn = document.getElementById("submit_btn");
 // ----------------------------------------------------------------------------------------
 // Checks if the mail backend is up. If so, enables button to send messages.
 function checkBackendStatus() {
-    const url = "https://vicemailer.herokuapp.com/sendemail";
+    const url = serverHost + "/api/isup";
 
     fetch(url)
         .then(function (response) {
@@ -26,7 +26,7 @@ function checkBackendStatus() {
             if (obj.status) {
                 if (obj.status == "up") { // Service is available and working.
                     enableSubmitMessageButton();
-                    console.log("NodeJS Email Sender's service is up.");
+                    console.log("Backend up.");
                 } else  // Service is unavailable.
                     errorFailedToFetch();
             } else  // Service is unavailable.
@@ -55,7 +55,7 @@ function errorFailedToFetch() {
         <div class="alert alert-danger" role="alert">
             <div class="h6">Service unavailable - Error 503</div>
             <hr>
-            <p>The email delivery service is unavailable at this moment. Try reaching me out on <a target="_blank" href="/s/twitter">Twitter.</a></p>
+            <p>The backend server is unavailable at the moment. Try reaching me out on <a target="_blank" href="/s/twitter">Twitter.</a></p>
         </div>
     `;
 }

@@ -38,7 +38,7 @@ function submitForm_native() {
 
 // Builds message to be sent. Connects to Mail backend service's API to send the message.
 function sendMessage(msg) {
-    const url = "https://vicemailer.herokuapp.com/sendemail"; // Mail backend service API url.
+    const url = serverHost + "/sendemail";
 
     const textMessage = // Body message content.
         `Message Type: ${msg.messageType}<br><br>
@@ -49,7 +49,7 @@ function sendMessage(msg) {
 
     // Entire message structure to be sent.
     const messageStructure = {
-        "subject": `Message from Send a Message - justvice.github.io - Type: ${msg.messageType}`,
+        "subject": `Message from - JUST-VICE.com - Type: ${msg.messageType}`,
         "text": "Plaintext content of the Email.",
         "html": textMessage
     }
