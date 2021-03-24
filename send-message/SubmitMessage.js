@@ -37,7 +37,7 @@ function submitForm_native() {
 }
 
 // Builds message to be sent. Connects to Mail backend service's API to send the message.
-function sendMessage(msg) {
+async function sendMessage(msg) {
     const url = serverHost + "/sendemail";
 
     const textMessage = // Body message content.
@@ -54,35 +54,33 @@ function sendMessage(msg) {
         "html": textMessage
     }
 
-    // API connection.
-    fetch(url, {
+    const request = await fetch(url, {
         method: 'POST',
-        body: JSON.stringify(messageStructure), // data can be `string` or {object}!
-        headers: { 'Content-Type': 'application/json' }
-    }).then(res => res.json())
-        .catch((error) => { // If error occurred, message is displayed notifying so.
-            console.error('Error:', error)
-            interactiveArea.innerHTML =
-                `
-                <div class="alert alert-danger" role="alert">
-                    An internal server error has happened! Sorry about that!.
-                </div>
-                Here's the message you wrote:
-                ${msg.messageType}${msg.contactInfo}${msg.yourMessage}
-                <br><br>
-                Please, try reaching me on <a href="../s/twitter">Twitter</a>.
-                `
-            sendMessageForm_wordpress.style.display = "inline";
-        })
-        .then((response) => { // If message sent, success message is displayed.
-            console.log(response)
-            interactiveArea.innerHTML =
-                `
+        headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+        body: JSON.stringify(messageStructure)
+    });
+
+    const response = await request.json();
+
+    if (response.status == 'success') {
+        interactiveArea.innerHTML =
+            `
             <div class="alert alert-success" role="alert">
                 Your message has been sent!
             </div>
             `
-        });
+    } else {
+        interactiveArea.innerHTML =
+            `
+            <div class="alert alert-danger" role="alert">
+                Internal server error (ERROR 500).
+            </div>
+            Message written:
+            ${msg.messageType}${msg.contactInfo}${msg.yourMessage}
+            <br><br>
+            Please, try reaching me on <a href="../s/twitter">Twitter</a>.
+            `
+    }
 }
 
 // ----------------------------------------------------------------------------------------
@@ -102,5 +100,5 @@ function getMessageType() {
 
 // Checks if user has written a message.
 function areThereAMessage(msg) {
-    if (msg.yourMessage != "") return true; else return false;
+    return msg.yourMessage != "" ? true : false;
 }
