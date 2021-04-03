@@ -5,13 +5,13 @@
     <!-- META AND SEO TAGS -->
     <meta name="author" content="JUST VICE">
     <meta name="description"
-        content="NodeJS Email Sender by JUST VICE. A template web application to send emails to yourself.">
-    <meta name="keywords" content="JUST VICE, VICE, JUSTVICE, art, coding, nodejs email sender">
-    <title>JUST VICE - NodeJS Email sender</title>
-    <meta property="og:title" content="JUST VICE - NodeJS Email Sender" />
-    <meta property="og:url" content="https://just-vice.com/technology/web-software/nodejs-email-sender/" />
+        content="Remote Shell by JUST VICE. A web server software to execute terminal commands on a PC remotely.">
+    <meta name="keywords" content="JUST VICE, VICE, JUSTVICE, art, coding, remote shell">
+    <title>JUST VICE - Remote Shell</title>
+    <meta property="og:title" content="JUST VICE - Remote Shell" />
+    <meta property="og:url" content="https://just-vice.com/technology/web-software/remote-shell" />
     <meta property="og:image"
-        content="https://dl.dropboxusercontent.com/s/c6cibvlt87xlrxe/nodejs-email-sender-demo.png?dl=0" />
+        content="https://raw.githubusercontent.com/JustVice/Remote-Shell/master/src/public/img/demo.png" />
     <meta property="twitter:site" content="@_justvice">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -30,11 +30,13 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
+    <!-- SCRIPT AND STYLE EXPORTS -->
+    <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
     <link id="pagestyle" rel="stylesheet" href="/public/css/style.css">
-    <link rel="stylesheet" href="style.css">
     <script src="/public/script/aside_script.js"></script>
     <script src="/public/script/load_htmlViews.js"></script>
     <script src="/public/script/ajax.js"></script>
+    <script src="script.js"></script>
     <script src="/public/script/global.js"></script>
 </head>
 
@@ -59,56 +61,55 @@
                         <li class="breadcrumb-item"><a href="/">Home</a></li>
                         <li class="breadcrumb-item"><a href="/technology/">Technology</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Web Software</li>
-                        <li class="breadcrumb-item active" aria-current="page">NodeJS Email Sender</li>
+                        <li class="breadcrumb-item active" aria-current="page">Remote Shell</li>
                     </ol>
                 </nav>
             </div>
             <div id="message_to_all_pages_content_id">
             </div>
-            <div class="h1" style="text-align: center;">NodeJS Email Sender</div>
+            <div class="h1" style="text-align: center;">Remote Shell</div>
             <hr>
             <div class="h6">Program specifications</div>
             <ul>
-                <li>Author: VICE</li>
+                <li>Author: JUST VICE</li>
                 <li>License: MIT</li>
                 <li>Latest version: 1.0.0</li>
                 <li>Programming language: JavaScript | NodeJS</li>
                 <li>Language: English</li>
-                <li>First release date: 2020/09/14</li>
+                <li>First release date: 2021 April 02</li>
             </ul>
             <hr>
             <div class="h6">Program description</div>
             <p>
-                NodeJS webserver which can be used to send emails sending a HTTP POST request. SMPT service provided by
-                <a href="https://sendgrid.com/" target="_blank" rel="noopener noreferrer">SendGrid</a>.
+                Control your or someone elses PC with terminal commands remotely.
+                <br>
+                Available default actions to perform with buttons. Currently the following:
+                <ul>
+                    <li>Turn off PC</li>
+                    <li>Restart PC</li>
+                </ul>
+                Check the <a href="https://github.com/JustVice/Remote-Shell" target="_blank">Github repository</a> to read instructions about how to install and execute on your PC.
             </p>
             <hr>
-            <div class="text-muted">Click image to see in full screen.</div>
-            <a href="https://dl.dropboxusercontent.com/s/c6cibvlt87xlrxe/nodejs-email-sender-demo.png?dl=0"
-                target="_blank" rel="noopener noreferrer">
-                <img class="demoImage"
-                    src="https://dl.dropboxusercontent.com/s/c6cibvlt87xlrxe/nodejs-email-sender-demo.png?dl=0"
-                    alt="missing img">
-            </a>
+            <img src="https://raw.githubusercontent.com/JustVice/Remote-Shell/master/src/public/img/demo.png" alt="Remote Shell demo">
             <hr>
             <div class="h5">Program features</div>
             <ul>
-                <li>Private email sending to yourself or other people.</li>
-                <li>Relatively easy to configure.</li>
-                <li>Secure (SendGrid service).</li>
+                <li>Can be used to control on mobile devices (turn off your PC with phone).</li>
+                <li>Dark mode so your eyes do not get burn.</li>
+                <li>Easy to install.</li>
             </ul>
             <hr>
             <div class="h5">Links</div>
             <ul>
                 <li>
-                    <a target="_blank" href="https://github.com/JustVice/NodeJS-Email-Sender/archive/master.zip">Direct
-                        download: NodeJS Email Sender</a>
+                    <a target="_blank" href="https://github.com/JustVice/Remote-Shell/archive/refs/heads/master.zip">Direct download: Remote Shell 1.0.0</a>
                 </li>
                 <li>
                     <a target="_blank" href="https://mega.nz/#F!mvQwmIgJ!1ErN51p9NRehylkS99M6jA">Mega archive</a>
                 </li>
                 <li>
-                    <a target="_blank" href="https://github.com/JustVice/nodejs-email-sender">Github repository</a>
+                    <a target="_blank" href="https://github.com/JustVice/Remote-Shell">Github repository</a>
                 </li>
             </ul>
             <hr>
@@ -129,7 +130,7 @@
         load_aside();
         load_messageToAllPages();
     </script>
-    <h1 style="visibility: hidden; position: fixed; font-size: 1px;">NodeJS Email Sender - By JUST VICE</h1>
+    <h1 style="visibility: hidden; position: fixed; font-size: 1px;">Remote Shell - By JUST VICE</h1>
 </body>
 
 </html>
