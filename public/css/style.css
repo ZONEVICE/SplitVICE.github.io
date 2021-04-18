@@ -17,6 +17,8 @@ body{background:rgb(218, 218, 218);}
 .center{text-align:center;}
 .PAGE_DESCRIPTION{text-align:center;color:gray;font-size:12px;}
 footer{color:black;margin-top:20px;width:100%;display:inline-table;text-align:center;}
+/* Modal */
+.reply__modal{background-color: white;}
 /* Responsive */
 @media only screen and (min-width:1025px){.headerNavbarButtonImage{display:none;}
 }

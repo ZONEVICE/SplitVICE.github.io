@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- HTML5 coding protocol -->
+    <meta charset="utf-8">
+
+    <!-- Responsive tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Sets a color to the address bar on mobile browsers. -->
+    <meta name="theme-color" content="#bd0058" />
+
+    <!-- Bootstrap and JQuery imports -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- Default scripts and styles imports -->
+    <link id="pagestyle" rel="stylesheet" href="/public/css/style.css">
+    <script src="/public/script/aside_script.js"></script>
+    <script src="/public/script/load_htmlViews.js"></script>
+    <script src="/public/script/ajax.js"></script>
+    <script src="/public/script/regexMatcher.js"></script>
+    <link rel="stylesheet" href="./OnlineNotesComments.css">
+
+    <!-- Browser tab icon -->
+    <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
+
+    <!-- sweetalert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <!-- Browser tab title -->
+    <title>JUST VICE</title>
+    <script src="/public/script/global.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div id="header_content_id">
+        </div>
+    </header>
+
+    <!-- Custom container contains all the HTML content but header and footer -->
+    <div class="customContainer">
+
+        <!-- Aside of the page which works as the navigator  -->
+        <aside id="aside_id">
+            <div id="aside_content_id">
+
+            </div>
+        </aside>
+
+        <!-- Current page's main content -->
+        <div class="mainContent">
+
+            <!-- Breadcrumb -->
+            <div class="breadCrumb">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item"><a href="../">Comments</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Old</li>
+                    </ol>
+                </nav>
+            </div>
+
+            <!-- Message to all pages container -->
+            <div id="message_to_all_pages_content_id">
+            </div>
+
+            <!-- Editable content -->
+            <div class="h1" style="text-align: center;">Comments</div>
+            <hr>
+            <div>
+                <div class="text-muted">
+                    Service powered by <a href="../technology/web-software/online-notes/">Online Notes.</a>
+                </div>
+                <div>
+                    <div class="h6">
+                        Post any comments on this page.
+                    </div>
+                    Take in consideration:
+                    <ul>
+                        <li>The comments are 100% anonymous.</li>
+                        <li>Comments can be wiped at any given time.</li>
+                        <li><b>You</b> cannot delete comments. Even those which you wrote.</li>
+                        <li>I don't receive notifications by posted comments.</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div id="CommentsArea">
+                <textarea id="TextArea_newComment" rows="3" placeholder="Your comment here." class="comment_textArea"></textarea>
+                <br>
+                <button id="btn_PostNewComment" class="btn btn-primary btn-block" type="button">Post comment</button>
+                <hr>
+                <div class="h6">Comments</div>
+                <div id="CommentsList">
+                    <div class="spinner-border text-danger" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    Loading comments, please wait up to 10 seconds...
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer_content_id">
+
+        </div>
+    </footer>
+
+    <!-- Scripts that load all the static HTML -->
+    <script>
+        load_header();
+        load_footer();
+        load_aside();
+        load_messageToAllPages();
+    </script>
+    <script src="OnlineNotesComments.js"></script>
+    <script>fetch_comments();</script>
+</body>
+
+</html>

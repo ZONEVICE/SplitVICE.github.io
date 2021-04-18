@@ -4,6 +4,7 @@ input, select, textarea, .alert, .form-control{background-color: rgb(29, 29, 29)
 hr{background-color: gray;}
 .nsfwContainer{background: rgb(39, 39, 39);}
 .btn-light{background-color: rgb(29, 29, 29);color:white;}
+.reply__modal{background-color: rgb(29, 29, 29);color:white;}
 /* Header */
 *{color:white}
 header{background-color:rgb(114, 4, 55);}

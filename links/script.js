@@ -1,13 +1,13 @@
 async function load_settings() {
-    let request = await fetch(serverHost + '/api/pagesettings', {
+    let request = await fetch(serverHost + '/api/WebSiteSettings', {
         method: 'GET',
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
         }
     });
-    const response = await request.json();
-    response[0].Settings.showNSFWLinks == true ? nsfwLinks_show() : nsfwLinks_hide();
+    const settings = await request.json();
+    settings.ShowNSFWLinks == true ? nsfwLinks_show() : nsfwLinks_hide();
 };
 
 function nsfwLinks_hide(){

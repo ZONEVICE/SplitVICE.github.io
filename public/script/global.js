@@ -40,9 +40,8 @@ function loadCheckboxControl() {
         }, 500);
     }
 }
-window.onload = () => {
-    loadCheckboxControl();
-}
+
+loadCheckboxControl();
 
 // ----------------------------------------------------------------------------------------
 // Functions.

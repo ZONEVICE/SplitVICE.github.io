@@ -81,20 +81,21 @@ const softwareCommissionOpen_content = `
 // Loads current commission status (both kinds of commission). Sets content depending of result.
 // ------------------------------------------------------------------------------------
 async function loadCommissionStatus() {
-    let request = await fetch(serverHost + "/api/pagesettings", {
+    let request = await fetch(serverHost + "/api/WebSiteSettings", {
         method: 'GET',
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
         }
     });
-    let response = await request.json();
-    if (response[0].Settings.artCommissionStatus)
+    let settings = await request.json();
+
+    if (settings.ArtCommissionStatus)
         art_commission_status.innerHTML = artCommissionOpen_content;
     else
         art_commission_status.innerHTML = artCommissionClosed_content;
 
-    if (response[0].Settings.softwareCommissionStatus)
+    if (settings.SoftwareCommissionStatus)
         software_commission_status_.innerHTML = softwareCommissionOpen_content;
     else
         software_commission_status_.innerHTML = softwareCommissionClosed_content;

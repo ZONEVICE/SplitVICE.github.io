@@ -2,9 +2,20 @@
 <html lang="en">
 
 <head>
+    <meta name="author" content="JUST VICE">
+    <meta name="description" content="JUST VICE website changelog">
+    <meta name="keywords" content="JUST VICE, VICE, JUSTVICE, art, coding, changelog">
+    <title>JUST VICE - Changelog</title>
+    <meta property="og:title" content="JUST VICE - Changelog" />
+    <meta property="og:url" content="https://just-vice.com/changelog" />
+    <meta property="og:image" content="/public/img/favicon.png" />
+    <meta property="twitter:site" content="@_justvice">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#bd0058" />
+    <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
+
+    <!-- EXTERNAL SCRIPT AND STYLE EXPORTS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -17,14 +28,14 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-    <link id="pagestyle" rel="stylesheet" href="/public/css/style.css">
+    <!-- LOCAL SCRIPT AND STYLE EXPORTS -->
     <script src="/public/script/aside_script.js"></script>
     <script src="/public/script/load_htmlViews.js"></script>
     <script src="/public/script/ajax.js"></script>
-
+    <script src="/public/script/regexMatcher.js"></script>
+    <link id="pagestyle" rel="stylesheet" href="/public/css/style.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
-    <title>JUST VICE</title>
     <script src="/public/script/global.js"></script>
 </head>
 
@@ -60,6 +71,13 @@
                 Changes and content added over time.
             </p>
             <div id="changeLogDivContent_id">
+                <b> 2021/04/18 - v1.0.0</b>
+                <br>
+                <span class="changeLogDateDescription">
+                    - <a href="/comments/">Comments</a> section renovated.
+                </span>
+                <br>
+                <br>
                 <b> 2021/04/02</b>
                 <br>
                 <span class="changeLogDateDescription">
@@ -393,6 +411,7 @@
         load_aside();
         load_messageToAllPages();
     </script>
+    <h1 style="position: fixed; visibility: hidden;">JUST VICE website Changelog</h1>
 </body>
 
 </html>
