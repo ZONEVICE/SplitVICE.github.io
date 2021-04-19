@@ -12,18 +12,19 @@
 }
 
 .html--comments--list--container {
-    min-height: 70px;
+    min-height: 60px;
     margin-bottom: 17px;
+}
+
+.html--comments--list--dividerLine{
+    background-color: rgb(224, 224, 224);
+    min-height: 1px;
 }
 
 .html--comments--list--container--reply{
     min-height: 70px;
     margin-bottom: 17px;
     margin-left: 80px;
-}
-
-.html--comments--list--replySign{
-    
 }
 
 .html--comments--list--text-container {
@@ -78,8 +79,10 @@ textarea{
     height: 100vh;
     top: 0;
     left: 0;
-    margin-top: 180px;
+    margin-top: 80px;
     transform: translateY(780px);
+    overflow: scroll;
+    padding-bottom: 160px;
 }
 
 .modal-content--activate-animation {

@@ -150,7 +150,9 @@ async function comments__main(CommentsKeyName) {
 
                 temporal += render__comment(comment);
 
-                render__reply(comment, 40);
+                const leftMargin__pattern = 25;
+
+                render__reply(comment, leftMargin__pattern);
 
                 /**
                  * Checks is the document element given has replies inside ReplyCommentDocument
@@ -164,7 +166,7 @@ async function comments__main(CommentsKeyName) {
                     if (comment.ReplyCommentDocument != undefined) {
                         for (let i = 0; i < comment.ReplyCommentDocument.length; i++) {
                             temporal += render__comment(comment.ReplyCommentDocument[i], leftMargin);
-                            render__reply(comment.ReplyCommentDocument[i], (leftMargin * 2));
+                            render__reply(comment.ReplyCommentDocument[i], (leftMargin + leftMargin__pattern));
                         }
                     }
                 }
@@ -190,6 +192,8 @@ async function comments__main(CommentsKeyName) {
                 <img src='${settings.pic}' width='50px' class='html--comments--list--img'/>
 
                 <div class='html--comments--list--text-container'>
+
+                    <div class='html--comments--list--dividerLine'></div>
 
                     <div class='html--comments--list--ownerName--date'>
 
