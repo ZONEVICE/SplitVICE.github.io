@@ -2,6 +2,14 @@
 <html lang="en">
 
 <head>
+    <meta name="author" content="JUSTVICE">
+    <meta name="description"
+        content="JUST VICE's art log. Organized by date, rating, and links to where they are published.">
+    <meta name="keywords" content="justvice, vice, just vice, art log, art">
+    <meta property="og:title" content="JUST VICE - Art log" />
+    <meta property="og:url" content="https://www.just-vice.com/art/log" />
+    <meta property="og:image" content="/public/img/favicon.png" />
+    <meta property="twitter:site" content="@_justvice">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#bd0058" />
@@ -24,7 +32,7 @@
     <link rel="stylesheet" href="./OnlineNotesComments.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
-    <title>JUST VICE</title>
+    <title>JUST VICE - Art log</title>
     <script src="/public/script/global.js"></script>
 </head>
 
@@ -77,12 +85,6 @@
                     There is music that can be played labeled under each year. It represents a song signature of my
                     general mood and mood when drawing the during year.
                 </li>
-                <!-- <li>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="checkbox_PlayMusicAutomatically">
-                        <label class="form-check-label" for="checkbox_PlayMusicAutomatically">Play music automatically</label>
-                    </div>
-                </li> -->
             </ul>
             <div class="h5">How to download full resolution images</div>
             <ul>
@@ -103,9 +105,28 @@
                 </li>
             </ul>
             <hr>
+
+            <!-- /////////////////////////////////////////////// -->
+
+            <div id="_2021_title" class="text-center">
+                <img class="img-fluid" src="https://dl.dropboxusercontent.com/s/nmdv3hn4fk7iwe8/2021.png?dl=0"
+                    alt="art log 2021 image just vice">
+                <br>
+                <button id="btn_player3" class="btn btn-success btn-sm" type="button" onclick="video_controller(3)">Play
+                    music</button>
+                <br>
+                <a href="https://youtu.be/cPH53hOU4pA" target="_blank" class="MusicSource text-muted">Source</a>
+                <br>
+                <br>
+            </div>
+
+            <div id="_2021" class="table-responsive TableVice"></div>
+
+            <!-- /////////////////////////////////////////////// -->
+
             <div id="_2020_title" class="text-center">
                 <img class="img-fluid" src="https://dl.dropboxusercontent.com/s/ywpdb8z2oxbxzpd/2020.png?dl=0"
-                    alt="Missing demo image!">
+                    alt="art log 2020 image just vice">
                 <br>
                 <button id="btn_player0" class="btn btn-success btn-sm" type="button" onclick="video_controller(0)">Play
                     music</button>
@@ -117,9 +138,11 @@
 
             <div id="_2020" class="table-responsive TableVice"></div>
 
+            <!-- /////////////////////////////////////////////// -->
+
             <div id="_2019_title" class="text-center">
                 <img class="img-fluid" src="https://dl.dropboxusercontent.com/s/1ty8kf7bef1y6tq/2019.png?dl=0"
-                    alt="Missing demo image!">
+                    alt="art log 2019 image just vice">
                 <br>
                 <button id="btn_player1" class="btn btn-success btn-sm" type="button" onclick="video_controller(1)">Play
                     music</button>
@@ -129,9 +152,11 @@
 
             <div id="_2019" class="table-responsive TableVice"></div>
 
+            <!-- /////////////////////////////////////////////// -->
+
             <div id="_2018_title" class="text-center">
                 <img class="img-fluid" src="https://dl.dropboxusercontent.com/s/h96qznziar5nllr/2018.png?dl=0"
-                    alt="Missing demo image!">
+                    alt="art log 2018 image just vice">
                 <br>
                 <button id="btn_player2" class="btn btn-success btn-sm" type="button" onclick="video_controller(2)">Play
                     music</button>
@@ -140,6 +165,8 @@
             </div>
 
             <div id="_2018" class="table-responsive TableVice"></div>
+
+            <!-- /////////////////////////////////////////////// -->
 
             <br>
             <div class="h4">Comments</div><br>
@@ -162,6 +189,7 @@
         </div>
     </div>
 
+    <!-- <div id="player_2021"></div> -->
     <div id="player_2020"></div>
     <div id="player_2019"></div>
     <div id="player_2018"></div>
@@ -183,6 +211,7 @@
     <script src="OnlineNotesComments.js"></script>
     <script>fetch_comments();</script>
     <script src="music.js"></script>
+    <h1 style="visibility: hidden;">JUST VICE - Art log</h1>
 </body>
 
 </html>

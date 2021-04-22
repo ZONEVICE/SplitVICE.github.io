@@ -16,8 +16,18 @@ let players = new Array(), // Video players
 buttons[0] = document.getElementById("btn_player0");
 buttons[1] = document.getElementById("btn_player1");
 buttons[2] = document.getElementById("btn_player2");
+buttons[3] = document.getElementById("btn_player3");
 
 function onYouTubeIframeAPIReady() {
+    players[3] = new YT.Player('player_2021', { // 2021
+        height: '1',
+        width: '1',
+        videoId: 'cPH53hOU4pA',
+        playerVars: {
+            playlist: 'cPH53hOU4pA',
+            loop: 1
+        }
+    });
     players[0] = new YT.Player('player_2020', { // 2020
         height: '1',
         width: '1',

@@ -1,4 +1,5 @@
 // Dom elements capture.
+const _2021 = document.getElementById("_2021");
 const _2020 = document.getElementById("_2020");
 const _2019 = document.getElementById("_2019");
 const _2018 = document.getElementById("_2018");
@@ -7,9 +8,51 @@ function render_tables() {
   _2018_table();
   _2019_table();
   _2020_table();
+  _2021_table();
 }
 
 render_tables();
+
+function _2021_table() {
+  let table_content = `
+  <table class="table table-bordered table-sm table-striped">
+    <thead class="thead-dark">
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>ID</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Comments</th>
+        <th>Date</th>
+        <th>Links</th>
+      </tr>
+    </thead>
+    <tbody>
+  `;
+
+  for (let i = 0; i < registries_2021["Registries"].length; i++) {
+    table_content += `
+      <tr>
+        <th scope="row">${registries_2021["Registries"].length - i}</th>
+        <td>${registries_2021["Registries"][i].Name}</td>
+        <td>${registries_2021["Registries"][i].ID}</td>
+        <td>${registries_2021["Registries"][i].Type}</td>
+        <td>${registries_2021["Registries"][i].Description}</td>
+        <td>${registries_2021["Registries"][i].Comments}</td>
+        <td>${registries_2021["Registries"][i].Date}</td>
+        <td>${ExtractLinksForTable(registries_2021["Registries"][i])}</td>
+      </tr>
+    `;
+  }
+
+  table_content += `
+    </tbody>
+  </table>
+  `;
+
+  _2021.innerHTML = table_content;
+}
 
 function _2020_table() {
   let table_content = `

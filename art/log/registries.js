@@ -1,3 +1,28 @@
+const registries_2021 =
+{
+    "Registries": [
+        {
+            "Name": "Pikachu",
+            "ID": "xxxxxxxx",
+            "Type": "NSFW",
+            "Description": "A Pikachu getting a hand.",
+            "Comments": "Wanted to draw Pikachu long time ago.",
+            "Date": "xxxxxxxx",
+            "LinkName":
+                [
+                    "Twitter",
+                    "Pixiv",
+                    "NewGrounds",
+                    "FurAffinity",
+                ],
+            "LinkUrl":
+                [
+                    "xxxxxxxxxxxx"
+                ]
+        }
+    ]
+}
+
 const registries_2020 =
 {
     "Registries": [
