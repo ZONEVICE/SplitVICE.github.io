@@ -1,22 +1,10 @@
 .LINKS_TITLE {text-align: center; }
-
 .LINKS_TEXT_CATEGORY{font-size: 23px;}
-
 .LINK_BLOCK {height: 88px;}
-
 .LINK_BLOCK_IMG {float: left;width: 73px;}
-
 .LINK_BLOCK_TEXT {padding-left: 90px;}
-
 .LINK_BLOCK_A {font-size: 23px;}
-
 .LINK_BLOCK_P {font-size: 14px;margin-left: 25px;color: gray;}
-
 .PAGE_DESCRIPTION {text-align: center; color: gray;font-size: 12px;}
-
 .linktree {font-size: 13px;}
-
-.invisible{
-    visibility: hidden;
-    position: absolute;
-}
+.invisible{visibility: hidden;position: absolute;top:0;}

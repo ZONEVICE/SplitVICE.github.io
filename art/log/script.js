@@ -21,7 +21,6 @@ function _2021_table() {
         <th>#</th>
         <th>Name</th>
         <th>ID</th>
-        <th>Type</th>
         <th>Description</th>
         <th>Comments</th>
         <th>Date</th>
@@ -37,7 +36,6 @@ function _2021_table() {
         <th scope="row">${registries_2021["Registries"].length - i}</th>
         <td>${registries_2021["Registries"][i].Name}</td>
         <td>${registries_2021["Registries"][i].ID}</td>
-        <td>${registries_2021["Registries"][i].Type}</td>
         <td>${registries_2021["Registries"][i].Description}</td>
         <td>${registries_2021["Registries"][i].Comments}</td>
         <td>${registries_2021["Registries"][i].Date}</td>
@@ -62,7 +60,6 @@ function _2020_table() {
         <th>#</th>
         <th>Name</th>
         <th>ID</th>
-        <th>Type</th>
         <th>Description</th>
         <th>Comments</th>
         <th>Date</th>
@@ -78,7 +75,6 @@ function _2020_table() {
         <th scope="row">${registries_2020["Registries"].length - i}</th>
         <td>${registries_2020["Registries"][i].Name}</td>
         <td>${registries_2020["Registries"][i].ID}</td>
-        <td>${registries_2020["Registries"][i].Type}</td>
         <td>${registries_2020["Registries"][i].Description}</td>
         <td>${registries_2020["Registries"][i].Comments}</td>
         <td>${registries_2020["Registries"][i].Date}</td>
@@ -103,7 +99,6 @@ function _2019_table() {
         <th>#</th>
         <th>Name</th>
         <th>ID</th>
-        <th>Type</th>
         <th>Description</th>
         <th>Comments</th>
         <th>Date</th>
@@ -119,7 +114,6 @@ function _2019_table() {
         <th scope="row">${registries_2019["Registries"].length - i}</th>
         <td>${registries_2019["Registries"][i].Name}</td>
         <td>${registries_2019["Registries"][i].ID}</td>
-        <td>${registries_2019["Registries"][i].Type}</td>
         <td>${registries_2019["Registries"][i].Description}</td>
         <td>${registries_2019["Registries"][i].Comments}</td>
         <td>${registries_2019["Registries"][i].Date}</td>
@@ -144,7 +138,6 @@ function _2018_table() {
         <th>#</th>
         <th>Name</th>
         <th>ID</th>
-        <th>Type</th>
         <th>Description</th>
         <th>Comments</th>
         <th>Date</th>
@@ -160,7 +153,6 @@ function _2018_table() {
         <th scope="row">${registries_2018["Registries"].length - i}</th>
         <td>${registries_2018["Registries"][i].Name}</td>
         <td>${registries_2018["Registries"][i].ID}</td>
-        <td>${registries_2018["Registries"][i].Type}</td>
         <td>${registries_2018["Registries"][i].Description}</td>
         <td>${registries_2018["Registries"][i].Comments}</td>
         <td>${registries_2018["Registries"][i].Date}</td>

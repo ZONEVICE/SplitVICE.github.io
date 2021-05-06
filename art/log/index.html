@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta name="author" content="JUSTVICE">
+    <meta name="author" content="JUST VICE">
     <meta name="description"
         content="JUST VICE's art log. Organized by date, rating, and links to where they are published.">
     <meta name="keywords" content="justvice, vice, just vice, art log, art">
@@ -34,6 +34,7 @@
     <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
     <title>JUST VICE - Art log</title>
     <script src="/public/script/global.js"></script>
+    <link rel="stylesheet" href="/public/libs/comments/Comments.css">
 </head>
 
 <body>
@@ -171,20 +172,7 @@
             <br>
             <div class="h4">Comments</div><br>
 
-            <div id="CommentsArea">
-                <textarea id="TextArea_newComment" rows="3" placeholder="Your comment here."
-                    class="comment_textArea"></textarea>
-                <br>
-                <button id="btn_PostNewComment" class="btn btn-primary btn-block" type="button">Post comment</button>
-                <hr>
-                <div class="h6">Comments</div>
-                <div id="CommentsList">
-                    <div class="spinner-border text-danger" role="status">
-                        <span class="sr-only">Loading...</span>
-                    </div>
-                    Loading comments, please wait up to 10 seconds...
-                </div>
-            </div>
+            <div id='comments'></div>
 
         </div>
     </div>
@@ -208,10 +196,12 @@
     </script>
     <script src="registries.js"></script>
     <script src="script.js"></script>
-    <script src="OnlineNotesComments.js"></script>
     <script>fetch_comments();</script>
     <script src="music.js"></script>
-    <h1 style="visibility: hidden;">JUST VICE - Art log</h1>
+    <h1 style="visibility: hidden; position: fixed; top: 0;">JUST VICE - Art log</h1>
+    <script src="/public/libs/comments/Comments.js"></script>
+    <script src="/public/libs/moment.js"></script>
+    <script>comments__main('ArtLogSection')</script>
 </body>
 
 </html>
