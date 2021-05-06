@@ -1,0 +1,18 @@
+To add comments to a new page
+Copy div on html:
+
+<div id='comments'></div>
+
+Copy necessary scripts at the end of html:
+
+<script src="/public/libs/comments/Comments.js"></script>
+<script src="/public/libs/moment.js"></script>
+<script>comments__main('name_of_comments_document')</script>
+
+Copy necessary css spreadsheet at the end of head tag:
+
+<link rel="stylesheet" href="/public/libs/comments/Comments.css">
+
+Add SweetAlert2 CDN on head if not included:
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>

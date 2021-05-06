@@ -3,10 +3,10 @@
 
 <head>
     <meta name="author" content="JUST VICE">
-    <meta name="description" content="Just VICE web page. N/SFW digital artist and computer engineer.">
-    <meta name="keywords" content="JUST VICE, VICE, JUSTVICE, art, coding">
-    <title>JUST VICE</title>
-    <meta property="og:title" content="JUST VICE" />
+    <meta name="description" content="Just VICE's blog. N/SFW digital artist and computer engineer.">
+    <meta name="keywords" content="JUST VICE, VICE, JUSTVICE, art, coding, blog">
+    <title>JUST VICE - Blog</title>
+    <meta property="og:title" content="JUST VICE - Blog" />
     <meta property="og:url" content="https://just-vice.com/" />
     <meta property="og:image" content="/public/img/favicon.png" />
     <meta property="twitter:site" content="@_justvice">
@@ -33,9 +33,11 @@
     <script src="/public/script/aside_script.js"></script>
     <script src="/public/script/load_htmlViews.js"></script>
     <script src="/public/script/ajax.js"></script>
-    <script src="/public/script/regexMatcher.js"></script>
     <link id="pagestyle" rel="stylesheet" href="/public/css/style.css">
     <script src="/public/script/global.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="/public/libs/moment.js"></script>
+    <link rel="stylesheet" href="/public/libs/comments/Comments.css">
 </head>
 
 <body>
@@ -58,7 +60,7 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="/">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">ACTIVE PAGE</li>
+                        <li class="breadcrumb-item active" aria-current="page">Blog</li>
                     </ol>
                 </nav>
             </div>
@@ -66,9 +68,22 @@
             <div id="message_to_all_pages_content_id">
             </div>
 
-            <div class="h1" style="text-align: center;">Page title</div>
+            <div class="h1" style="text-align: center;">Blog</div>
             <hr>
-            This is the template I use when I create new pages.
+
+            <div id="container_blog">
+                Loading blogs... please wait <br>
+                If content not loading, please report this at <a href="/send-message/">Send a message</a>
+                <br>
+                <div class="spinner-border text-danger" role="status">
+                    <span class="visually-hidden"></span>
+                </div>
+            </div>
+
+            <div class="h5">Comments</div>
+
+            <div id='comments'></div>
+
         </div>
     </div>
 
@@ -84,8 +99,9 @@
         load_aside();
         load_messageToAllPages();
     </script>
-
-    <h1 style='position: fixed; visibility: hidden;'>JUST VICE</h1>
+    <script src="script.js"></script>
+    <script src="/public/libs/comments/Comments.js"></script>
+    <script>comments__main('BlogSection')</script>
 </body>
 
 </html>
