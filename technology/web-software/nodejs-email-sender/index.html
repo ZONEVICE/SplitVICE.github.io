@@ -3,19 +3,20 @@
 
 <head>
     <!-- META AND SEO TAGS -->
-    <meta name="author" content="JUST VICE">
+    <title>NodeJS Email Sender - By SPLIT VICE</title>
+    <meta name="author" content="SPLIT VICE">
     <meta name="description"
-        content="NodeJS Email Sender by JUST VICE. A template web application to send emails to yourself.">
-    <meta name="keywords" content="JUST VICE, VICE, JUSTVICE, art, coding, nodejs email sender">
-    <title>JUST VICE - NodeJS Email sender</title>
-    <meta property="og:title" content="JUST VICE - NodeJS Email Sender" />
-    <meta property="og:url" content="https://just-vice.com/technology/web-software/nodejs-email-sender/" />
+        content="NodeJS Email Sender - By SPLIT VICE. A template web application to send emails with SendGrid service.">
+    <meta name="keywords" content="SPLIT VICE, VICE, SPLITVICE, art, coding, nodejs email sender">
+    <meta property="og:title" content="NodeJS Email Sender - By SPLIT VICE" />
+    <meta property="og:url" content="https://split-vice.com/technology/web-software/nodejs-email-sender/" />
     <meta property="og:image"
         content="https://dl.dropboxusercontent.com/s/c6cibvlt87xlrxe/nodejs-email-sender-demo.png?dl=0" />
-    <meta property="twitter:site" content="@_justvice">
+    <meta property="twitter:site" content="@SplitVice_">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#bd0058" />
+    <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
 
     <!-- EXTERNAL SCRIPT AND STYLE EXPORTS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -30,29 +31,28 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-    <link id="pagestyle" rel="stylesheet" href="/public/css/style.css">
+    <!-- LOCAL EXPORTS -->
     <link rel="stylesheet" href="style.css">
-    <script src="/public/script/aside_script.js"></script>
-    <script src="/public/script/load_htmlViews.js"></script>
-    <script src="/public/script/ajax.js"></script>
-    <script src="/public/script/global.js"></script>
 </head>
+
+<div id="div_style">
+    <link rel="stylesheet" href="/public/css/style.darkmode.css">
+</div>
 
 <body>
 
     <header>
-        <div id="header_content_id">
+        <div id="div_header">
         </div>
     </header>
 
-    <div class="customContainer">
-        <aside id="aside_id">
-            <div id="aside_content_id">
-
+    <div class="container-general">
+        <aside id="div_aside_left">
+            <div>
             </div>
         </aside>
 
-        <div class="mainContent">
+        <div class="container-main-content">
             <div class="breadCrumb">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
@@ -63,13 +63,13 @@
                     </ol>
                 </nav>
             </div>
-            <div id="message_to_all_pages_content_id">
+            <div id="div_global_message">
             </div>
             <div class="h1" style="text-align: center;">NodeJS Email Sender</div>
             <hr>
             <div class="h6">Program specifications</div>
             <ul>
-                <li>Author: VICE</li>
+                <li>Author: SPLIT VICE</li>
                 <li>License: MIT</li>
                 <li>Latest version: 1.0.0</li>
                 <li>Programming language: JavaScript | NodeJS</li>
@@ -88,7 +88,7 @@
                 target="_blank" rel="noopener noreferrer">
                 <img class="demoImage"
                     src="https://dl.dropboxusercontent.com/s/c6cibvlt87xlrxe/nodejs-email-sender-demo.png?dl=0"
-                    alt="missing img">
+                    alt="nodejs email sender">
             </a>
             <hr>
             <div class="h5">Program features</div>
@@ -101,14 +101,14 @@
             <div class="h5">Links</div>
             <ul>
                 <li>
-                    <a target="_blank" href="https://github.com/JustVice/NodeJS-Email-Sender/archive/master.zip">Direct
+                    <a target="_blank" href="https://github.com/SPLITVICE/NodeJS-Email-Sender/archive/master.zip">Direct
                         download: NodeJS Email Sender</a>
                 </li>
                 <li>
-                    <a target="_blank" href="https://mega.nz/#F!mvQwmIgJ!1ErN51p9NRehylkS99M6jA">Mega archive</a>
+                    <a target="_blank" href="/s/mega-archive/">Mega archive</a>
                 </li>
                 <li>
-                    <a target="_blank" href="https://github.com/JustVice/nodejs-email-sender">Github repository</a>
+                    <a target="_blank" href="https://github.com/SPLITVICE/nodejs-email-sender">Github repository</a>
                 </li>
             </ul>
             <hr>
@@ -118,18 +118,13 @@
     </div>
 
     <footer>
-        <div id="footer_content_id">
+        <div id="div_footer">
 
         </div>
     </footer>
+    <script src="/public/script/global.js"></script>
 
-    <script>
-        load_header();
-        load_footer();
-        load_aside();
-        load_messageToAllPages();
-    </script>
-    <h1 style="visibility: hidden; position: fixed; font-size: 1px;">NodeJS Email Sender - By JUST VICE</h1>
+    <h1 style='position: fixed; visibility: hidden; top:0;'>NodeJS Email Sender - By SPLIT VICE</h1>
 </body>
 
 </html>

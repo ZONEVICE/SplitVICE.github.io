@@ -2,16 +2,21 @@
 <html lang="en">
 
 <head>
-    <!-- HTML5 coding protocole -->
+    <!-- SEO -->
+    <title>SPLIT VICE - Drawesome</title>
+    <meta name="author" content="SPLIT VICE">
+    <meta name="description" content="SPLIT VICE - Drawesome. A place I have nostalgia for.">
+    <meta name="keywords" content="SPLIT VICE, VICE, SPLITVICE, art, coding, drawesome">
+    <meta property="og:title" content="SPLIT VICE - Drawesome" />
+    <meta property="og:url" content="https://split-vice.com/drawesome" />
+    <meta property="og:image" content="/public/img/favicon.png" />
+    <meta property="twitter:site" content="@SplitVICE_">
     <meta charset="utf-8">
-
-    <!-- Responsive tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Sets a color to adress bar on mobile browsers. -->
     <meta name="theme-color" content="#bd0058" />
+    <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
 
-    <!-- Bootstrap and JQuery imports -->
+    <!-- EXTERNAL EXPORTS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -24,38 +29,29 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-    <script src="vice-mp3.js"></script>
-    <link rel="stylesheet" href="style.css">
-
-    <!-- DEFAULT ASSET IMPORTS -->
-    <link id="pagestyle" rel="stylesheet" href="/public/css/style.css">
-    <script src="/public/script/aside_script.js"></script>
-    <script src="/public/script/load_htmlViews.js"></script>
-    <script src="/public/script/ajax.js"></script>
-
-    <!-- Browser tab icon -->
-    <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
-
-    <!-- Browser tab title -->
-    <title>JUST VICE</title>
-    <script src="/public/script/global.js"></script>
+    <!-- LOCAL EXPORTS -->
+    <link rel="stylesheet" href="./style.css">
+    <script src="./vice-mp3.js"></script>
 </head>
+
+<div id="div_style">
+    <link rel="stylesheet" href="/public/css/style.darkmode.css">
+</div>
 
 <body>
 
     <header>
-        <div id="header_content_id">
+        <div id="div_header">
         </div>
     </header>
 
-    <div class="customContainer">
-        <aside id="aside_id">
-            <div id="aside_content_id">
-
+    <div class="container-general">
+        <aside id="div_aside_left">
+            <div>
             </div>
         </aside>
 
-        <div class="mainContent" id="mainContent">
+        <div class="container-main-content" id="container_main_content">
             <div class="breadCrumb">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
@@ -64,9 +60,9 @@
                     </ol>
                 </nav>
             </div>
-            <div id="message_to_all_pages_content_id">
+            <div id="div_global_message">
             </div>
-            <h4 style="text-align: center;">Drawesome</h4>
+            <div class="h4 center">Drawesome</div>
             <hr>
             <div class="ENTRY_BLOCK">
                 <div style="text-align:center;">
@@ -83,9 +79,9 @@
             <hr>
             <div class="ENTRY_BLOCK">
                 <div style="text-align: center;">
-                    <h1 style="color:red;">
+                    <div class="h1" style="color:red;">
                         DEUS VULT!
-                    </h1>
+                    </div>
                     <p>
                         Message from The Holy Crusader For God!
                     </p>
@@ -94,7 +90,7 @@
 
             <hr>
             <div class="ENTRY_BLOCK">
-                <img class="JJJPLAYER_IMG" src="https://i.imgur.com/8C06Cu1.png" alt="JjjPlayer img">
+                <img class="JJJPLAYER_IMG" src="https://i.imgur.com/8C06Cu1.png" alt="JjjPlayer">
                 <h4 class="card-title text-center">Have you ever seen this user?</h4>
                 <p class="card-text">
                     This user is the most mysterious user on Drawesome: Jjjplayer
@@ -113,22 +109,20 @@
     </div>
 
     <footer>
-        <div id="footer_content_id">
+        <div id="div_footer">
 
         </div>
     </footer>
+    <script src="/public/script/global.js"></script>
 
     <script>
-        load_header();
-        load_footer();
-        load_aside();
-        load_messageToAllPages();
         MP3_SET_URL("https://dl.dropboxusercontent.com/s/ew5wuaqje4nibui/DOOM_MUSIC.mp3?dl=0");
         MP3_SET_VOLUME(0.2);
         MP3_SET_LOOP_STATE(true);
         MP3_PLAY();
     </script>
     <script src="./wendigo.js"></script>
+    <h1 style='position: fixed; visibility: hidden; top:0;'>SPLIT VICE - Drawesome</h1>
 </body>
 
 </html>

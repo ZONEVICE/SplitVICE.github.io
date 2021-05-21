@@ -3,14 +3,14 @@
  * DOM elements capture.
  * ==================================================================================
  */
-const input_1 = document.getElementById("input_1");
-const input_2 = document.getElementById("input_2");
-const key = document.getElementById("key");
-const btn_input1 = document.getElementById("btn_input1");
-const btn_input2 = document.getElementById("btn_input2");
-const btn_input1_copyClipboard = document.getElementById("btn_input1_copyClipboard");
-const btn_input2_copyClipboard = document.getElementById("btn_input2_copyClipboard");
-const aes256Content = document.getElementById("aes256Content");
+const input_1 = document.getElementById("input_1"),
+    input_2 = document.getElementById("input_2"),
+    key = document.getElementById("key"),
+    btn_input1 = document.getElementById("btn_input1"),
+    btn_input2 = document.getElementById("btn_input2"),
+    btn_input1_copyClipboard = document.getElementById("btn_input1_copyClipboard"),
+    btn_input2_copyClipboard = document.getElementById("btn_input2_copyClipboard"),
+    aes256Content = document.getElementById("aes256Content");
 
 /**
  * ==================================================================================
@@ -21,7 +21,7 @@ checkServiceUp();
 // Checks if backend service is up.
 async function checkServiceUp() {
     try {
-        let request = await fetch(serverHost + "/api/isup", {
+        let request = await fetch(SERVER_HOST + "/api/isup", {
             method: 'GET',
             headers: {
                 'Accept': 'application/json',
@@ -78,7 +78,7 @@ btn_input2_copyClipboard.addEventListener("click", () => {
  */
 async function encrypt() {
     try {
-        const request = await fetch(serverHost + "/api/aes256service/encrypt", {
+        const request = await fetch(SERVER_HOST + "/api/aes256service/encrypt", {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -100,7 +100,7 @@ async function encrypt() {
 
 async function decrypt() {
     try {
-        const request = await fetch(serverHost + "/api/aes256service/decrypt", {
+        const request = await fetch(SERVER_HOST + "/api/aes256service/decrypt", {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -114,7 +114,6 @@ async function decrypt() {
             )
         });
         const response = await request.json();
-        console.log(response)
         input_1.value = response;
     } catch (error) {
         serviceNotAvailable_renderHTMLError();

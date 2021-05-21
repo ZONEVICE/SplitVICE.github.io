@@ -1,5 +1,5 @@
 // YouTube music add to HTML pages.
-// Source: 
+// Source:
 // https://stackoverflow.com/questions/11651454/play-youtube-video-on-click-custom-button
 // https://stackoverflow.com/questions/42711959/play-youtube-video-on-click
 

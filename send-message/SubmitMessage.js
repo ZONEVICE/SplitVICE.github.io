@@ -38,7 +38,7 @@ function submitForm_native() {
 
 // Builds message to be sent. Connects to Mail backend service's API to send the message.
 async function sendMessage(msg) {
-    const url = serverHost + "/sendemail";
+    const url = SERVER_HOST + "/sendemail";
 
     const textMessage = // Body message content.
         `Message Type: ${msg.messageType}<br><br>
@@ -49,7 +49,7 @@ async function sendMessage(msg) {
 
     // Entire message structure to be sent.
     const messageStructure = {
-        "subject": `Message from - JUST-VICE.com - Type: ${msg.messageType}`,
+        "subject": `Message from - split-vice.com - Type: ${msg.messageType}`,
         "text": "Plaintext content of the Email.",
         "html": textMessage
     }

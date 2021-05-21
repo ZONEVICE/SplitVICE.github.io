@@ -16,16 +16,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
-    <link id="pagestyle" rel="stylesheet" href="/public/css/style.css">
-    <script src="/public/script/aside_script.js"></script>
-    <script src="/public/script/load_htmlViews.js"></script>
-    <script src="/public/script/ajax.js"></script>
     <script src="/public/script/regexMatcher.js"></script>
 
     <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
-    <title>JUST VICE</title>
-    <script src="/public/script/global.js"></script>
+    <title>SPLIT VICE</title>
     <style>
         .IMAGE_404 {
             margin-left: auto;
@@ -44,22 +38,25 @@
     </style>
 </head>
 
+<div id="div_style">
+    <link rel="stylesheet" href="/public/css/style.darkmode.css">
+</div>
+
 <body>
 
     <header>
-        <div id="header_content_id">
+        <div id="div_header">
         </div>
     </header>
 
-    <div class="customContainer">
-        <aside id="aside_id">
-            <div id="aside_content_id">
-
+    <div class="container-general">
+        <aside id="div_aside_left">
+            <div>
             </div>
         </aside>
 
-        <div class="mainContent">
-            <img class="IMAGE_404" src="/public/img/404-image.png" alt="404! Missing 404 image lol haha">
+        <div class="container-main-content">
+            <img class="IMAGE_404" src="/public/img/404-image.png" alt="404 image">
             <br>
             <div class="TEXT_404">
                 <p>
@@ -92,15 +89,16 @@
     </div>
 
     <footer>
-        <div id="footer_content_id">
+        <div id="div_footer">
 
         </div>
     </footer>
+    <script src="/public/script/global.js"></script>
 
     <script>
-        load_header();
-        load_footer();
-        load_aside();
+
+
+
         var currentUrl = document.location.href;
         regexMatcher_webpageRoutes(currentUrl, "/h/about", "/about/")
         regexMatcher_webpageRoutes(currentUrl, "/h/changelog", "/changelog/")

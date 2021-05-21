@@ -3,16 +3,16 @@
 
 <head>
     <!-- META AND SEO TAGS -->
-    <meta name="author" content="JUST VICE">
+    <meta name="author" content="SPLIT VICE">
     <meta name="description"
-        content="Passwords Stash Lite by JUST VICE. A simple application to store your password securely and locally.">
-    <meta name="keywords" content="JUST VICE, VICE, JUSTVICE, art, coding, passwords stash, passwords stash lite">
-    <title>JUST VICE - Passwords Stash Lite</title>
-    <meta property="og:title" content="JUST VICE - Passwords Stash Lite" />
-    <meta property="og:url" content="https://just-vice.com/technology/CSharp/passwords-stash-lite/" />
+        content="Passwords Stash Lite by SPLIT VICE. A simple application to store your password securely and locally.">
+    <meta name="keywords" content="SPLIT VICE, VICE, SPLITVICE, art, coding, passwords stash, passwords stash lite">
+    <title>SPLIT VICE - Passwords Stash Lite</title>
+    <meta property="og:title" content="SPLIT VICE - Passwords Stash Lite" />
+    <meta property="og:url" content="https://split-vice.com/technology/CSharp/passwords-stash-lite/" />
     <meta property="og:image"
         content="https://dl.dropboxusercontent.com/s/hgypl2pnjmkw9zc/passwords-stash-lite-image-demo.png?dl=0" />
-    <meta property="twitter:site" content="@_justvice">
+    <meta property="twitter:site" content="@SplitVice_">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#bd0058" />
@@ -30,32 +30,26 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-    <!-- SCRIPT AND STYLE EXPORTS -->
-    <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
-    <link id="pagestyle" rel="stylesheet" href="/public/css/style.css">
-    <script src="/public/script/aside_script.js"></script>
-    <script src="/public/script/load_htmlViews.js"></script>
-    <script src="/public/script/ajax.js"></script>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <script src="/public/script/global.js"></script>
 </head>
+
+<div id="div_style">
+    <link rel="stylesheet" href="/public/css/style.darkmode.css">
+</div>
 
 <body>
 
     <header>
-        <div id="header_content_id">
+        <div id="div_header">
         </div>
     </header>
 
-    <div class="customContainer">
-        <aside id="aside_id">
-            <div id="aside_content_id">
-
+    <div class="container-general">
+        <aside id="div_aside_left">
+            <div>
             </div>
         </aside>
 
-        <div class="mainContent">
+        <div class="container-main-content">
             <div class="breadCrumb">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
@@ -66,13 +60,13 @@
                     </ol>
                 </nav>
             </div>
-            <div id="message_to_all_pages_content_id">
+            <div id="div_global_message">
             </div>
             <div class="h1" style="text-align: center;">PROGRAM NAME</div>
             <hr>
             <div class="h6">Program specifications</div>
             <ul>
-                <li>Author: VICE</li>
+                <li>Author: SPLIT VICE</li>
                 <li>License: MIT</li>
                 <li>Latest version: xxxxxxxxxxxx</li>
                 <li>Programming language: </li>
@@ -107,10 +101,10 @@
                     <a target="_blank" href="">Direct download: PROGRAMNAME</a>
                 </li>
                 <li>
-                    <a target="_blank" href="https://mega.nz/#F!mvQwmIgJ!1ErN51p9NRehylkS99M6jA">Mega archive</a>
+                    <a target="_blank" href="/s/mega-archive/">Mega archive</a>
                 </li>
                 <li>
-                    <a target="_blank" href="https://github.com/JustVice?tab=repositories">Github repository</a>
+                    <a target="_blank" href="https://github.com/SPLITVICE?tab=repositories">Github repository</a>
                 </li>
             </ul>
             <hr>
@@ -120,17 +114,13 @@
     </div>
 
     <footer>
-        <div id="footer_content_id">
+        <div id="div_footer">
 
         </div>
     </footer>
+    <script src="/public/script/global.js"></script>
 
-    <script>
-        load_header();
-        load_footer();
-        load_aside();
-        load_messageToAllPages();
-    </script>
+
     <h1 style="visibility: hidden; position: fixed; top: 0;">MYTITLE</h1>
 </body>
 

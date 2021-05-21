@@ -1,6 +1,6 @@
 /* Dark mode */
 a { color:rgb(102, 194, 255) }
-input, select, textarea, .alert, .form-control{background-color: rgb(29, 29, 29);color:white;}
+input, select, textarea, .alert, .form-control, #yourMessage, #contactInfo{background-color: rgb(29, 29, 29);color:white;}
 hr{background-color: gray;}
 .nsfwContainer{background: rgb(39, 39, 39);}
 .btn-light{background-color: rgb(29, 29, 29);color:white;}
@@ -8,7 +8,7 @@ hr{background-color: gray;}
 /* Header */
 *{color:white}
 header{background-color:rgb(114, 4, 55);}
-.headerImage{max-width:180px;padding-top:9px;padding-bottom:9px;display:block;margin-left:auto;margin-right:auto;}
+.header-image{max-width:180px;padding-top:9px;padding-bottom:9px;display:block;margin-left:auto;margin-right:auto;}
 .headerNavbarButtonImage{float:right;margin:12px;margin-top:17px;margin-right:20px;}
 /* Aside */
 aside{float:left;}
@@ -18,21 +18,21 @@ aside{float:left;}
 .ASIDE_CATEGORIES{padding-left:12px;font-size:17px;font-family:"Trebuchet MS", sans-serif;}
 /* Main content */
 body{background:rgb(46, 49, 51)}
-.customContainer{margin:0 auto;margin-top:11px;max-width:1020px;}
-.mainContent{margin-left:230px;padding:25px;padding-top:9px;background-color:rgb(24, 26, 27);}
+.container-general{margin:0 auto;margin-top:11px;max-width:1020px;}
+.container-main-content{margin-left:230px;padding:25px;padding-top:9px;background-color:rgb(24, 26, 27);}
 .breadcrumb{margin:0px;padding:5px;padding-left:10px;margin-bottom:10px;background:rgb(87, 3, 45);color:white;}
 .textBold{font-weight:bold;}
 .center{text-align:center;}
-.PAGE_DESCRIPTION{text-align:center;color:gray;font-size:12px;}
 footer{color:black;margin-top:20px;width:100%;display:inline-table;text-align:center;}
 /* Responsive */
 @media only screen and (min-width:1025px){.headerNavbarButtonImage{display:none;}
 }
-@media only screen and (max-width:1024px){aside{display:none;width:100%;}
- .asideShowWhenScreenIsSmallClass{display:block;}
+@media only screen and (max-width:1024px){
+  aside{display:none;width:100%;}
+ .aside-display-small-screen{display:block;}
  .asideBlock{border-style:none;width:auto;margin-bottom:0px;}
- .mainContent{margin-left:0px;border-style:none;}
- .customContainer{margin-top:0px;}
- .headerImage{display:inline;margin-left:10px;}
+ .container-main-content{margin-left:0px;border-style:none;}
+ .container-general{margin-top:0px;}
+ .header-image{display:inline;margin-left:10px;}
  .sha256_code{font-size: 9px;}
 }

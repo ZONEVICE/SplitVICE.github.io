@@ -1,1 +1,1 @@
-JUST VICE's Github pages repository.
+# www.SPLIT-VICE.com frontend

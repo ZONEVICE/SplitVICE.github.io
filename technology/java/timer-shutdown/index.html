@@ -2,16 +2,21 @@
 <html lang="en">
 
 <head>
-    <!-- HTML5 coding protocole -->
+    <!-- SEO -->
+    <title>Timer Shutdown - By SPLIT VICE</title>
+    <meta name="author" content="SPLIT VICE">
+    <meta name="description" content="Timer Shutdown - By SPLIT VICE. A simple Java application to shutdown your PC automatically after a given timer.">
+    <meta name="keywords" content="SPLIT VICE, VICE, SPLITVICE, art, coding, timer shutdown">
+    <meta property="og:title" content="SPLIT VICE" />
+    <meta property="og:url" content="https://split-vice.com/technology/java/text-encryptor/" />
+    <meta property="og:image" content="/public/img/favicon.png" />
+    <meta property="twitter:site" content="@SplitVICE_">
     <meta charset="utf-8">
-
-    <!-- Responsive tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Sets a color to adress bar on mobile browsers. -->
     <meta name="theme-color" content="#bd0058" />
+    <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
 
-    <!-- Bootstrap and JQuery imports -->
+    <!-- EXTERNAL EXPORTS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -23,40 +28,26 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
-    <!-- CSS and JS imports/templates -->
-    <!-- <link rel="stylesheet" href="XXXXXXXXX"> -->
-    <!-- <script src="XXXXXXX"></script> -->
-
-    <!-- DEFAULT ASSET IMPORTS -->
-    <link id="pagestyle" rel="stylesheet" href="/public/css/style.css">
-    <script src="/public/script/aside_script.js"></script>
-    <script src="/public/script/load_htmlViews.js"></script>
-    <script src="/public/script/ajax.js"></script>
-
-    <!-- Browser tab icon -->
-    <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
-
-    <!-- Browser tab title -->
-    <title>JUST VICE</title>
-    <script src="/public/script/global.js"></script>
 </head>
+
+<div id="div_style">
+    <link rel="stylesheet" href="/public/css/style.darkmode.css">
+</div>
 
 <body>
 
     <header>
-        <div id="header_content_id">
+        <div id="div_header">
         </div>
     </header>
 
-    <div class="customContainer">
-        <aside id="aside_id">
-            <div id="aside_content_id">
-
+    <div class="container-general">
+        <aside id="div_aside_left">
+            <div>
             </div>
         </aside>
 
-        <div class="mainContent">
+        <div class="container-main-content">
             <div class="breadCrumb">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
@@ -68,13 +59,13 @@
                     </ol>
                 </nav>
             </div>
-            <div id="message_to_all_pages_content_id">
+            <div id="div_global_message">
             </div>
-            <h1 style="text-align: center;">Timer Shutdown</h1>
+            <div class="h1 center">Timer Shutdown</div>
             <hr>
             <h6>Program specifications</h6>
             <ul>
-                <li>Author: VICE</li>
+                <li>Author: SPLIT VICE</li>
                 <li>License: MIT</li>
                 <li>Latest version: 1.5</li>
                 <li>Programming language: Java</li>
@@ -88,7 +79,7 @@
                 Sets an inner timer inside your Windows operating system to shut down by itself at a given time.
             </p>
             <hr>
-            <img src="https://i.imgur.com/9Kb2TrQ.png" alt="missing img">
+            <img src="https://i.imgur.com/9Kb2TrQ.png" alt="timer shutdown">
             <hr>
             <h6>Program features</h6>
             <ul>
@@ -101,15 +92,15 @@
             <ul>
                 <li>
                     <a target="_blank"
-                        href="https://github.com/JustVice/TimerShutdown/releases/download/1.5/TimerShutdown.zip">Direct
+                        href="https://github.com/SPLITVICE/TimerShutdown/releases/download/1.5/TimerShutdown.zip">Direct
                         download: Timer Shutdown 1.5</a>
                 </li>
 
                 <li>
-                    <a target="_blank" href="https://mega.nz/#F!mvQwmIgJ!1ErN51p9NRehylkS99M6jA">Mega archive</a>
+                    <a target="_blank" href="/s/mega-archive/">Mega archive</a>
                 </li>
                 <li>
-                    <a target="_blank" href="https://github.com/JustVice?tab=repositories">Github repositories</a>
+                    <a target="_blank" href="https://github.com/SPLITVICE?tab=repositories">Github repositories</a>
                 </li>
             </ul>
             <hr>
@@ -124,17 +115,12 @@
     </div>
 
     <footer>
-        <div id="footer_content_id">
+        <div id="div_footer">
 
         </div>
     </footer>
-
-    <script>
-        load_header();
-        load_footer();
-        load_aside();
-        load_messageToAllPages();
-    </script>
+    <script src="/public/script/global.js"></script>
+    <h1 style='position: fixed; visibility: hidden; top:0;'>Timer Shutdown - By SPLIT VICE</h1>
 </body>
 
 </html>

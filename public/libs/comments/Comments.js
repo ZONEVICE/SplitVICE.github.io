@@ -32,7 +32,7 @@ async function comments__main(CommentsKeyName) {
 
     async function get__commentsDocument() {
         try {
-            let request = await fetch(serverHost + '/api/comments/' + settings.CommentsKeyName, {
+            let request = await fetch(SERVER_HOST + '/api/comments/' + settings.CommentsKeyName, {
                 method: 'GET',
                 headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' }
             });
@@ -197,7 +197,7 @@ async function comments__main(CommentsKeyName) {
 
                     <div class='html--comments--list--ownerName--date'>
 
-                    ${commentDocument.VICEComment == true ? `<span class='vice-comment'>| JUST VICE |</span><br>` : ''}
+                    ${commentDocument.VICEComment == true ? `<span class='vice-comment'>| SPLIT VICE |</span><br>` : ''}
 
                         <span class='html--comments--list--ownerName'>
                             ${commentDocument.OwnerName}
@@ -235,7 +235,7 @@ async function comments__main(CommentsKeyName) {
             return;
         }
 
-        const request = await fetch(serverHost + '/api/comments/', {
+        const request = await fetch(SERVER_HOST + '/api/comments/', {
             method: 'POST',
             headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
             body: JSON.stringify(
@@ -272,7 +272,7 @@ async function comments__main(CommentsKeyName) {
             PointedCommentId: PointedCommentId
         }
 
-        const request = await fetch(serverHost + '/api/comments/reply', {
+        const request = await fetch(SERVER_HOST + '/api/comments/reply', {
             method: 'POST',
             headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
             body: JSON.stringify(reply_object)

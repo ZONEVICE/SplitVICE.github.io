@@ -1,34 +1,22 @@
 <!DOCTYPE html>
-<!--    ------------------
-      /                    \
-    /                        \
-  /     - - - -      - - - -   \
-/      /        \   /        \  \
-|     |         |  |         |   |
-|     |         |  |         |   |
-|       - - - -      - - - -     |
-|      - -                - -    |
-|    |     |            |     |  |
-\      - -      - -       - -    /
-  \            |    |          /
-    \           - -          /
-      \--------------------/ VICE.
-    Hey there, hope you are having a nice day! :>-->
 <html lang="en">
 
 <head>
+    <!-- SEO -->
+    <meta name="author" content="SPLIT VICE">
+    <meta name="description" content="SPLIT VICE web page. computer engineer and artist.">
+    <meta name="keywords" content="SPLIT VICE, VICE, SPLITVICE, art, coding">
+    <title>SPLIT VICE</title>
+    <meta property="og:title" content="SPLIT VICE" />
+    <meta property="og:url" content="https://split-vice.com/" />
+    <meta property="og:image" content="/public/img/favicon.png" />
+    <meta property="twitter:site" content="@SplitVICE_">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#bd0058" />
-    <meta name="author" content="JUSTVICE">
     <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
-    <meta name="description" content="Just VICE web page. N/SFW digital artist and computer engineer.">
-    <meta name="keywords" content="justvice, vice, just vice, art, coding">
-    <title>JUST VICE</title>
-    <meta property="og:title" content="JUST VICE" />
-    <meta property="og:url" content="https://just-vice.com/" />
-    <meta property="og:image" content="/public/img/favicon.png" />
-    <meta property="twitter:site" content="@_justvice">
+
+    <!-- EXTERNAL EXPORTS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -40,34 +28,29 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="/public/script/aside_script.js"></script>
-    <script src="/public/script/load_htmlViews.js"></script>
-    <script src="/public/script/ajax.js"></script>
-    <link id="pagestyle" rel="stylesheet" href="/public/css/style.css">
-    <script src="./public/script/global.js"></script>
 </head>
+
+<div id="div_style">
+    <link rel="stylesheet" href="/public/css/style.darkmode.css">
+</div>
 
 <body>
     <header>
-        <a href="/">
-            <img class="headerImage" src="/public/img/header-image.png" alt="missing logo!">
-        </a>
-        <a href="#" onclick="show_hide_aside()">
-            <img class="headerNavbarButtonImage" src="/public/img/navbar-button.png" width="30px"
-                alt="Missing navbar button!">
-        </a>
+        <div id="div_header">
+
+        </div>
     </header>
 
-    <div class="customContainer">
+    <div class="container-general">
 
-        <aside id="aside_id">
-            <div id="aside_content_id">
+        <aside id="div_aside_left">
+            <div>
             </div>
         </aside>
 
-        <div class="mainContent">
+        <div class="container-main-content">
 
-            <div class="breadCrumb">
+            <div>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item active" aria-current="page">Home</li>
@@ -75,11 +58,11 @@
                 </nav>
             </div>
 
-            <div id="message_to_all_pages_content_id">
+            <div id="div_global_message">
 
             </div>
 
-            <h1 style="text-align: center;">JUST VICE's Archive</h1>
+            <h1 style="text-align: center;">SPLIT VICE Archive</h1>
 
             <ul class="navigatorUl">
                 <li>
@@ -111,7 +94,7 @@
             </ul>
             <hr>
 
-            <div class="mainContentInfoTitleBlock h3">Art</div>
+            <div class="container-main-contentInfoTitleBlock h3">Art</div>
             <p>
                 My art has been <span class="textBold">considered cursed/scary</span> from different sources (SFW and
                 NSFW).
@@ -137,7 +120,7 @@
             </ul>
             <hr>
 
-            <div class="mainContentInfoTitleBlock h3">Technology</div>
+            <div class="container-main-contentInfoTitleBlock h3">Technology</div>
             <p>
                 I like to code and sharing is living so here you go.
                 <br> Collection of programs I made for either practice, personal use, fun or all of the above.
@@ -164,7 +147,7 @@
             </ul>
             <hr>
 
-            <div class="mainContentInfoTitleBlock h3">Miscellaneous</div>
+            <div class="container-main-contentInfoTitleBlock h3">Miscellaneous</div>
             <p>
                 Varied information or pages not related to art or technology somewhat worthy to be shown in this
                 website.
@@ -196,34 +179,17 @@
     </div>
 
     <footer>
-        <div id="footer_content_id">
+        <div id="div_footer">
 
         </div>
     </footer>
-    <script>
-        load_footer();
-        load_aside();
-        load_messageToAllPages();
+    <script src="/public/script/global.js"></script>
 
-        async function checkBackendStatus() {
-            try {
-                const request = await fetch(serverHost + "/api/isup", {
-                    method: 'GET',
-                    headers: {
-                        'Accept': 'application/json',
-                        'Content-Type': 'application/json'
-                    }
-                });
-                const response = await request.json();
-                if (response.status == "up")
-                    console.log("Backend server: OK");
-                else
-                    console.error('Server unreachable');
-            } catch (error) {
-                console.error(error);
-            }
-        }
-        checkBackendStatus();
+    <script>
+        (async () => {
+            const request = await fetch(SERVER_HOST + "/api/isup"), response = await request.json();
+            response.status == 'up' ? console.log("Backend server: OK") : console.error('Server unreachable');
+        })();
     </script>
 
     <style>
@@ -237,11 +203,10 @@
             color: rgb(163, 163, 163);
         }
 
-        .mainContentInfoTitleBlock {
+        .container-main-contentInfoTitleBlock {
             text-align: center;
         }
     </style>
-    
 </body>
 
 </html>

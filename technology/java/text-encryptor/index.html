@@ -1,161 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <!-- HTML5 coding protocole -->
-        <meta charset="utf-8">
-    
-        <!-- Responsive tag -->
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-        <!-- Sets a color to adress bar on mobile browsers. -->
-        <meta name="theme-color" content="#bd0058" />
-    
-        <!-- Bootstrap and JQuery imports -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
-    
-        <!-- CSS and JS imports/templates -->
-        <!-- <link rel="stylesheet" href="XXXXXXXXX"> -->
-        <!-- <script src="XXXXXXX"></script> -->
-    
-        <!-- DEFAULT ASSET IMPORTS -->
-        <link id="pagestyle" rel="stylesheet" href="/public/css/style.css">
-        <script src="/public/script/aside_script.js"></script>
-        <script src="/public/script/load_htmlViews.js"></script>
-        <script src="/public/script/ajax.js"></script>
-    
-        <!-- Browser tab icon -->
-        <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
-    
-        <!-- Browser tab title -->
-        <title>JUST VICE</title>
-        <script src="/public/script/global.js"></script>
-    </head>
+<head>
+    <!-- SEO -->
+    <title>Text Encryptor - By SPLIT VICE</title>
+    <meta name="author" content="SPLIT VICE">
+    <meta name="description" content="Text Encryptor - By SPLIT VICE. An old yet probably bad coded text encryption application.">
+    <meta name="keywords" content="SPLIT VICE, VICE, SPLITVICE, art, coding, text encryptor">
+    <meta property="og:title" content="SPLIT VICE" />
+    <meta property="og:url" content="https://split-vice.com/technology/java/text-encryptor/" />
+    <meta property="og:image" content="/public/img/favicon.png" />
+    <meta property="twitter:site" content="@SplitVICE_">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#bd0058" />
+    <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
 
-    <body>
+    <!-- EXTERNAL EXPORTS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</head>
 
-        <header>
-            <div id="header_content_id">
-            </div>
-        </header>
-    
-        <div class="customContainer">
-            <aside id="aside_id">
-                <div id="aside_content_id">
-    
-                </div>
-            </aside>
-    
-            <div class="mainContent">
-                <div class="breadCrumb">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="/">Home</a></li>
-                            <li class="breadcrumb-item"><a href="/technology/">Technology</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Java</li>
-                            <li class="breadcrumb-item active" aria-current="page">Text Encryptor</li>
-                            <!-- <li class="breadcrumb-item active" aria-current="page">ACTIVE PAGE</li> -->
-                        </ol>
-                    </nav>
-                </div>
-                <div id="message_to_all_pages_content_id">
-                </div>
-                <h1 style="text-align: center;">Text Encryptor</h1>
-                <hr>
-                <h6>Program specifications</h6>
-                <p>
-                <b>Note: </b>Yes, I know the program does not really encrypt text. It codifies it. I was a novice ok? :> (I still am).
-                </p>
-                <ul>
-                    <li>Author: VICE</li>
-                    <li>License: MIT</li>
-                    <li>Latest version: 0.9</li>
-                    <li>Programming language: Java</li>
-                    <li>Language: English</li>
-                    <li>First release date: 22 September 2018</li>
-                    <li>Last update: 21 November 2019</li>
-                </ul>
-                <hr>
-                <h6>Program description</h6>
-                <p>
-                    A program made to encrypt text. Its true value is that you are able to make your own encrypted text.
-                    <br>
-                    Make your own encrypted text out of a text file and save it inside a safe spot.
-                    <br>
-                    <b> Without the .txt file with the encrypted pattern, it is impossible to unencrypt your text, so be
-                        careful.</b>
-                    <br>
-                    <br>
-                    <a target="_blank" href="https://github.com/JustVice/TextEncryptor/wiki">To learn how to make your own
-                        encrypted patterns, please, read the User Manual here.</a>
-                </p>
-                <hr>
-                <img src="https://i.imgur.com/UToAqbt.png" alt="missing img">
-                <hr>
-                <h6>Program features</h6>
-                <ul>
-                    <li>Is there a letter not encrypted? No problem, add it inside the .txt file as stated in the user
-                        manual</li>
-                    <li>No matter what kind of alphabet you are using, the program should work.</li>
-                    <li>Possibility to save all the encryption patterns you want.</li>
-                    <li>Encrypt any kind of text you want.</li>
-                    <li>Feather size.</li>
-                </ul>
-                <hr>
-                <h6>Links</h6>
-                <ul>
-                    <li>
-                        <a target="_blank"
-                            href="https://github.com/JustVice/TextEncryptor/releases/download/0.9/Text.Encryptor.0.9.zip">
-                            Direct download: Text Encryptor 0.9</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://github.com/JustVice/TextEncryptor/releases">Browse other
-                            versions</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://github.com/JustVice/TextEncryptor/wiki">User Manual.</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://mega.nz/#F!mvQwmIgJ!1ErN51p9NRehylkS99M6jA">Mega archive</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://github.com/JustVice?tab=repositories">Github repositories</a>
-                    </li>
-                </ul>
-                <hr>
-                <h6>Support</h6>
-                <a href="/send-message/">Send feedback (bug report or suggestions)</a>
-                <style>
-                    img {
-                        max-width: 100%;
-                    }
-                </style>
-            </div>
+<div id="div_style">
+    <link rel="stylesheet" href="/public/css/style.darkmode.css">
+</div>
+
+<body>
+
+    <header>
+        <div id="div_header">
         </div>
-    
-        <footer>
-            <div id="footer_content_id">
-    
+    </header>
+
+    <div class="container-general">
+        <aside id="div_aside_left">
+            <div>
             </div>
-        </footer>
-    
-        <script>
-            load_header();
-            load_footer();
-            load_aside();
-            load_messageToAllPages();
-        </script>
-    </body>
+        </aside>
+
+        <div class="container-main-content">
+            <div class="breadCrumb">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item"><a href="/technology/">Technology</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Java</li>
+                        <li class="breadcrumb-item active" aria-current="page">Text Encryptor</li>
+                        <!-- <li class="breadcrumb-item active" aria-current="page">ACTIVE PAGE</li> -->
+                    </ol>
+                </nav>
+            </div>
+            <div id="div_global_message">
+            </div>
+            <div class="h1 center">Text Encryptor</div>
+            <hr>
+            <h6>Program specifications</h6>
+            <p>
+                <b>Note: </b>Yes, I know the program does not really encrypt text. It codifies it. I was a novice ok? :>
+                (I still am).
+            </p>
+            <ul>
+                <li>Author: SPLIT VICE</li>
+                <li>License: MIT</li>
+                <li>Latest version: 0.9</li>
+                <li>Programming language: Java</li>
+                <li>Language: English</li>
+                <li>First release date: 22 September 2018</li>
+                <li>Last update: 21 November 2019</li>
+            </ul>
+            <hr>
+            <h6>Program description</h6>
+            <p>
+                A program made to encrypt text. Its true value is that you are able to make your own encrypted text.
+                <br>
+                Make your own encrypted text out of a text file and save it inside a safe spot.
+                <br>
+                <b> Without the .txt file with the encrypted pattern, it is impossible to unencrypt your text, so be
+                    careful.</b>
+                <br>
+                <br>
+                <a target="_blank" href="https://github.com/SPLITVICE/TextEncryptor/wiki">To learn how to make your own
+                    encrypted patterns, please, read the User Manual here.</a>
+            </p>
+            <hr>
+            <img src="https://i.imgur.com/UToAqbt.png" alt="text encryptor">
+            <hr>
+            <h6>Program features</h6>
+            <ul>
+                <li>Is there a letter not encrypted? No problem, add it inside the .txt file as stated in the user
+                    manual</li>
+                <li>No matter what kind of alphabet you are using, the program should work.</li>
+                <li>Possibility to save all the encryption patterns you want.</li>
+                <li>Encrypt any kind of text you want.</li>
+                <li>Feather size.</li>
+            </ul>
+            <hr>
+            <h6>Links</h6>
+            <ul>
+                <li>
+                    <a target="_blank"
+                        href="https://github.com/SPLITVICE/TextEncryptor/releases/download/0.9/Text.Encryptor.0.9.zip">
+                        Direct download: Text Encryptor 0.9</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://github.com/SPLITVICE/TextEncryptor/releases">Browse other
+                        versions</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://github.com/SPLITVICE/TextEncryptor/wiki">User Manual.</a>
+                </li>
+                <li>
+                    <a target="_blank" href="/s/mega-archive/">Mega archive</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://github.com/SPLITVICE?tab=repositories">Github repositories</a>
+                </li>
+            </ul>
+            <hr>
+            <h6>Support</h6>
+            <a href="/send-message/">Send feedback (bug report or suggestions)</a>
+            <style>
+                img {
+                    max-width: 100%;
+                }
+            </style>
+        </div>
+    </div>
+
+    <footer>
+        <div id="div_footer">
+
+        </div>
+    </footer>
+    <script src="/public/script/global.js"></script>
+    <h1 style='position: fixed; visibility: hidden; top:0;'>Text Encryptor - By SPLIT VICE</h1>
+</body>
 
 </html>

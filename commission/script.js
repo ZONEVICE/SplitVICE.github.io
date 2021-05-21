@@ -81,7 +81,7 @@ const softwareCommissionOpen_content = `
 // Loads current commission status (both kinds of commission). Sets content depending of result.
 // ------------------------------------------------------------------------------------
 async function loadCommissionStatus() {
-    let request = await fetch(serverHost + "/api/WebSiteSettings", {
+    let request = await fetch(SERVER_HOST + "/api/WebSiteSettings", {
         method: 'GET',
         headers: {
             'Accept': 'application/json',

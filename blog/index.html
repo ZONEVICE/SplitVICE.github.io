@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta name="author" content="JUST VICE">
-    <meta name="description" content="Just VICE's blog. N/SFW digital artist and computer engineer.">
-    <meta name="keywords" content="JUST VICE, VICE, JUSTVICE, art, coding, blog">
-    <title>JUST VICE - Blog</title>
-    <meta property="og:title" content="JUST VICE - Blog" />
-    <meta property="og:url" content="https://just-vice.com/" />
+    <title>SPLIT VICE - Blog</title>
+    <meta name="author" content="SPLIT VICE">
+    <meta name="description" content="SPLIT VICE - blog. Digital artist and computer engineer.">
+    <meta name="keywords" content="SPLIT VICE, VICE, SPLITVICE, art, coding, blog">
+    <meta property="og:title" content="SPLIT VICE - Blog" />
+    <meta property="og:url" content="https://split-vice.com/blog" />
     <meta property="og:image" content="/public/img/favicon.png" />
-    <meta property="twitter:site" content="@_justvice">
+    <meta property="twitter:site" content="@SplitVice_">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#bd0058" />
@@ -29,32 +29,29 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
-    <!-- LOCAL SCRIPT AND STYLE EXPORTS -->
-    <script src="/public/script/aside_script.js"></script>
-    <script src="/public/script/load_htmlViews.js"></script>
-    <script src="/public/script/ajax.js"></script>
-    <link id="pagestyle" rel="stylesheet" href="/public/css/style.css">
-    <script src="/public/script/global.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <script src="/public/libs/moment.js"></script>
-    <link rel="stylesheet" href="/public/libs/comments/Comments.css">
+    <!-- LOCAL EXPORTS -->
+    <link rel="stylesheet" href="./style.css">
 </head>
+
+<div id="div_style">
+    <link rel="stylesheet" href="/public/css/style.darkmode.css">
+</div>
 
 <body>
 
     <header>
-        <div id="header_content_id">
+        <div id="div_header">
         </div>
     </header>
 
-    <div class="customContainer">
+    <div class="container-general">
 
-        <aside id="aside_id">
-            <div id="aside_content_id">
+        <aside id="div_aside_left">
+            <div>
             </div>
         </aside>
 
-        <div class="mainContent">
+        <div class="container-main-content">
 
             <div class="breadCrumb">
                 <nav aria-label="breadcrumb">
@@ -65,7 +62,7 @@
                 </nav>
             </div>
 
-            <div id="message_to_all_pages_content_id">
+            <div id="div_global_message">
             </div>
 
             <div class="h1" style="text-align: center;">Blog</div>
@@ -88,20 +85,19 @@
     </div>
 
     <footer>
-        <div id="footer_content_id">
+        <div id="div_footer">
 
         </div>
     </footer>
+    <script src="/public/script/global.js"></script>
 
-    <script>
-        load_header();
-        load_footer();
-        load_aside();
-        load_messageToAllPages();
-    </script>
+
     <script src="script.js"></script>
+    <link rel="stylesheet" href="/public/libs/comments/Comments.css">
     <script src="/public/libs/comments/Comments.js"></script>
+    <script src="/public/libs/moment.js"></script>
     <script>comments__main('BlogSection')</script>
+    <h1 style='position: fixed; visibility: hidden; top:0;'>SPLIT VICE - Blog</h1>
 </body>
 
 </html>

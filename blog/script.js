@@ -10,7 +10,7 @@ const container_blog = document.getElementById("container_blog");
 
 async function get_blogs() {
     try {
-        const req = await fetch(serverHost + "/api/blog"),
+        const req = await fetch(SERVER_HOST + "/api/blog"),
             res = await req.json();
         res.status == "success" && res.description == "blogs retrieved" ?
             render_blogs(res.blogs) :

@@ -8,7 +8,7 @@ function render_tables() {
   _2018_table();
   _2019_table();
   _2020_table();
-  _2021_table();
+  //_2021_table();
 }
 
 render_tables();

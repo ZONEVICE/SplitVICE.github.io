@@ -5,6 +5,7 @@ Copy div on html:
 
 Copy necessary scripts at the end of html:
 
+<link rel="stylesheet" href="/public/libs/comments/Comments.css">
 <script src="/public/libs/comments/Comments.js"></script>
 <script src="/public/libs/moment.js"></script>
 <script>comments__main('name_of_comments_document')</script>

@@ -2,17 +2,21 @@
 <html lang="en">
 
 <head>
-    <meta name="author" content="JUST VICE">
-    <meta name="description"
-        content="JUST VICE's art log. Organized by date, rating, and links to where they are published.">
-    <meta name="keywords" content="justvice, vice, just vice, art log, art">
-    <meta property="og:title" content="JUST VICE - Art log" />
-    <meta property="og:url" content="https://www.just-vice.com/art/log" />
+    <!-- SEO -->
+    <title>SPLIT VICE - Art log</title>
+    <meta name="author" content="SPLIT VICE">
+    <meta name="description" content="SPLIT VICE - Art log. Organized by date and links to where they are published.">
+    <meta name="keywords" content="SPLIT VICE, VICE, SPLITVICE, art, art log">
+    <meta property="og:title" content="SPLIT VICE - Art log" />
+    <meta property="og:url" content="https://www.split-vice.com/art/log" />
     <meta property="og:image" content="/public/img/favicon.png" />
-    <meta property="twitter:site" content="@_justvice">
+    <meta property="twitter:site" content="@SplitVice_">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#bd0058" />
+    <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
+
+    <!-- EXTERNAL EXPORTS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -24,34 +28,28 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <link id="pagestyle" rel="stylesheet" href="/public/css/style.css">
-    <script src="/public/script/aside_script.js"></script>
-    <script src="/public/script/load_htmlViews.js"></script>
-    <script src="/public/script/ajax.js"></script>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./OnlineNotesComments.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
-    <title>JUST VICE - Art log</title>
-    <script src="/public/script/global.js"></script>
-    <link rel="stylesheet" href="/public/libs/comments/Comments.css">
 </head>
+
+<div id="div_style">
+    <link rel="stylesheet" href="/public/css/style.darkmode.css">
+</div>
 
 <body>
 
     <header>
-        <div id="header_content_id">
+        <div id="div_header">
         </div>
     </header>
 
-    <div class="customContainer">
+    <div class="container-general">
 
-        <aside id="aside_id">
-            <div id="aside_content_id">
+        <aside id="div_aside_left">
+            <div>
             </div>
         </aside>
 
-        <div class="mainContent">
+        <div class="container-main-content">
 
             <div class="breadCrumb">
                 <nav aria-label="breadcrumb">
@@ -63,7 +61,7 @@
                 </nav>
             </div>
 
-            <div id="message_to_all_pages_content_id">
+            <div id="div_global_message">
             </div>
 
             <div class="h1" style="text-align: center;">Art log</div>
@@ -108,7 +106,7 @@
 
             <!-- <div id="_2021_title" class="text-center">
                 <img class="img-fluid" src="https://dl.dropboxusercontent.com/s/nmdv3hn4fk7iwe8/2021.png?dl=0"
-                    alt="art log 2021 image just vice">
+                    alt="art log 2021 image SPLIT VICE">
                 <br>
                 <button id="btn_player3" class="btn btn-success btn-sm" type="button" onclick="video_controller(3)">Play
                     music</button>
@@ -124,7 +122,7 @@
 
             <div id="_2020_title" class="text-center">
                 <img class="img-fluid" src="https://dl.dropboxusercontent.com/s/ywpdb8z2oxbxzpd/2020.png?dl=0"
-                    alt="art log 2020 image just vice">
+                    alt="art log 2020 image SPLIT VICE">
                 <br>
                 <button id="btn_player0" class="btn btn-success btn-sm" type="button" onclick="video_controller(0)">Play
                     music</button>
@@ -140,7 +138,7 @@
 
             <div id="_2019_title" class="text-center">
                 <img class="img-fluid" src="https://dl.dropboxusercontent.com/s/1ty8kf7bef1y6tq/2019.png?dl=0"
-                    alt="art log 2019 image just vice">
+                    alt="art log 2019 image SPLIT VICE">
                 <br>
                 <button id="btn_player1" class="btn btn-success btn-sm" type="button" onclick="video_controller(1)">Play
                     music</button>
@@ -153,8 +151,8 @@
             <!-- /////////////////////////////////////////////// -->
 
             <div id="_2018_title" class="text-center">
-                <img class="img-fluid" src="https://dl.dropboxusercontent.com/s/h96qznziar5nllr/2018.png?dl=0"
-                    alt="art log 2018 image just vice">
+                <img class="img-fluid" src="https://dl.dropboxusercontent.com/s/sr5mb5ytzhj51k2/2018.png?dl=0"
+                    alt="art log 2018 image SPLIT VICE">
                 <br>
                 <button id="btn_player2" class="btn btn-success btn-sm" type="button" onclick="video_controller(2)">Play
                     music</button>
@@ -180,25 +178,21 @@
     <div id="player_2018"></div>
 
     <footer>
-        <div id="footer_content_id">
+        <div id="div_footer">
 
         </div>
     </footer>
+    <script src="/public/script/global.js"></script>
 
-    <script>
-        load_header();
-        load_footer();
-        load_aside();
-        load_messageToAllPages();
-    </script>
+
     <script src="registries.js"></script>
-    <script src="script.js"></script>
-    <script>fetch_comments();</script>
+    <script src="./script.js"></script>
     <script src="music.js"></script>
-    <h1 style="visibility: hidden; position: fixed; top: 0;">JUST VICE - Art log</h1>
+    <link rel="stylesheet" href="/public/libs/comments/Comments.css">
     <script src="/public/libs/comments/Comments.js"></script>
     <script src="/public/libs/moment.js"></script>
     <script>comments__main('ArtLogSection')</script>
+    <h1 style="visibility: hidden; position: fixed; top: 0;">SPLIT VICE - Art log</h1>
 </body>
 
 </html>

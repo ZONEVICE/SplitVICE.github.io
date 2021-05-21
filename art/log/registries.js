@@ -43,10 +43,10 @@ const registries_2020 =
                 ],
             "LinkUrl":
                 [
-                    "https://twitter.com/_JustVice_/status/1255572116419772419?s=20",
-                    "https://www.deviantart.com/justviceart/art/Steve-s-Ass-839887579?ga_submit_new=10%3A1588186707",
+                    "https://twitter.com/_SPLITVICE_/status/1255572116419772419?s=20",
+                    "https://www.deviantart.com/SPLITVICEart/art/Steve-s-Ass-839887579?ga_submit_new=10%3A1588186707",
                     "https://www.pixiv.net/en/artworks/81167454",
-                    "https://www.newgrounds.com/art/view/justvice/steve-s-ass",
+                    "https://www.newgrounds.com/art/view/SPLITVICE/steve-s-ass",
                     "https://www.instagram.com/p/B_k2FoOBFV8/?utm_source=ig_web_button_share_sheet"
                 ]
         },
@@ -68,12 +68,12 @@ const registries_2020 =
                 ],
             "LinkUrl":
                 [
-                    "https://twitter.com/_JustVice_/status/1249051296054771712?s=20",
-                    "https://www.deviantart.com/justviceart/art/Jenny-XJ9-837458715?ga_submit_new=10%3A1586632167",
+                    "https://twitter.com/_SPLITVICE_/status/1249051296054771712?s=20",
+                    "https://www.deviantart.com/SPLITVICEart/art/Jenny-XJ9-837458715?ga_submit_new=10%3A1586632167",
                     "https://www.pixiv.net/en/artworks/80727791",
-                    "https://www.newgrounds.com/art/view/justvice/jenny-xj9",
+                    "https://www.newgrounds.com/art/view/SPLITVICE/jenny-xj9",
                     "https://www.instagram.com/p/B-2hbOrBrR1/?utm_source=ig_web_button_share_sheet",
-                    "https://justvice.tumblr.com/post/615128704363986944/can-robots-get-drunk"
+                    "https://SPLITVICE.tumblr.com/post/615128704363986944/can-robots-get-drunk"
                 ]
         },
         {
@@ -94,11 +94,11 @@ const registries_2020 =
                 ],
             "LinkUrl":
                 [
-                    "https://twitter.com/_JustVice_/status/1216879395002093570?s=20",
+                    "https://twitter.com/_SPLITVICE_/status/1216879395002093570?s=20",
                     "https://www.pixiv.net/en/artworks/78894125",
-                    "https://justvice.tumblr.com/post/190243610691/tony-stark-commission-by-ac",
-                    "https://www.newgrounds.com/art/view/justvice/tony-stark",
-                    "https://www.deviantart.com/justviceart/art/Tony-Stark-826887674?ga_submit_new=10%3A1578961691",
+                    "https://SPLITVICE.tumblr.com/post/190243610691/tony-stark-commission-by-ac",
+                    "https://www.newgrounds.com/art/view/SPLITVICE/tony-stark",
+                    "https://www.deviantart.com/SPLITVICEart/art/Tony-Stark-826887674?ga_submit_new=10%3A1578961691",
                     "https://www.instagram.com/p/B7R6qw2B6Yw/?utm_source=ig_web_button_share_sheet"
                 ]
         }
@@ -121,7 +121,7 @@ const registries_2019 =
                 ],
             "LinkUrl":
                 [
-                    "https://twitter.com/_JustVice_/status/1182204614097166341?s=20"
+                    "https://twitter.com/_SPLITVICE_/status/1182204614097166341?s=20"
                 ]
         },
         {
@@ -141,10 +141,10 @@ const registries_2019 =
                 ],
             "LinkUrl":
                 [
-                    "https://twitter.com/_justvice_/status/1162190511698059264?s=20",
-                    "https://www.newgrounds.com/art/view/justvice/pheromosa",
+                    "https://twitter.com/_SPLITVICE_/status/1162190511698059264?s=20",
+                    "https://www.newgrounds.com/art/view/SPLITVICE/pheromosa",
                     "https://www.pixiv.net/member_illust.php?mode=medium&illust_id=76285412",
-                    "https://www.deviantart.com/justviceart/art/Pheromosa-809835950?ga_submit_new=10%3A1565922719",
+                    "https://www.deviantart.com/SPLITVICEart/art/Pheromosa-809835950?ga_submit_new=10%3A1565922719",
                     "https://www.instagram.com/p/B1NUxdtB9UD/?utm_source=ig_web_button_share_sheet"
                 ]
         },
@@ -167,11 +167,11 @@ const registries_2019 =
                 ],
             "LinkUrl":
                 [
-                    "https://twitter.com/JustVice1/status/1098326895597359105",
+                    "https://twitter.com/SPLITVICE1/status/1098326895597359105",
                     "https://www.pixiv.net/member_illust.php?mode=medium&illust_id=73301421",
-                    "https://www.newgrounds.com/art/view/justvice/he-s-smiling",
-                    "https://www.deviantart.com/justviceart/art/He-s-smiling-786510361?ga_submit_new=10%3A1550696668&ga_type=edit&ga_changes=1",
-                    "https://justvice.tumblr.com/post/182943859121/hes-smiling-links-httpbitlyjustvicelinks",
+                    "https://www.newgrounds.com/art/view/SPLITVICE/he-s-smiling",
+                    "https://www.deviantart.com/SPLITVICEart/art/He-s-smiling-786510361?ga_submit_new=10%3A1550696668&ga_type=edit&ga_changes=1",
+                    "https://SPLITVICE.tumblr.com/post/182943859121/hes-smiling-links-httpbitlySPLITVICElinks",
                     "http://www.furaffinity.net/view/30550186/",
                     "https://www.instagram.com/p/BuHktTvh_Ws/?utm_source=ig_web_copy_link"
                 ]
@@ -193,10 +193,10 @@ const registries_2019 =
                 ],
             "LinkUrl":
                 [
-                    "https://twitter.com/JustVice1/status/1094811133536620545",
+                    "https://twitter.com/SPLITVICE1/status/1094811133536620545",
                     "https://www.pixiv.net/member_illust.php?mode=medium&illust_id=73120516",
-                    "https://www.newgrounds.com/art/view/justvice/febstermix-10-succubus-pumpkin",
-                    "https://www.deviantart.com/justviceart/art/Febstermix-10-Succubus-Pumpkin-785131430?ga_submit_new=10%3A1549858913",
+                    "https://www.newgrounds.com/art/view/SPLITVICE/febstermix-10-succubus-pumpkin",
+                    "https://www.deviantart.com/SPLITVICEart/art/Febstermix-10-Succubus-Pumpkin-785131430?ga_submit_new=10%3A1549858913",
                     "https://www.instagram.com/p/Btul9mwhp0c/?utm_source=ig_web_options_share_sheet"
                 ]
         },
@@ -219,11 +219,11 @@ const registries_2019 =
                 ],
             "LinkUrl":
                 [
-                    "https://twitter.com/JustVice1/status/1090075080535826432",
+                    "https://twitter.com/SPLITVICE1/status/1090075080535826432",
                     "https://www.pixiv.net/member_illust.php?mode=medium&illust_id=72898814",
-                    "https://www.newgrounds.com/art/view/justvice/bendycat-2",
-                    "https://www.deviantart.com/justviceart/art/BendyCat-2-783216846?ga_submit_new=10%3A1548729313",
-                    "https://justvice.tumblr.com/post/182387400026/bendycat-2-links-httpbitlyjustvicelinks",
+                    "https://www.newgrounds.com/art/view/SPLITVICE/bendycat-2",
+                    "https://www.deviantart.com/SPLITVICEart/art/BendyCat-2-783216846?ga_submit_new=10%3A1548729313",
+                    "https://SPLITVICE.tumblr.com/post/182387400026/bendycat-2-links-httpbitlySPLITVICElinks",
                     "https://www.instagram.com/p/BtM8Nhkht6A/?utm_source=ig_web_button_share_sheet",
                     "http://www.furaffinity.net/view/30264171/"
                 ]
@@ -250,10 +250,10 @@ const registries_2018 =
                 ],
             "LinkUrl":
                 [
-                    "https://twitter.com/JustVicee/status/1060764683383304192#",
+                    "https://twitter.com/SPLITVICEe/status/1060764683383304192#",
                     "https://www.pixiv.net/member_illust.php?mode=medium&illust_id=71571481#",
-                    "https://justvice.tumblr.com/post/179918338126/frisky-kirby-links-to-my-other-media#",
-                    "https://www.deviantart.com/justviceart/art/Frisky-Kirby-771837894?ga_submit_new=10%3A1541741072#"
+                    "https://SPLITVICE.tumblr.com/post/179918338126/frisky-kirby-links-to-my-other-media#",
+                    "https://www.deviantart.com/SPLITVICEart/art/Frisky-Kirby-771837894?ga_submit_new=10%3A1541741072#"
                 ]
         },
         {
@@ -273,10 +273,10 @@ const registries_2018 =
                 ],
             "LinkUrl":
                 [
-                    "https://twitter.com/JustVicee/status/1060592600615391233#",
+                    "https://twitter.com/SPLITVICEe/status/1060592600615391233#",
                     "https://www.pixiv.net/member_illust.php?mode=medium&illust_id=71568033#",
-                    "https://justvice.tumblr.com/post/179899569346/bandit-from-clash-royale-links-to-my-other#",
-                    "https://www.deviantart.com/justviceart/art/Clash-Royale-Bandit-771764906?ga_submit_new=10%3A1541699872#",
+                    "https://SPLITVICE.tumblr.com/post/179899569346/bandit-from-clash-royale-links-to-my-other#",
+                    "https://www.deviantart.com/SPLITVICEart/art/Clash-Royale-Bandit-771764906?ga_submit_new=10%3A1541699872#",
                     "https://www.instagram.com/p/Bp7aZcnhw4c/?utm_source=ig_web_button_share_sheet#"
                 ]
         },
@@ -294,8 +294,8 @@ const registries_2018 =
                 ],
             "LinkUrl":
                 [
-                    "https://justvice.tumblr.com/post/179832515221/srpelos-2018-halloween-dance#",
-                    "https://www.deviantart.com/justviceart/art/Sr-Pelo-s-2018-Halloween-dance-771520687#"
+                    "https://SPLITVICE.tumblr.com/post/179832515221/srpelos-2018-halloween-dance#",
+                    "https://www.deviantart.com/SPLITVICEart/art/Sr-Pelo-s-2018-Halloween-dance-771520687#"
                 ]
         },
         {
@@ -315,10 +315,10 @@ const registries_2018 =
                 ],
             "LinkUrl":
                 [
-                    "https://twitter.com/JustVice1/status/1045088771421753344#",
+                    "https://twitter.com/SPLITVICE1/status/1045088771421753344#",
                     "https://www.pixiv.net/member_illust.php?mode=medium&illust_id=70895453#",
-                    "https://justvice.tumblr.com/post/178494071836/shyette-not-a-masks-fetish-btw-my-other-media#",
-                    "https://www.deviantart.com/justviceart/art/Shyette-765679061#",
+                    "https://SPLITVICE.tumblr.com/post/178494071836/shyette-not-a-masks-fetish-btw-my-other-media#",
+                    "https://www.deviantart.com/SPLITVICEart/art/Shyette-765679061#",
                     "https://www.instagram.com/p/BoNRHkXhyyK/?utm_source=ig_web_button_share_sheet#"
                 ]
         },
@@ -339,10 +339,10 @@ const registries_2018 =
                 ],
             "LinkUrl":
                 [
-                    "https://twitter.com/JustVice1/status/1042971408501014528#",
+                    "https://twitter.com/SPLITVICE1/status/1042971408501014528#",
                     "https://www.pixiv.net/member_illust.php?mode=medium&illust_id=70796120#",
-                    "https://justvice.tumblr.com/post/178300634391/avatar-drawing-again-i-should-stop-drawing#",
-                    "https://www.deviantart.com/justviceart/art/Avatar-drawing-again-764844538#",
+                    "https://SPLITVICE.tumblr.com/post/178300634391/avatar-drawing-again-i-should-stop-drawing#",
+                    "https://www.deviantart.com/SPLITVICEart/art/Avatar-drawing-again-764844538#",
                     "https://www.instagram.com/p/Bn-QBG9BKr7/?utm_source=ig_web_button_share_sheet#"
                 ]
         },
@@ -363,10 +363,10 @@ const registries_2018 =
                 ],
             "LinkUrl":
                 [
-                    "https://twitter.com/JustVice1/status/1038974799710707718#",
+                    "https://twitter.com/SPLITVICE1/status/1038974799710707718#",
                     "https://www.pixiv.net/member_illust.php?mode=medium&illust_id=70629861#",
-                    "https://justvice.tumblr.com/post/177925625786/avatar-drawings#",
-                    "https://www.deviantart.com/justviceart/art/Avatar-drawings-763347825#",
+                    "https://SPLITVICE.tumblr.com/post/177925625786/avatar-drawings#",
+                    "https://www.deviantart.com/SPLITVICEart/art/Avatar-drawings-763347825#",
                     "https://www.instagram.com/p/Bnh2kmMguoZ/?utm_source=ig_web_button_share_sheet#"
                 ]
         },
@@ -387,10 +387,10 @@ const registries_2018 =
                 ],
             "LinkUrl":
                 [
-                    "https://twitter.com/JustVice1/status/1034524779196436482#",
+                    "https://twitter.com/SPLITVICE1/status/1034524779196436482#",
                     "https://www.pixiv.net/member_illust.php?mode=medium&illust_id=70436981#",
-                    "https://justvice.tumblr.com/post/177491641091/clash-royale-princess#",
-                    "https://www.deviantart.com/justviceart/art/Clash-Royale-Princess-761550609#",
+                    "https://SPLITVICE.tumblr.com/post/177491641091/clash-royale-princess#",
+                    "https://www.deviantart.com/SPLITVICEart/art/Clash-Royale-Princess-761550609#",
                     "https://www.instagram.com/p/BnCQ21AAQwt/?utm_source=ig_web_button_share_sheet#"
                 ]
         },
@@ -407,7 +407,7 @@ const registries_2018 =
                 ],
             "LinkUrl":
                 [
-                    "https://twitter.com/JustVice1/status/1027803877565980673#"
+                    "https://twitter.com/SPLITVICE1/status/1027803877565980673#"
                 ]
         },
         {
@@ -427,10 +427,10 @@ const registries_2018 =
                 ],
             "LinkUrl":
                 [
-                    "https://twitter.com/JustVice1/status/1030694084564987904#",
+                    "https://twitter.com/SPLITVICE1/status/1030694084564987904#",
                     "https://www.pixiv.net/member_illust.php?mode=medium&illust_id=70262389#",
-                    "https://justvice.tumblr.com/post/177119417826/just-vice-avatar-doodle-one-form-or-form-one#",
-                    "https://www.deviantart.com/justviceart/art/Just-Vice-Avatar-doodle-One-form-or-Form-One-759965676#",
+                    "https://SPLITVICE.tumblr.com/post/177119417826/just-vice-avatar-doodle-one-form-or-form-one#",
+                    "https://www.deviantart.com/SPLITVICEart/art/Just-Vice-Avatar-doodle-One-form-or-Form-One-759965676#",
                     "https://www.instagram.com/p/BmnAV-Lg_l_/?utm_source=ig_web_button_share_sheet#"
                 ]
         },
@@ -451,10 +451,10 @@ const registries_2018 =
                 ],
             "LinkUrl":
                 [
-                    "https://twitter.com/JustVice1/status/1030920355039391744#",
+                    "https://twitter.com/SPLITVICE1/status/1030920355039391744#",
                     "https://www.pixiv.net/member_illust.php?mode=medium&illust_id=70273652#",
-                    "https://justvice.tumblr.com/post/177132447811/just-vice-avatar-one-form-enhanced-version-my#",
-                    "https://www.deviantart.com/justviceart/art/Just-Vice-Avatar-One-form-Enhanced-version-760015737#",
+                    "https://SPLITVICE.tumblr.com/post/177132447811/just-vice-avatar-one-form-enhanced-version-my#",
+                    "https://www.deviantart.com/SPLITVICEart/art/Just-Vice-Avatar-One-form-Enhanced-version-760015737#",
                     "https://www.instagram.com/p/BmoG8hnAvau/?utm_source=ig_web_button_share_sheet#"
                 ]
         },
@@ -474,10 +474,10 @@ const registries_2018 =
                 ],
             "LinkUrl":
                 [
-                    "https://twitter.com/JustVice1/status/1022318347990515718#",
+                    "https://twitter.com/SPLITVICE1/status/1022318347990515718#",
                     "https://www.pixiv.net/member_illust.php?mode=medium&illust_id=69865225#",
-                    "https://justvice.tumblr.com/post/176287158901/rick-sanchez#",
-                    "https://www.deviantart.com/justviceart/art/Rick-Sanchez-756325499#"
+                    "https://SPLITVICE.tumblr.com/post/176287158901/rick-sanchez#",
+                    "https://www.deviantart.com/SPLITVICEart/art/Rick-Sanchez-756325499#"
                 ]
         },
         {
@@ -496,9 +496,9 @@ const registries_2018 =
                 ],
             "LinkUrl":
                 [
-                    "https://twitter.com/JustVice1/status/1018877966951092230#",
-                    "https://justvice.tumblr.com/post/175952902806/weird-dreams#",
-                    "https://www.deviantart.com/justviceart/art/Weird-Dreams-754795866#",
+                    "https://twitter.com/SPLITVICE1/status/1018877966951092230#",
+                    "https://SPLITVICE.tumblr.com/post/175952902806/weird-dreams#",
+                    "https://www.deviantart.com/SPLITVICEart/art/Weird-Dreams-754795866#",
                     "https://www.instagram.com/p/BlTDBlhAaKk/?utm_source=ig_web_button_share_sheet#"
                 ]
         },
@@ -519,10 +519,10 @@ const registries_2018 =
                 ],
             "LinkUrl":
                 [
-                    "https://twitter.com/JustVice1/status/1017955867692617728#",
+                    "https://twitter.com/SPLITVICE1/status/1017955867692617728#",
                     "https://www.pixiv.net/member_illust.php?mode=medium&illust_id=69711090#",
-                    "https://justvice.tumblr.com/post/175868879016/avatar-design-inspired-on-jason-voorhees#",
-                    "https://www.deviantart.com/justviceart/art/My-boy-Jason-Voorhees-754418701#",
+                    "https://SPLITVICE.tumblr.com/post/175868879016/avatar-design-inspired-on-jason-voorhees#",
+                    "https://www.deviantart.com/SPLITVICEart/art/My-boy-Jason-Voorhees-754418701#",
                     "https://www.instagram.com/p/BlMmBeJAmar/?utm_source=ig_web_button_share_sheet#"
                 ]
         },

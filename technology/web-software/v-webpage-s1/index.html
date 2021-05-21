@@ -2,16 +2,10 @@
 <html lang="en">
 
 <head>
-    <!-- HTML5 coding protocole -->
+    <title>SPLIT VICE</title>
     <meta charset="utf-8">
-
-    <!-- Responsive tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Sets a color to adress bar on mobile browsers. -->
     <meta name="theme-color" content="#bd0058" />
-
-    <!-- Bootstrap and JQuery imports -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -23,40 +17,27 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
-    <!-- CSS and JS imports/templates -->
-    <!-- <link rel="stylesheet" href="XXXXXXXXX"> -->
-    <!-- <script src="XXXXXXX"></script> -->
-
-    <!-- DEFAULT ASSET IMPORTS -->
-    <link id="pagestyle" rel="stylesheet" href="/public/css/style.css">
-    <script src="/public/script/aside_script.js"></script>
-    <script src="/public/script/load_htmlViews.js"></script>
-    <script src="/public/script/ajax.js"></script>
-
-    <!-- Browser tab icon -->
     <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
-
-    <!-- Browser tab title -->
-    <title>JUST VICE</title>
-    <script src="/public/script/global.js"></script>
 </head>
+
+<div id="div_style">
+    <link rel="stylesheet" href="/public/css/style.darkmode.css">
+</div>
 
 <body>
 
     <header>
-        <div id="header_content_id">
+        <div id="div_header">
         </div>
     </header>
 
-    <div class="customContainer">
-        <aside id="aside_id">
-            <div id="aside_content_id">
-
+    <div class="container-general">
+        <aside id="div_aside_left">
+            <div>
             </div>
         </aside>
 
-        <div class="mainContent">
+        <div class="container-main-content">
             <div class="breadCrumb">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
@@ -68,13 +49,13 @@
                     </ol>
                 </nav>
             </div>
-            <div id="message_to_all_pages_content_id">
+            <div id="div_global_message">
             </div>
             <h1 style="text-align: center;">V-WebPage S1</h1>
             <hr>
             <h6>Software specifications</h6>
             <ul>
-                <li>Author: VICE.</li>
+                <li>Author: SPLIT VICE.</li>
                 <li>License: MIT</li>
                 <li>Latest version: 1.0</li>
                 <li>Programming "languages": HTML, CSS, and JavaScript</li>
@@ -85,11 +66,11 @@
             <h6>Software description</h6>
             <p>
                 The HTML, CSS, and JavaScript project files used to display
-                <a href="">https://justvice.github.io</a>, but as a project template
+                <a href="">https://SPLITVICE.github.io</a>, but as a project template
                 to download and personalize.
             </p>
             <hr>
-            <img src="https://i.imgur.com/5XMWCgq.png" alt="missing img">
+            <img src="https://i.imgur.com/5XMWCgq.png" alt="v-webpage-s1">
             <hr>
             <!-- <h6>Software features</h6>
                 <ul>
@@ -109,7 +90,7 @@
                     </a>
                 </li>
                 <li>
-                    <a target="_blank" href="https://github.com/JustVice?tab=repositories">Github repositories</a>
+                    <a target="_blank" href="https://github.com/SPLITVICE?tab=repositories">Github repositories</a>
                 </li>
 
             </ul>
@@ -125,17 +106,11 @@
     </div>
 
     <footer>
-        <div id="footer_content_id">
+        <div id="div_footer">
 
         </div>
     </footer>
-
-    <script>
-        load_header();
-        load_footer();
-        load_aside();
-        load_messageToAllPages();
-    </script>
+    <script src="/public/script/global.js"></script>
 </body>
 
 </html>

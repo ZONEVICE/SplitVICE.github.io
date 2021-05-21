@@ -12,7 +12,7 @@ const submit_btn = document.getElementById("submit_btn");
 // ----------------------------------------------------------------------------------------
 // Checks if the mail backend is up. If so, enables button to send messages.
 function checkBackendStatus() {
-    const url = serverHost + "/api/isup";
+    const url = SERVER_HOST + "/api/isup";
 
     fetch(url)
         .then(function (response) {

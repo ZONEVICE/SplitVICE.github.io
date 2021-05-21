@@ -2,20 +2,18 @@
 <html lang="en">
 
 <head>
+    <title>SPLIT VICE - Send a message</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#bd0058" />
     <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
-    <meta name="author" content="JUSTVICE">
-    <meta name="description"
-    content="Send me a message - JUST VICE">
-    <meta name="keywords" content="justvice, vice, just vice, art, coding, send a message">
-    <title>JUST VICE - Send a message</title>
-    <meta property="og:title" content="JUST VICE - Send a message" />
-    <meta property="og:url" content="https://just-vice.com/send-message" />
-    <meta property="og:image"
-    content="/public/img/favicon.png" />
-    <meta property="twitter:site" content="@_justvice"> 
+    <meta name="author" content="SPLITVICE">
+    <meta name="description" content="SPLIT VICE - Send me a message">
+    <meta name="keywords" content="SPLITVICE, vice, SPLIT VICE, art, coding, send a message">
+    <meta property="og:title" content="SPLIT VICE - Send a message" />
+    <meta property="og:url" content="https://split-vice.com/send-message" />
+    <meta property="og:image" content="/public/img/favicon.png" />
+    <meta property="twitter:site" content="@SplitVice_">
 
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -29,31 +27,30 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="style.css">
-    <link id="pagestyle" rel="stylesheet" href="/public/css/style.css">
-    <script src="/public/script/global.js"></script>
-    <script src="/public/script/aside_script.js"></script>
-    <script src="/public/script/load_htmlViews.js"></script>
-    <script src="/public/script/ajax.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <!-- LOCAL EXPORTS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
+<div id="div_style">
+    <link rel="stylesheet" href="/public/css/style.darkmode.css">
+</div>
 
 <body>
 
     <header>
-        <div id="header_content_id">
+        <div id="div_header">
         </div>
     </header>
 
-    <div class="customContainer">
-        <aside id="aside_id">
-            <div id="aside_content_id">
-
+    <div class="container-general">
+        <aside id="div_aside_left">
+            <div>
             </div>
         </aside>
 
-        <div class="mainContent">
+        <div class="container-main-content">
             <div class="breadCrumb">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
@@ -62,7 +59,7 @@
                     </ol>
                 </nav>
             </div>
-            <div id="message_to_all_pages_content_id">
+            <div id="div_global_message">
             </div>
             <div class="h2 center">Send a Message</div>
             <hr>
@@ -151,20 +148,15 @@
     </div>
 
     <footer>
-        <div id="footer_content_id">
+        <div id="div_footer">
 
         </div>
     </footer>
+    <script src="/public/script/global.js"></script>
 
-    <script>
-        load_header();
-        load_footer();
-        load_aside();
-        load_messageToAllPages();
-    </script>
     <script src="ServiceCheck.js"></script>
     <script src="SubmitMessage.js"></script>
-    <h1 style="visibility: hidden;">JUST VICE - Send a message</h1>
+    <h1 style='position: fixed; visibility: hidden; top:0;'>SPLIT VICE - Send a message</h1>
 </body>
 
 </html>
