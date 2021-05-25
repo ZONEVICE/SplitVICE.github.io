@@ -129,7 +129,7 @@ const AsideLeft = /* html */`
 const GlobalMessage = /* html */``;
 
 const Footer = /* html */ `
-    SPLIT VICE's Website. Proudly coded by hand and from scratch. v1.2.1
+    SPLIT VICE's Website. Proudly coded by hand and from scratch
 `;
 
 // ==================================================================================================
