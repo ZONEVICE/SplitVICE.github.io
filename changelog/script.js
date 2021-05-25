@@ -14,6 +14,10 @@ function build(){
 const records =
     [
         {
+            title: "2021/05/25 - v1.2.4",
+            desc: `- Drawesome section page was moved to The Junk Stash.`,
+        },
+        {
             title: "2021/05/21 - v1.2.1",
             desc: `- SPLIT Patch:<br>
             - Several inner code has been improved.<br>
@@ -215,7 +219,7 @@ const records =
         },
         {
             title: "2019/03/16",
-            desc: "- SPLITVICE.github.io was born.",
+            desc: "- SplitVICE.github.io was born.",
         },
     ]
 build()

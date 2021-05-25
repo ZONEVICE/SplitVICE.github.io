@@ -89,7 +89,7 @@ async function sendMessage(msg) {
 
 // Returns string of type of message selected.
 function getMessageType() {
-    if (op1.checked) return "Friendly or hate message";
+    if (op1.checked) return "Direct personal message";
     if (op2.checked) return "Question";
     if (op3.checked) return "Error report";
     if (op4.checked) return "Suggestion";

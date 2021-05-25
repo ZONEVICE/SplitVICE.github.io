@@ -117,8 +117,6 @@ const AsideLeft = /* html */`
         Miscellaneous
     </div>
     <ul class="asideLiStyle">
-        <!-- <li><a href="/project-online-drawing">Project OD</a></li> -->
-        <li><a href="/drawesome/">Drawesome</a></li>
         <li><a href="/the-junk-stash/">The junk stash</a></li>
         <li><a href="/changelog/">Changelog</a></li>
         <li><a href="/about/">About</a></li>
