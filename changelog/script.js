@@ -14,7 +14,7 @@ function build(){
 const records =
     [
         {
-            title: "2021/05/21 - v1.2.2",
+            title: "2021/05/21 - v1.2.1",
             desc: `- SPLIT Patch:<br>
             - Several inner code has been improved.<br>
             - Website visual components are now loaded using JavaScript. No more AJAX.<br>
@@ -26,10 +26,6 @@ const records =
             - Some grammar mistakes fixed.<br>
             - Redirection links updated.<br>
             - Several unused .html, .txt, and .js files deleted.`,
-        },
-        {
-            title: "2021/05/20 - v1.2.1",
-            desc: `- <a href="/blog/">Blogs</a> section added.`,
         },
         {
             title: "2021/05/06 - v1.2.0",
