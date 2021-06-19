@@ -38,7 +38,6 @@ const AsideLeft = /* html */`
         Art
     </div>
     <ul class="asideLiStyle">
-        <li><a href="/art/log/">Art log</a></li>
         <li><a href="/art/fundamentals/">Art Fundamentals</a></li>
         <li><a href="/commission/">Commission</a></li>
     </ul>
