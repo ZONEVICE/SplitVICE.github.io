@@ -15,7 +15,7 @@
     <meta name="theme-color" content="#bd0058" />
     <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
 
-    <!-- EXTERNAL SCRIPT AND STYLE EXPORTS -->
+    <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -27,7 +27,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+    <!-- SWEET ALERT 2 -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <!-- VUE -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 
     <!-- LOCAL EXPORTS -->
     <link rel="stylesheet" href="./style.css">
@@ -66,22 +71,60 @@
             </div>
 
             <div class="h1" style="text-align: center;">Blog</div>
+
             <hr>
 
-            <div id="container_blog">
-                Loading blogs... please wait <br>
-                If content not loading, please report this at <a href="/send-message/">Send a message</a>
-                <br>
-                <div class="spinner-border text-danger" role="status">
-                    <span class="visually-hidden"></span>
-                </div>
+            <!-- VUE APP -->
+            <div id="app">
+
+                <span v-if="blogs == undefined">
+
+                    Loading blogs... please wait
+                    <br>
+                    If blogs are not being displayed, please report this at <a href="/send-message/">Send a message</a>
+
+                    <br>
+
+                    <div class="spinner-border text-danger" role="status">
+                        <span class="visually-hidden"></span>
+                    </div>
+
+                </span>
+
+                <span v-else-if="blogs.length == 0">
+                    <div class="alert alert-warning" role="alert">
+                        No blogs have been written yet
+                      </div>
+                </span>
+
+                <span v-else-if="blogs.length > 0">
+
+                    <div v-for="blog in blogs">
+
+                        <span class="blog-title">{{ blog.Title }}</span>
+                        <span class="blog-subtitle">
+                            {{ render_date(blog.Date) }} - {{ blog.Writer }}
+                        </span>
+
+                        <br>
+
+                        <span v-html="linkify(blog.Body)"></span>
+
+                        <hr>
+
+                    </div>
+
+                </span>
             </div>
 
-            <div class="h5">Comments</div>
+            <hr>
+
+            <div class="h5">General comments</div>
 
             <div id='comments'></div>
 
         </div>
+
     </div>
 
     <footer>
@@ -91,12 +134,14 @@
     </footer>
     <script src="/public/script/global.js"></script>
 
-
+    <script src="/public/libs/moment.js"></script>
     <script src="script.js"></script>
+
+    <!-- COMMENTS SECTION EXPORTS -->
     <link rel="stylesheet" href="/public/libs/comments/Comments.css">
     <script src="/public/libs/comments/Comments.js"></script>
-    <script src="/public/libs/moment.js"></script>
     <script>comments__main('BlogSection')</script>
+
     <h1 style='position: fixed; visibility: hidden; top:0;'>SPLIT VICE - Blog</h1>
 </body>
 

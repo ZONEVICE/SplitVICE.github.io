@@ -71,7 +71,7 @@ async function comments__main(CommentsKeyName) {
 
             <textarea class='form-control' id="html__comments__body" rows="5" placeholder='Your comment'></textarea>
             <input id='html__comments__ownerName' type='text' class='form-control' placeholder='Your name/nickname (optional)'>
-            <button onClick='post__comment()' class='btn btn-primary'>Post new comment</button>`
+            <button onClick='post__comment()' class='btn btn-light'>Post new comment</button>`
                     : /* html */
                     `<div class="alert alert-warning" role="alert">
                     Comments have been set as read only

@@ -1,7 +1,7 @@
 // ==================================================================================================
 // Global variables
 // ==================================================================================================
-const SERVER_HOST = 'https://split-vice-backend.herokuapp.com';
+const SERVER_HOST = 'http://localhost:2300';//'https://split-vice-backend.herokuapp.com';
 
 // ==================================================================================================
 // HTML content
@@ -16,6 +16,14 @@ const Header = /* html */`
     </a>
 `;
 
+// Sets blog count to blog count indicator at the AsideLeft
+(async () => {
+    const req = await fetch(`${SERVER_HOST}/api/blog`);
+    const res = await req.json();
+    document.getElementById('blog_count').innerHTML =
+        res.blogs.length != undefined ? res.blogs.length : 0;
+})();
+
 const AsideLeft = /* html */`
 <!-- Block: Main menu. -->
 <div class="asideBlock">
@@ -24,10 +32,10 @@ const AsideLeft = /* html */`
     </div>
     <ul class="asideLiStyle">
         <li><a href="/">Home</a></li>
+        <li><span id="blog_count" class="badge bg-light text-dark"> ... </span> <a href="/blog/">Blog</a></li>
         <li><a href="/links/">Content links</a></li>
         <li><a href="/send-message/">Send a Message</a></li>
         <li><a href="/comments/">Comments</a></li>
-        <li><span class="badge bg-warning text-dark">New</span> <a href="/blog/">Blog</a></li>
         <li><input type="checkbox" id="checkbox_darkmode"> Dark mode</li>
     </ul>
 </div>
@@ -60,7 +68,11 @@ const AsideLeft = /* html */`
     <!-- Category: Web Software. -->
     <div class="ASIDE_CATEGORIES">Web Software</div>
     <ul>
-        <li> <span class="badge bg-warning text-dark">New</span> <a
+        <li>
+            <span class="badge bg-warning text-dark">New</span>
+            <a href="/technology/web-software/bit-frisbee/">Bit Frisbee</a>
+        </li>
+        <li> <a
                 href="/technology/web-software/remote-shell/">Remote Shell</a></li>
         <li> <a href="/technology/web-software/movies-interface/">Movies Interface</a></li>
         <li>
@@ -69,9 +81,9 @@ const AsideLeft = /* html */`
         <li>
             <a class="" href="/technology/web-software/pdf-interface/">PDF Interface</a>
         </li>
-        <li><a href="/technology/web-software/online-notes/">
-                <span class="not-released psUltimate">Online Notes (beta)</span>
-            </a></li>
+        <li>
+            <a href="/technology/web-software/online-notes/">Online Notes (beta)</a>
+        </li>
         <li><a href="/technology/web-software/v-webpage-s1/">V-WebPage S1</a></li>
         <li><a href="/technology/web-software/web-user-manual/">Web User Manual</a></li>
     </ul>
@@ -88,7 +100,7 @@ const AsideLeft = /* html */`
     <!-- Category: Java. -->
     <div class="ASIDE_CATEGORIES">Java</div>
     <ul>
-        <li><span class="badge bg-warning text-dark">New</span> <a href="/technology/java/dossiers/">Dossiers</a></li>
+        <li> <a href="/technology/java/dossiers/">Dossiers</a></li>
         <li> <a href="/technology/java/v-aesecrypt-2/">V-AESEcrypt-2</a></li>
         <li> <a href="/technology/java/passwords-stash/">Passwords Stash</a> </li>
         <li> <a href="/technology/java/auto-save/">Auto Save</a> </li>

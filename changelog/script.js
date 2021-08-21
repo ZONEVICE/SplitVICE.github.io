@@ -14,6 +14,10 @@ function build(){
 const records =
     [
         {
+            title: "August 20, 2021 - v1.3.0",
+            desc: `- Bit Frisbee added to web software collection.`,
+        },
+        {
             title: "2021/05/25 - v1.2.4",
             desc: `- Drawesome section page was moved to The Junk Stash.`,
         },
