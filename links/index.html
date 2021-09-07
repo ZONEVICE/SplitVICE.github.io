@@ -29,6 +29,9 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
+    <!-- VUE -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
     <!-- LOCAL EXPORTS -->
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -64,26 +67,28 @@
             <div id="div_global_message">
             </div>
 
-            <div class="center h4">SPLIT VICE's links</div>
-
-            <div class="scoped-link-section-title">
-                All the services such as social networks, clouds, and hosts I use to communicate and post my work
-                online.
-            </div>
+            <div class="center h2">SPLIT VICE's links</div>
 
             <p class="center">
-                To contact me go to <a href="/send-message/">Send a message</a> section.
+                To contact me go to <a href="/send-message/">Send a message</a> section or try reaching me on any of the
+                following
             </p>
 
             <hr>
 
-            <div class="center mb-4">
-                <a target="_blank" href="https://twitter.com/SplitVice_">My Twitter</a>
+            <div id="app">
+                <div class="container-link" v-for="link in links" :key="name">
+                    <a :href="link.url" target="_blank">
+                        <img class="link-img" :src="link.img_src" :alt="link.img_alt">
+                    </a>
+                    <div class="link-text">
+                        <a :href="link.url" class="link-title" target="_blank">{{ link.name }}</a>
+                        <br>
+                        {{ link.description }}
+                    </div>
+                </div>
             </div>
 
-            <div class="alert alert-warning" role="alert">
-                Links currently in maintenance
-            </div>
         </div>
 
         <footer>
@@ -93,7 +98,29 @@
         </footer>
 
         <script src="/public/script/global.js"></script>
+        <script src="./script.js"></script>
         <h1 style='position: fixed; visibility: hidden; top:0;'>SPLIT VICE - Links</h1>
+
+        <style>
+            .container-link {
+                margin-bottom: 30px;
+            }
+
+            .link-img {
+                float: left;
+                width: 73px;
+            }
+
+            .link-text {
+                margin-left: 90px;
+                padding-top: 0px;
+            }
+
+            .link-title {
+                font-size: 28px;
+            }
+        </style>
+
 </body>
 
 </html>
