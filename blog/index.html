@@ -115,13 +115,10 @@
                     </div>
 
                 </span>
+                <div v-if="sorted == true">
+                    <button class="btn btn-light btn-sm" @click="reset_blog_view">See all blogs</button>
+                </div>
             </div>
-
-            <!-- <hr>
-
-            <div class="h5">General comments</div>
-
-            <div id='comments'></div> -->
 
         </div>
 
@@ -136,11 +133,6 @@
 
     <script src="/public/libs/moment.js"></script>
     <script src="script.js"></script>
-
-    <!-- COMMENTS SECTION EXPORTS -->
-    <!-- <link rel="stylesheet" href="/public/libs/comments/Comments.css">
-    <script src="/public/libs/comments/Comments.js"></script>
-    <script>comments__main('BlogSection')</script> -->
 
     <h1 style='position: fixed; visibility: hidden; top:0;'>SPLIT VICE - Blog</h1>
 </body>

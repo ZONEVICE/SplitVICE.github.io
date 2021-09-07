@@ -1,6 +1,9 @@
 var app = new Vue({
     el: '#app',
-    data: { blogs: undefined },
+    data: {
+        blogs: undefined, // holds blog registries as an array
+        sorted: false // if data has been sorted by url query
+    },
     methods: {
         async load_blogs() {
             const req = await fetch(`${SERVER_HOST}/api/blog`);
@@ -13,6 +16,30 @@ var app = new Vue({
         // Uses moment.js to render formatted date
         render_date(date) {
             return moment(date).format('MMMM DD, YYYY')
+        },
+        render_blog_by_id(id) {
+            for (let i = 0; i < this.blogs.length; i++) {
+                if (this.blogs[i]._id == id) {
+                    const a = [this.blogs[i]];
+                    this.blogs = a;
+                    this.sorted = true;
+                    break;
+                }
+            }
+        },
+        render_blog_by_title(title) {
+            for (let i = 0; i < this.blogs.length; i++) {
+                if (this.blogs[i].Title.toLowerCase() == title.toLowerCase()) {
+                    const a = [this.blogs[i]];
+                    this.blogs = a;
+                    this.sorted = true;
+                    break;
+                }
+            }
+        },
+        // resets the view of blogs by redirecting to root route so all queries are cleaned
+        reset_blog_view(){
+            window.location.href = "/blog/";
         },
         linkify(inputText) {
             // Source: https://stackoverflow.com/questions/49634850/javascript-convert-plain-text-links-to-clickable-links
@@ -38,7 +65,10 @@ var app = new Vue({
             return replacedText;
         }
     },
-    created() {
-        this.load_blogs();
+    async created() {
+        await this.load_blogs();
+        const params = new URLSearchParams(window.location.search)
+        if (params.has('id')) { this.render_blog_by_id(params.get('id')); return; }
+        if (params.has('title')) { this.render_blog_by_title(params.get('title')); return; }
     }
 })
