@@ -2,8 +2,8 @@
 // Global variables
 // ==================================================================================================
 const SERVER_HOST =
-    //'http://localhost:2300' // dev backend host
-    'https://split-vice-backend.herokuapp.com'; // production backend host
+    'http://localhost:2300' // dev backend host
+    //'https://split-vice-backend.herokuapp.com'; // production backend host
 
 // ==================================================================================================
 // HTML content

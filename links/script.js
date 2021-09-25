@@ -1,19 +1,6 @@
-class Link {
-    constructor({ url, name, description, img_light, img_dark, img_alt, dynamic_description } = {}) {
-        this.url = url;
-        this.name = name;
-        this.description = description;
-        this.img_light = img_light;
-        this.img_dark = img_dark;
-        this.img_src = img_dark;
-        this.img_alt = img_alt;
-        this.dynamic_description = dynamic_description; // set by website settings
-    }
-}
-
 /**
  TODO
- twitter, deviantArt, Twitch, Mega
+    deviantArt, Twitch, Mega
  */
 
 const app = new Vue({
@@ -35,7 +22,7 @@ const app = new Vue({
             }
         }
     },
-    created() {
+    async created() {
         this.links.push({
             url: 'https://www.twitter.com/Splitvice_',
             name: 'Twitter',
@@ -52,6 +39,12 @@ const app = new Vue({
             img_dark: 'https://dl.dropboxusercontent.com/s/2w6qs2qeg7gjonq/twitch.png?dl=0',
             img_alt: 'twitch link'
         });
+
+        const req = await fetch(`${SERVER_HOST}/api/data/links`);
+        const res = await req.json();
+        const data = JSON.parse(res.content);
+        if (data.length > 0) { data.forEach(e => { this.links.push(e); }); }
+
         this.toggle_link_img_src();
     }
 });
