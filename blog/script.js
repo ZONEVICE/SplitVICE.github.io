@@ -45,7 +45,7 @@ var app = new Vue({
         share_link(title) {
             var dummy = document.createElement("textarea");
             document.body.appendChild(dummy);
-            dummy.value = encodeURI(`https://split-vice.com/blog/?title="${title}"`);
+            dummy.value = encodeURI(`https://split-vice.com/blog/?title=${title}`);
             dummy.select();
             document.execCommand('copy');
             document.body.removeChild(dummy);
