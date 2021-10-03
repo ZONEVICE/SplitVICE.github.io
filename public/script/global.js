@@ -74,9 +74,12 @@ const AsideLeft = /* html */`
             <span class="badge bg-warning text-dark">New</span>
             <a href="/technology/web-software/bit-frisbee/">Bit Frisbee</a>
         </li>
+        <li>
+            <span class="badge bg-primary text-dark">Update</span>
+            <a href="/technology/web-software/movies-interface/">Movies Interface</a>
+        </li>
         <li> <a
                 href="/technology/web-software/remote-shell/">Remote Shell</a></li>
-        <li> <a href="/technology/web-software/movies-interface/">Movies Interface</a></li>
         <li>
             <a class="" href="/technology/web-software/nodejs-email-sender/">NodeJS Email Sender</a>
         </li>

@@ -94,7 +94,7 @@
                 <span v-else-if="blogs.length == 0">
                     <div class="alert alert-warning" role="alert">
                         No blogs have been written yet
-                      </div>
+                    </div>
                 </span>
 
                 <span v-else-if="blogs.length > 0">
@@ -109,6 +109,10 @@
                         <br>
 
                         <span v-html="linkify(blog.Body)"></span>
+
+                        <br>
+
+                        <button @click="share_link(blog.Title)" class="btn btn-ligh btn-sm">Share</button>
 
                         <hr>
 

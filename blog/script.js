@@ -38,8 +38,17 @@ var app = new Vue({
             }
         },
         // resets the view of blogs by redirecting to root route so all queries are cleaned
-        reset_blog_view(){
+        reset_blog_view() {
             window.location.href = "/blog/";
+        },
+        // Copies onto clipboard the link URL
+        share_link(title) {
+            var dummy = document.createElement("textarea");
+            document.body.appendChild(dummy);
+            dummy.value = encodeURI(`https://split-vice.com/blog/?title="${title}"`);
+            dummy.select();
+            document.execCommand('copy');
+            document.body.removeChild(dummy);
         },
         linkify(inputText) {
             // Source: https://stackoverflow.com/questions/49634850/javascript-convert-plain-text-links-to-clickable-links
