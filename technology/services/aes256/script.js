@@ -53,23 +53,19 @@ async function checkServiceUp() {
  * ==================================================================================
  */
 btn_input1.addEventListener("click", () => {
-    if (checkRequiresParams_ToEncrypt())
-        encrypt();
+    if (input_1.value != "" && key.value != "") encrypt();
 });
 
 btn_input2.addEventListener("click", () => {
-    if (checkRequiresParams_ToDecrypt())
-        decrypt();
+    if (input_2.value != "" && key.value != "") decrypt();
 });
 
 btn_input1_copyClipboard.addEventListener("click", () => {
-    if (input_1.value != "")
-        copy_text_to_clipboard(input_1.value);
+    if (input_1.value != "") copy_text_to_clipboard(input_1.value);
 });
 
 btn_input2_copyClipboard.addEventListener("click", () => {
-    if (input_2.value != "")
-        copy_text_to_clipboard(input_2.value);
+    if (input_2.value != "") copy_text_to_clipboard(input_2.value);
 });
 
 /**
@@ -121,19 +117,6 @@ async function decrypt() {
 }
 
 /**
- * ==================================================================================
- * Helper functions.
- */
-
-function checkRequiresParams_ToEncrypt() {
-    return input_1.value != "" && key.value != ""
-}
-
-function checkRequiresParams_ToDecrypt() {
-    return input_2.value != "" && key.value != ""
-}
-
-/**
  * Copies into user's clipboard text.
  * @param { String } text_to_copy The text to copy into user's clipboard.
  */
@@ -181,7 +164,7 @@ function message_posted_alert() {
 function serviceNotAvailable_renderHTMLError() {
     aes256Content.innerHTML = `
     <div class="alert alert-danger" role="alert">
-        Error 503 - Service unavailable. Sorry about that! Report here: <a href="../../../send-message">Send a message</a>
+        Error 503 - Service unavailable. Report here: <a href="../../../send-message">Send a message</a>
     </div>
     `;
 }
