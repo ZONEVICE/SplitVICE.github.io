@@ -169,9 +169,9 @@ function show_hide_aside() { document.getElementById("div_aside_left").classList
 // Darkmode's main.
 
 // Checks if localStorage variable exists. If so and 'on', sets dark mode.
-if (localStorage.getItem('darkmode')) {
+if (localStorage.getItem('darkmode') != null) {
     localStorage.getItem('darkmode') == 'on' ? setDark() : setLight();
-} else localStorage.setItem('darkmode', 'off');
+} else localStorage.setItem('darkmode', 'on');
 
 // ----------------------------------------------------------------------------------------
 // Darkmode checkbox control.
