@@ -101,7 +101,18 @@
 
                     <div v-for="blog in blogs">
 
-                        <span class="blog-title">{{ blog.Title }}</span>
+                        <span class="blog-title-container">
+
+                            <span class="blog-title">
+                                {{ blog.Title }}
+                            </span>
+
+                            <button v-if="sorted == false" @click="share_link(blog.Title)"
+                                class="btn btn-light btn-sm button-share">
+                                Share
+                            </button>
+
+                        </span>
                         <span class="blog-subtitle">
                             {{ render_date(blog.Date) }} - {{ blog.Writer }}
                         </span>
@@ -110,20 +121,16 @@
 
                         <span v-html="linkify(blog.Body)"></span>
 
-                        <br>
-
-                        <button @click="share_link(blog.Title)" class="btn btn-light btn-sm">Share</button>
-
                         <hr>
 
                     </div>
 
                 </span>
-                <div v-if="sorted == true">
-                    <button class="btn btn-light btn-sm" @click="reset_blog_view">See all blogs</button>
-                </div>
+                <button v-if="sorted == true" class="btn btn-light btn-sm" @click="reset_blog_view">
+                    Show all blog entries
+                </button>
             </div>
-
+            <!-- END OF VUE APP -->
         </div>
 
     </div>

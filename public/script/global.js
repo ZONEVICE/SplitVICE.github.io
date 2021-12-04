@@ -13,7 +13,7 @@ const Header = /* html */`
     <a href="/">
         <img class="header-image" src="/public/img/header-image.png" alt="split vice logo">
     </a>
-    <a href="#" onclick="show_hide_aside()">
+    <a href="javascript:void(0)" onclick="show_hide_aside()">
         <img class="headerNavbarButtonImage" src="/public/img/navbar-button.png" width="30px" alt="navbar button">
     </a>
 `;
@@ -71,11 +71,11 @@ const AsideLeft = /* html */`
     <div class="ASIDE_CATEGORIES">Web Software</div>
     <ul>
         <li>
-            <span class="badge bg-warning text-dark">New</span>
+            <span class="badge bg-warning text-dark">Newest</span>
             <a href="/technology/web-software/bit-frisbee/">Bit Frisbee</a>
         </li>
         <li>
-            <span class="badge bg-primary text-dark">Update</span>
+            <span class="badge bg-primary">Update 1.4.2</span>
             <a href="/technology/web-software/movies-interface/">Movies Interface</a>
         </li>
         <li> <a
