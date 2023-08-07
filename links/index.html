@@ -34,7 +34,7 @@
 
 </head>
 <div id="div_style">
-    <link rel="stylesheet" href="/public/css/style.darkmode.css">
+    <link rel="stylesheet" href="/public/css/style.css">
 </div>
 
 <body>
@@ -65,25 +65,28 @@
             <div id="div_global_message">
             </div>
 
-            <div class="center h2">SPLIT VICE's links</div>
+            <div class="center h2">Links</div>
 
-            <p class="center">
+            <!-- Server unreachable so it's disabled. -->
+            <!-- <p class="center">
                 To contact me go to <a href="/send-message/">Send a message</a> section or try reaching me on any of the
                 following
-            </p>
+            </p> -->
 
             <hr>
 
             <div id="app">
                 <div class="container-link" v-for="link in links" :key="name">
-                    <a :href="link.url" target="_blank">
-                        <img class="link-img" :src="link.img_src" :alt="link.img_alt">
-                    </a>
-                    <div class="link-text">
-                        <a :href="link.url" class="link-title" target="_blank">{{ link.name }}</a>
-                        <br>
-                        {{ link.description }}
-                    </div>
+                    <span v-if="link.active === true">
+                        <a :href="link.url" target="_blank">
+                            <img class="link-img" :src="link.img_src" :alt="link.img_alt">
+                        </a>
+                        <div class="link-text">
+                            <a :href="link.url" class="link-title" target="_blank">{{ link.name }}</a>
+                            <br>
+                            {{ link.description }}
+                        </div>
+                    </span>
                 </div>
             </div>
 
@@ -96,7 +99,7 @@
         </footer>
 
         <script src="/public/script/global.js"></script>
-        <script src="./script.js"></script>
+        <script src="./script-218723.js"></script>
         <h1 style='position: fixed; visibility: hidden; top:0;'>SPLIT VICE - Links</h1>
 
         <style>

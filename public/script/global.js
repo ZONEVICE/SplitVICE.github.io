@@ -3,7 +3,8 @@
 // ==================================================================================================
 const SERVER_HOST =
     //'http://localhost:2300' // dev backend host
-    'https://split-vice-backend.herokuapp.com'; // production backend host
+    //'https://split-vice-backend.herokuapp.com'; // production backend host
+    null;
 
 // ==================================================================================================
 // HTML content
@@ -19,12 +20,12 @@ const Header = /* html */`
 `;
 
 // Sets blog count to blog count indicator at the AsideLeft
-(async () => {
+/* (async () => {
     const req = await fetch(`${SERVER_HOST}/api/blog`);
     const res = await req.json();
     document.getElementById('blog_count').innerHTML =
         res.blogs.length != undefined ? res.blogs.length : 0;
-})();
+})(); */
 
 const AsideLeft = /* html */`
 <!-- Block: Main menu. -->
@@ -34,16 +35,19 @@ const AsideLeft = /* html */`
     </div>
     <ul class="asideLiStyle">
         <li><a href="/">Home</a></li>
-        <li><span id="blog_count" class="badge bg-light text-dark"> ... </span> <a href="/blog/">Blog</a></li>
+        <!--<li><span id="blog_count" class="badge bg-light text-dark"> ... </span> <a href="/blog/">Blog</a></li>-->
+        <li style="color:gray;">Blog</li>
         <li><a href="/links/">Content links</a></li>
-        <li><a href="/send-message/">Send a Message</a></li>
-        <li><a href="/comments/">Comments</a></li>
+        <!--<li><a href="/send-message/">Send a Message</a></li>-->
+        <li style="color:gray;">Send a Message</li>
+        <!--<li><a href="/comments/">Comments</a></li>-->
+        <li style="color:gray;">Comments</li>
         <li><input type="checkbox" id="checkbox_darkmode"> Dark mode</li>
     </ul>
 </div>
 
 <!-- Block: Art. -->
-<div class="asideBlock">
+<!--<div class="asideBlock">
     <div class="asideListTitle">
         Art
     </div>
@@ -51,7 +55,7 @@ const AsideLeft = /* html */`
         <li><a href="/art/fundamentals/">Art Fundamentals</a></li>
         <li><a href="/commission/">Commission</a></li>
     </ul>
-</div>
+</div>-->
 
 <!-- Block: technology. -->
 <div class="asideBlock">
@@ -62,8 +66,8 @@ const AsideLeft = /* html */`
     <!-- Category: No named. -->
     <ul class="asideLiStyle">
         <li> <a href="/technology/">Technology home page</a> </li>
-        <li> <a href="/technology/services/aes256/">AES256 encryption</a></li>
-        <li><a href="/commission/">Commission</a></li>
+        <!--<li> <a href="/technology/services/aes256/">AES256 encryption</a></li>-->
+        <li style="color:gray;">AES256 encryption</li>
     </ul>
     <hr>
 
@@ -71,11 +75,9 @@ const AsideLeft = /* html */`
     <div class="ASIDE_CATEGORIES">Web Software</div>
     <ul>
         <li>
-            <span class="badge bg-warning text-dark">Newest</span>
             <a href="/technology/web-software/bit-frisbee/">Bit Frisbee</a>
         </li>
         <li>
-            <span class="badge bg-primary">Update 1.4.2</span>
             <a href="/technology/web-software/movies-interface/">Movies Interface</a>
         </li>
         <li> <a
@@ -171,7 +173,7 @@ function show_hide_aside() { document.getElementById("div_aside_left").classList
 // Checks if localStorage variable exists. If so and 'on', sets dark mode.
 if (localStorage.getItem('darkmode') != null) {
     localStorage.getItem('darkmode') == 'on' ? setDark() : setLight();
-} else localStorage.setItem('darkmode', 'on');
+} else localStorage.setItem('darkmode', 'off');
 
 // ----------------------------------------------------------------------------------------
 // Darkmode checkbox control.

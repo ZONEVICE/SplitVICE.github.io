@@ -14,6 +14,12 @@ function build(){
 const records =
     [
         {
+            title: "August 07, 2023 - N/A",
+            desc: `- Disabled backend dependent services from easy reach.<br>
+            - Updated home with news with future of this website.<br>
+            - This is a temporal version and will be deleted later.`,
+        },
+        {
             title: "August 20, 2021 - v1.3.0",
             desc: `- Bit Frisbee added to web software collection.`,
         },
