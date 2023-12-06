@@ -24,6 +24,7 @@ body{background:rgb(46, 49, 51)}
 .textBold{font-weight:bold;}
 .center{text-align:center;}
 footer{color:black;margin-top:20px;width:100%;display:inline-table;text-align:center;}
+a{text-decoration: none;}
 /* Responsive */
 @media only screen and (min-width:1025px){.headerNavbarButtonImage{display:none;}
 }
