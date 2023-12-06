@@ -14,10 +14,22 @@ function build(){
 const records =
     [
         {
-            title: "August 07, 2023 - N/A",
-            desc: `- Disabled backend dependent services from easy reach.<br>
-            - Updated home with news with future of this website.<br>
-            - This is a temporal version and will be deleted later.`,
+            title: "December 6, 2023 - v1.5.6-legacy.v0.1.0",
+            desc: `- Disabled backend functions.<br>
+            - Removed tech category.<br>
+            - Added Blog & Insights category.<br>
+            - Darkmode no longer default theme.<br>
+            - Blog section removed.<br>
+            - The Junk Stash section removed.<br>
+            - Art section removed.<br>
+            - Comments section removed.<br>
+            - Commission section removed.<br>
+            - Send a Message section removed.<br>
+            - Technology section removed.<br>
+            - Error 404 page error fixed on darkmode, footer and global message.<br>
+            - Clunky design on aside titles fixed.<br>
+            - About section updated.<br>
+            - Footer removed.`
         },
         {
             title: "August 20, 2021 - v1.3.0",

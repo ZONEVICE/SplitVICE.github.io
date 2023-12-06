@@ -1,13 +1,6 @@
-/**
- TODO
-    deviantArt, Twitch, Mega
- */
-
 const app = new Vue({
     el: '#app',
-    data: {
-        links: []
-    },
+    data: { links: [] },
     methods: {
         // toggles dark or light mode link images when setting changed
         toggle_link_img_src() {
@@ -26,7 +19,7 @@ const app = new Vue({
         this.links.push({
             url: '/s/twitter/',
             name: 'X',
-            description: 'Most used social media.',
+            description: 'Highest chance of contact back.',
             img_light: 'https://seeklogo.com/images/T/twitter-x-logo-0339F999CF-seeklogo.com.png?v=638258077460000000',
             img_dark: 'https://seeklogo.com/images/T/twitter-x-logo-0339F999CF-seeklogo.com.png?v=638258077460000000',
             img_alt: 'twitter link',
@@ -41,16 +34,6 @@ const app = new Vue({
             img_alt: 'twitch link',
             active: false
         });
-
-        /* try {
-            const req = await fetch(`${SERVER_HOST}/api/data/links`);
-            const res = await req.json();
-            const data = JSON.parse(res.content);
-            if (data.length > 0) { data.forEach(e => { this.links.push(e); }); }
-        } catch (error) {
-            //console.error('Server unreachable.' + error)
-        } */
-
         this.toggle_link_img_src();
     }
 });

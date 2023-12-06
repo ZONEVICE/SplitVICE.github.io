@@ -12,7 +12,7 @@ header{background-color:rgb(114, 4, 55);}
 .headerNavbarButtonImage{float:right;margin:12px;margin-top:17px;margin-right:20px;}
 /* Aside */
 aside{float:left;}
-.asideListTitle{background-color:rgb(143, 30, 83);color:white;padding-left:20px;padding-top:4px;padding-bottom:4px;font-size:15px;font-weight:650;}
+.asideListTitle{background-color:rgb(143, 30, 83);color:white;padding-left:20px;padding-top:4px;padding-bottom:4px;font-size:15px;font-weight:650;margin-bottom:10px;}
 .asideBlock{background-color:rgb(24, 26, 27);margin-bottom:13px;width:219px;padding-bottom:1px;}
 .asideBlock .asideLiStyle{list-style-type:square;}
 .ASIDE_CATEGORIES{padding-left:12px;font-size:17px;font-family:"Trebuchet MS", sans-serif;}

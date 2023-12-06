@@ -55,19 +55,19 @@
             </div>
         </aside>
 
+        <div id="div_global_message">
+        </div>
+
         <div class="container-main-content">
             <img class="IMAGE_404" src="/public/img/404-image.png" alt="404 image">
             <br>
             <div class="TEXT_404">
-                <p>
-                    Well, it seems the page you are looking for does not exist.
-                </p>
                 <p class="GRAY_SMALL_TEXT">
                     Error code: 404 - Page not found.
                 </p>
             </div>
             <hr>
-            <h6>Here are some helpful links instead:</h6>
+            <h6>Helpful links instead</h6>
             <ul>
                 <li>
                     <a href="/">Home</a>
@@ -75,14 +75,6 @@
                 <li>
                     <a href="/links/">Links page</a>
                 </li>
-            </ul>
-            <hr>
-            <p>
-                If you want to report this 404 error as missing content that should be up in this page,
-                send an issue message at the <b>Send a Message</b> page:
-            </p>
-            <ul>
-                <li><a href="/send-message/">Send a message</a></li>
             </ul>
 
         </div>
@@ -93,28 +85,12 @@
 
         </div>
     </footer>
-    <script src="/public/script/global.js"></script>
-
+    
     <script>
         const currentUrl = document.location.href;
-        regexMatcher_webpageRoutes(currentUrl, "/h/about", "/about/")
-        regexMatcher_webpageRoutes(currentUrl, "/h/changelog", "/changelog/")
-        regexMatcher_webpageRoutes(currentUrl, "/h/commission", "/commission/")
-        regexMatcher_webpageRoutes(currentUrl, "/h/drawesome", "/drawesome/")
-        regexMatcher_webpageRoutes(currentUrl, "/h/links", "/links/")
-        regexMatcher_webpageRoutes(currentUrl, "/h/link", "/links/")
-        regexMatcher_webpageRoutes(currentUrl, "/h/nsfw-alert-mf", "/nsfw-alert-mf/")
-        regexMatcher_webpageRoutes(currentUrl, "/h/send-message", "/send-message/")
-        regexMatcher_webpageRoutes(currentUrl, "/h/technology", "/technology/")
-        regexMatcher_webpageRoutes(currentUrl, "/h/the-junk-stash", "/the-junk-stash/")
-        regexMatcher_webpageRoutes(currentUrl, "/h/technology/java/auto-save/", "/technology/java/auto-save")
-        regexMatcher_webpageRoutes(currentUrl, "/h/technology/CSharp/passwords-stash-lite/", "/technology/CSharp/passwords-stash-lite")
-        regexMatcher_webpageRoutes(currentUrl, "/aes256/", "/technology/services/aes256/")
-        regexMatcher_webpageRoutes(currentUrl, "/aes256", "/technology/services/aes256/")
-        regexMatcher_webpageRoutes(currentUrl, "/autosave", "/technology/java/auto-save/")
-        regexMatcher_webpageRoutes(currentUrl, "/autosave/", "/technology/java/auto-save/")
-        regexMatcher_webpageRoutes(currentUrl, "/drawesome/", "/the-junk-stash/drawesome")
+        // regexMatcher_webpageRoutes(currentUrl, "/h/about", "/about/")
     </script>
+    <script src="/public/script/global.js"></script>
 </body>
 
 </html>
