@@ -14,6 +14,10 @@ function build(){
 const records =
     [
         {
+            title:'December 18 2023 - v1.5.6-legacy.v0.1.1',
+            desc:'- Style defects fixed.'
+        },
+        {
             title: "December 6, 2023 - v1.5.6-legacy.v0.1.0",
             desc: `- Disabled backend functions.<br>
             - Removed tech category.<br>
