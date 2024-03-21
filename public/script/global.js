@@ -51,7 +51,7 @@ const AsideLeft = /* html */`
 </div>
 `;
 
-const GlobalMessage = /* html */``;
+const GlobalMessage = /* html */`<div class='center' style='color:gray;font-size:23px'><i>Website domain end of life at 20 may 2024</i></div>`;
 
 const Footer = /* html */ ``;
 

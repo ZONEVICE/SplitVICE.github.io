@@ -14,6 +14,10 @@ function build(){
 const records =
     [
         {
+            title:'March 20 2024 - v1.5.6-legacy.v0.1.2',
+            desc:`- End of life website domain notice.`
+        },
+        {
             title:'December 18 2023 - v1.5.6-legacy.v0.1.1',
             desc:'- Style defects fixed.'
         },

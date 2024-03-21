@@ -17,9 +17,9 @@ const app = new Vue({
     },
     async created() {
         this.links.push({
-            url: '/s/twitter/',
+            url: '/s/x/',
             name: 'X',
-            description: 'Highest chance of contact back.',
+            description: null,
             img_light: 'https://seeklogo.com/images/T/twitter-x-logo-0339F999CF-seeklogo.com.png?v=638258077460000000',
             img_dark: 'https://seeklogo.com/images/T/twitter-x-logo-0339F999CF-seeklogo.com.png?v=638258077460000000',
             img_alt: 'twitter link',
