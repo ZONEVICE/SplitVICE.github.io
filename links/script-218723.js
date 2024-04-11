@@ -34,6 +34,15 @@ const app = new Vue({
             img_alt: 'twitch link',
             active: false
         });
+        this.links.push({
+            url: 'https://www.github.com/ZONEVICE',
+            name: 'Github',
+            description: 'not willing to find out why this is out of alignment',
+            img_light: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZkTHDk9wFCnizM9J7jS8FQkSQkY3BPG_HvnkdetOYXw&s',
+            img_dark:  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZkTHDk9wFCnizM9J7jS8FQkSQkY3BPG_HvnkdetOYXw&s',
+            img_alt: 'github link',
+            active: true
+        });
         this.toggle_link_img_src();
     }
 });
