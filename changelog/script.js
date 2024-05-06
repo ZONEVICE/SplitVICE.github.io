@@ -14,6 +14,10 @@ function build(){
 const records =
     [
         {
+            title:'May 6 2024 - rolling version',
+            desc:`- New website migration "www.zonevice.com" website notice.`
+        },
+        {
             title:'March 20 2024 - v1.5.6-legacy.v0.1.2',
             desc:`- End of life website domain notice.`
         },
