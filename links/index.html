@@ -64,8 +64,8 @@
             <hr>
 
             <div id="app">
-                <div class="container-link" v-for="link in links" :key="name">
-                    <span v-if="link.active === true">
+                <div class="container-link">
+                    <div v-for="link in links" :key="name" v-if="link.active === true" class="link-box">
                         <a :href="link.url" target="_blank">
                             <img class="link-img" :src="link.img_src" :alt="link.img_alt">
                         </a>
@@ -74,7 +74,7 @@
                             <br>
                             {{ link.description }}
                         </div>
-                    </span>
+                    </div>
                 </div>
             </div>
 
@@ -92,7 +92,12 @@
 
         <style>
             .container-link {
-                margin-bottom: 30px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .link-box{
+                margin-bottom: 20px;
             }
 
             .link-img {

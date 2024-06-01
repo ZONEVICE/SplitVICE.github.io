@@ -8,7 +8,8 @@ const messages = [
     "DNI",
     "Remember to unfollow and block.",
     "What kind of athlete you are if you have never been injured?",
-    "Tick tock... tick tock..."
+    "Tick tock... tick tock...",
+    "Memento Mori."
 ];
 
 let message = messages[Math.round(Math.random() * messages.length - 1)];
