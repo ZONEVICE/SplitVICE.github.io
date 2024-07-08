@@ -51,7 +51,7 @@ const AsideLeft = /* html */`
 </div>
 `;
 
-const GlobalMessage = /* html */`<div class='center' style='color:gray;font-size:23px'><div>Doing streaming everyday on <a target="_blank" href="https://www.twitch.tv/ZONEVICE">Twitch</a></div><i>Website migration to "<a href="javascript:void(0)">ZONEVICE.com</a>" confirmed</i></div>`;
+const GlobalMessage = /* html */`<div class="center">Website migration to "<a href="javascript:void(0)">ZONEVICE.com</a>" confirmed</div>`;
 
 const Footer = /* html */ ``;
 

@@ -16,7 +16,7 @@ const app = new Vue({
         this.links.push({
             url: 'https://www.twitch.tv/ZONEVICE',
             name: 'Twitch',
-            description: 'Doing streams everyday.',
+            description: 'Doing streams when feeling like it.',
             img_src: 'https://dl.dropboxusercontent.com/s/2w6qs2qeg7gjonq/twitch.png?dl=0',
             img_alt: 'twitch',
             active: true
