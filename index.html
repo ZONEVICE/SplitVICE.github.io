@@ -3,25 +3,26 @@
 
 <head>
     <!-- SEO -->
-    <meta name="author" content="SPLIT VICE">
-    <meta name="description" content="SPLIT VICE web page. computer engineer and artist.">
-    <meta name="keywords" content="SPLIT VICE, VICE, SPLITVICE, art, coding">
-    <title>SPLIT VICE</title>
-    <meta property="og:title" content="SPLIT VICE" />
-    <meta property="og:url" content="https://split-vice.com/" />
-    <meta property="og:image" content="/public/img/favicon.png" />
-    <meta property="twitter:site" content="@SplitVICE_">
+    <meta name="author" content="ZONEVICE">
+    <meta name="description" content="ZONEVICE web page. computer engineer and artist.">
+    <meta name="keywords" content="ZONEVICE, VICE, ZONEVICE, art, coding">
+    <title>ZONEVICE</title>
+    <meta property="og:title" content="ZONEVICE" />
+    <meta property="og:url" content="https://zonevice.com/" />
+    <meta property="og:image" content="/public/img/zv_lg_v2.svg" />
+    <meta property="twitter:site" content="@_ZONEVICE">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#bd0058" />
-    <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
+    <link rel="shortcut icon" type="image/svg" href="/public/img/zv_lg_v2.svg">
 
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
 </head>
 
 <div id="div_style">
@@ -29,66 +30,87 @@
 </div>
 
 <body>
-    <header>
-        <div id="div_header">
-
-        </div>
-    </header>
-
-    <div class="container-general">
-
-        <aside id="div_aside_left">
-            <div>
-            </div>
-        </aside>
-
-        <div class="container-main-content">
-
-            <div>
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item active" aria-current="page">Home</li>
-                    </ol>
-                </nav>
-            </div>
-
-            <div id="div_global_message">
-
-            </div>
-
-            <ul class="mt-4">
-                <div class="h3">Website domain will be changed to ZONEVICE.com</div>
-                <div>Domain Split-VICE.com end of life.</div>
-                <hr>
-                <li>Update may, 6 2024: new website domain "www.ZONEVICE.com".</li>
-                <li>Update december, 6 2023: Website refactor in work in progress.</li>
-            </ul>
-
+  <div class="animated-background"></div>
+  <div class="container-fluid d-flex justify-content-center align-items-center vh-100">
+    <div class="text-center px-3">
+      <img src="/public/img/zv_lg_v2.svg" alt="ZONEVICE Logo" class="img-fluid mb-4" style="max-width: 1400px; width: 300px;">
+      <h1 class="display-1 fw-bold text-white mb-3">ZONEVICE</h1>
+      <h2 class="display-6 text-light mb-2">Launching</h2>
+      <p class="text-white-50">September - October 2025</p>
     </div>
+  </div>
 
-    <footer>
-        <div id="div_footer">
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow: hidden;
+    }
 
-        </div>
-    </footer>
-    <h1 style='position: fixed; visibility: hidden; top:0;'>SPLIT VICE - Archive</h1>
-    <script src="/public/script/global.js"></script>
+    .animated-background {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: linear-gradient(270deg, #b22222, #8b0000, #c71585, #ff4500);
+      background-size: 800% 800%;
+      animation: gradientShift 15s ease infinite;
+      z-index: -2;
+    }
 
-    <style>
-        .navigatorUl a {
-            font-size: 21px;
-        }
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
 
-        .navigatorUl span {
-            padding-left: 25px;
-            font-size: 14.7px;
-            color: rgb(163, 163, 163);
-        }
+    /* Morphing blobs overlay */
+    .animated-background::before {
+      content: "";
+      position: absolute;
+      top: -20%;
+      left: -10%;
+      width: 130vw;
+      height: 130vh;
+      background: radial-gradient(circle at 30% 30%, rgba(255, 99, 71, 0.6), transparent 60%),
+                  radial-gradient(circle at 70% 70%, rgba(178, 34, 34, 0.5), transparent 60%),
+                  radial-gradient(circle at 50% 50%, rgba(255, 20, 147, 0.4), transparent 60%);
+      filter: blur(100px);
+      animation: blobMovement 20s ease-in-out infinite alternate;
+      z-index: -1;
+    }
 
-        .container-main-contentInfoTitleBlock {
-            text-align: center;
-        }
-    </style>
+    @keyframes blobMovement {
+      0% {
+        transform: scale(1) translate(0, 0);
+        opacity: 0.9;
+      }
+      50% {
+        transform: scale(1.3) translate(20px, 30px);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1) translate(0, 0);
+        opacity: 0.9;
+      }
+    }
+
+    .container-fluid {
+      position: relative;
+      z-index: 1;
+    }
+
+    h1, h2, p {
+      animation: fadeIn 1.2s ease forwards;
+      opacity: 0;
+    }
+    h1 { animation-delay: 0.4s; }
+    h2 { animation-delay: 0.8s; }
+    p { animation-delay: 1.2s; }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+  </style>
 </body>
 
 </html>

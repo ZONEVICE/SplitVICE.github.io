@@ -1,1 +1,1 @@
-# www.SPLIT-VICE.com frontend
+# www.ZONEVICE.com static frontend

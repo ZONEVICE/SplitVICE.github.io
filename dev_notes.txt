@@ -1,4 +1,0 @@
-FOLDERS MEANING
-	s: Stands for "shortener". It contains pages that work as shorteners. I can also change the url destiny as I wish.
-DEFAULT VALUES
-	header default color: #bd0058
