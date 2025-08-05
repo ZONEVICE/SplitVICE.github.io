@@ -34,9 +34,9 @@
   <div class="container-fluid d-flex justify-content-center align-items-center vh-100">
     <div class="text-center px-3">
       <img src="/public/img/zv_lg_v2.svg" alt="ZONEVICE Logo" class="img-fluid mb-4" style="max-width: 1400px; width: 300px;">
-      <h1 class="display-1 fw-bold text-white mb-3">ZONEVICE</h1>
-      <h2 class="display-6 text-light mb-2">Launching</h2>
-      <p class="text-white-50">September - October 2025</p>
+      <div class="display-1 fw-bold text-white mb-3 h1">ZONEVICE</div>
+      <div class="display-10 text-light mb-2 h5">Release</div>
+      <p class="text-white-50">October - November 2025</p>
     </div>
   </div>
 
@@ -99,18 +99,22 @@
       z-index: 1;
     }
 
-    h1, h2, p {
+    .h1, .h5, p {
       animation: fadeIn 1.2s ease forwards;
       opacity: 0;
     }
-    h1 { animation-delay: 0.4s; }
-    h2 { animation-delay: 0.8s; }
+    .h1 { animation-delay: 0.4s; }
+    .h5 { animation-delay: 0.8s; }
     p { animation-delay: 1.2s; }
 
     @keyframes fadeIn {
       to { opacity: 1; }
     }
   </style>
+  <script>
+    var msg = "Fortune favors the brave";
+    console.log(msg)
+  </script>
 </body>
 
 </html>
